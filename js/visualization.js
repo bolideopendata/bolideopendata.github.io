@@ -374,10 +374,7 @@ $(document).ready(function(){
 														labels: Labelcrim,
 														datasets: [{
 															data: Valcrim,
-															backgroundColor: [
-															  "#fff2e6", "#ffe6cc", "#ffd9b3",  "#ffcc99", "#ffbf80", "#ffb366", "#ffa64d", "#ffa345", "#ff9933", "#ff8c1a", "#ff8000", "#e67300"
-															],
-															
+															backgroundColor: ["#f16a43", "#f27547", "#f2804b", "#f38b4e", "#f39652", "#f4a256", "#f5ad5a", "#f5b85e", "#f6c361", "#f6ce65", "#f7d969"]															],	
 														}]
 													};
 											var optiongensegn = {
