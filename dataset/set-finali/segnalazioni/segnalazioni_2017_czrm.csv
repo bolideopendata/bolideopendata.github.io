@@ -1,0 +1,320 @@
+Zona,Categoria Segnalazione,Sottocategoria Segnalazione,Numero Segnalazioni
+Colli,Ambientale,Rifiuti/rottami,14
+Colli,Ambientale,Neve,2
+Colli,Sociale,Senza fissa dimora,1
+Colli,Ambientale,Inquinamento acustico,1
+Colli,Sociale,Bivacco,2
+Costa Saragozza,Ambientale,Rifiuti/rottami,79
+Costa Saragozza,Ambientale,Inquinamento atmosferico,7
+Costa Saragozza,Microcriminalita,Vandalismi,5
+Costa Saragozza,Ambientale,Sporcizia/deiezioni/problemi igienici,15
+Costa Saragozza,Ambientale,Neve,2
+Costa Saragozza,Ambientale,Inquinamento acustico,9
+Costa Saragozza,Microcriminalita,Furti/rapine,1
+Costa Saragozza,Ambientale,Altro,1
+Costa Saragozza,Sociale,Adulti in difficolta,1
+Costa Saragozza,Microcriminalita,Comportamenti sanzionabili,2
+Costa Saragozza,Sociale,Prostituzione,1
+Costa Saragozza,Ambientale,Scarichi idrici,3
+Costa Saragozza,Sociale,Senza fissa dimora,2
+Costa Saragozza,Microcriminalita,Altro,1
+Costa Saragozza,Sociale,Bivacco,2
+Costa Saragozza,Sociale,Nomadi,1
+Costa Saragozza,Sociale,Conflitti,3
+Costa Saragozza,Sociale,Mendicanti,1
+Costa Saragozza,Microcriminalita,Occupazioni abusive,1
+Costa Saragozza,Sociale,Tossicodipendenti,1
+Costa Saragozza,Sociale,Altro,2
+Costa Saragozza,Sociale,Bande giovanili,1
+Bolognina,Ambientale,Rifiuti/rottami,117
+Bolognina,Sociale,Bivacco,20
+Bolognina,Sociale,Bande giovanili,3
+Bolognina,Microcriminalita,Furti/rapine,3
+Bolognina,Microcriminalita,Spaccio,12
+Bolognina,Ambientale,Inquinamento acustico,27
+Bolognina,Ambientale,Sporcizia/deiezioni/problemi igienici,13
+Bolognina,Ambientale,Dissesto idro-geologico,6
+Bolognina,Sociale,Tossicodipendenti,4
+Bolognina,Ambientale,Inquinamento atmosferico,7
+Bolognina,Sociale,Prostituzione,3
+Bolognina,Ambientale,Scarichi idrici,6
+Bolognina,Sociale,Nomadi,5
+Bolognina,Microcriminalita,Occupazioni abusive,9
+Bolognina,Ambientale,Neve,1
+Bolognina,Sociale,Senza fissa dimora,5
+Bolognina,Microcriminalita,Vandalismi,6
+Bolognina,Microcriminalita,Comportamenti sanzionabili,3
+Bolognina,Sociale,Altro,7
+Bolognina,Ambientale,Altro,1
+Bolognina,Sociale,Mendicanti,2
+Bolognina,Sociale,Conflitti,1
+Corticella,Ambientale,Rifiuti/rottami,84
+Corticella,Ambientale,Inquinamento acustico,11
+Corticella,Microcriminalita,Furti/rapine,1
+Corticella,Ambientale,Altro,4
+Corticella,Sociale,Nomadi,3
+Corticella,Ambientale,Scarichi idrici,5
+Corticella,Sociale,Tossicodipendenti,1
+Corticella,Sociale,Altro,1
+Corticella,Ambientale,Sporcizia/deiezioni/problemi igienici,6
+Corticella,Microcriminalita,Occupazioni abusive,3
+Corticella,Ambientale,Inquinamento atmosferico,2
+Corticella,Sociale,Bande giovanili,2
+Corticella,Sociale,Bivacco,5
+Corticella,Sociale,Adulti in difficolta,1
+Corticella,Sociale,Prostituzione,3
+Corticella,Ambientale,Neve,1
+Corticella,Sociale,Mendicanti,2
+Corticella,Sociale,Senza fissa dimora,2
+Corticella,Ambientale,Dissesto idro-geologico,2
+Corticella,Sociale,Punkabbestia,1
+Corticella,Microcriminalita,Vandalismi,1
+Malpighi,Ambientale,Sporcizia/deiezioni/problemi igienici,23
+Malpighi,Sociale,Bande giovanili,7
+Malpighi,Microcriminalita,Comportamenti sanzionabili,2
+Malpighi,Sociale,Bivacco,11
+Malpighi,Ambientale,Rifiuti/rottami,52
+Malpighi,Microcriminalita,Occupazioni abusive,1
+Malpighi,Microcriminalita,Spaccio,4
+Malpighi,Sociale,Mendicanti,3
+Malpighi,Sociale,Altro,2
+Malpighi,Microcriminalita,Furti/rapine,2
+Malpighi,Ambientale,Inquinamento acustico,10
+Malpighi,Sociale,Senza fissa dimora,3
+Malpighi,Microcriminalita,Altro,1
+Malpighi,Sociale,Conflitti,3
+Malpighi,Sociale,Tossicodipendenti,1
+Malpighi,Sociale,Adulti in difficolta,1
+Malpighi,Ambientale,Scarichi idrici,2
+Malpighi,Ambientale,Inquinamento atmosferico,2
+Malpighi,Microcriminalita,Truffe,1
+Malpighi,Microcriminalita,Vandalismi,1
+Murri,Ambientale,Rifiuti/rottami,27
+Murri,Ambientale,Scarichi idrici,1
+Murri,Ambientale,Sporcizia/deiezioni/problemi igienici,8
+Murri,Ambientale,Inquinamento acustico,8
+Murri,Ambientale,Inquinamento atmosferico,6
+Murri,Ambientale,Neve,3
+Murri,Microcriminalita,Vandalismi,1
+Murri,Sociale,Conflitti,2
+Murri,Sociale,Bivacco,2
+Murri,Ambientale,Dissesto idro-geologico,2
+Murri,Sociale,Altro,1
+Murri,Sociale,Tossicodipendenti,1
+Murri,Sociale,Bande giovanili,1
+Murri,Sociale,Nomadi,1
+Irnerio,Sociale,Tossicodipendenti,16
+Irnerio,Ambientale,Rifiuti/rottami,57
+Irnerio,Ambientale,Inquinamento acustico,11
+Irnerio,Sociale,Bande giovanili,8
+Irnerio,Sociale,Senza fissa dimora,5
+Irnerio,Ambientale,Sporcizia/deiezioni/problemi igienici,15
+Irnerio,Ambientale,Inquinamento atmosferico,4
+Irnerio,Sociale,Bivacco,18
+Irnerio,Microcriminalita,Truffe,4
+Irnerio,Sociale,Altro,9
+Irnerio,Ambientale,Scarichi idrici,1
+Irnerio,Microcriminalita,Comportamenti sanzionabili,2
+Irnerio,Microcriminalita,Spaccio,10
+Irnerio,Sociale,Mendicanti,2
+Irnerio,Microcriminalita,Occupazioni abusive,2
+Irnerio,Sociale,Nomadi,1
+Irnerio,Microcriminalita,Furti/rapine,2
+Borgo Panigale,Ambientale,Rifiuti/rottami,56
+Borgo Panigale,Ambientale,Inquinamento acustico,7
+Borgo Panigale,Sociale,Nomadi,10
+Borgo Panigale,Sociale,Bande giovanili,4
+Borgo Panigale,Ambientale,Sporcizia/deiezioni/problemi igienici,21
+Borgo Panigale,Ambientale,Inquinamento atmosferico,6
+Borgo Panigale,Microcriminalita,Vandalismi,6
+Borgo Panigale,Sociale,Bivacco,9
+Borgo Panigale,Ambientale,Dissesto idro-geologico,5
+Borgo Panigale,Ambientale,Scarichi idrici,4
+Borgo Panigale,Microcriminalita,Videosorveglianza,1
+Borgo Panigale,Sociale,Prostituzione,10
+Borgo Panigale,Sociale,Senza fissa dimora,2
+Borgo Panigale,Microcriminalita,Comportamenti sanzionabili,1
+Borgo Panigale,Sociale,Conflitti,2
+Lame,Ambientale,Rifiuti/rottami,54
+Lame,Ambientale,Neve,2
+Lame,Ambientale,Inquinamento elettromagnetico,1
+Lame,Sociale,Nomadi,3
+Lame,Sociale,Conflitti,1
+Lame,Sociale,Senza fissa dimora,9
+Lame,Microcriminalita,Vandalismi,2
+Lame,Sociale,Bande giovanili,8
+Lame,Sociale,Bivacco,6
+Lame,Ambientale,Inquinamento acustico,12
+Lame,Sociale,Altro,5
+Lame,Ambientale,Scarichi idrici,4
+Lame,Microcriminalita,Occupazioni abusive,2
+Lame,Ambientale,Sporcizia/deiezioni/problemi igienici,8
+Lame,Microcriminalita,Spaccio,1
+Lame,Sociale,Adulti in difficolta,2
+Lame,Sociale,Mendicanti,2
+Lame,Ambientale,Altro,1
+Santa Viola,Sociale,Nomadi,4
+Santa Viola,Ambientale,Rifiuti/rottami,16
+Santa Viola,Microcriminalita,Vandalismi,1
+Santa Viola,Ambientale,Inquinamento acustico,3
+Santa Viola,Sociale,Bivacco,4
+Santa Viola,Microcriminalita,Comportamenti sanzionabili,1
+Santa Viola,Ambientale,Sporcizia/deiezioni/problemi igienici,4
+Santa Viola,Ambientale,Inquinamento atmosferico,3
+Santa Viola,Sociale,Mendicanti,1
+Santa Viola,Sociale,Prostituzione,1
+Santa Viola,Sociale,Donne in difficolta,1
+Santa Viola,Ambientale,Dissesto idro-geologico,2
+Saffi,Microcriminalita,Comportamenti sanzionabili,6
+Saffi,Sociale,Mendicanti,4
+Saffi,Sociale,Altro,4
+Saffi,Sociale,Nomadi,10
+Saffi,Sociale,Bivacco,5
+Saffi,Microcriminalita,Occupazioni abusive,2
+Saffi,Ambientale,Rifiuti/rottami,60
+Saffi,Ambientale,Sporcizia/deiezioni/problemi igienici,12
+Saffi,Ambientale,Inquinamento acustico,15
+Saffi,Sociale,Adulti in difficolta,4
+Saffi,Sociale,Conflitti,7
+Saffi,Ambientale,Scarichi idrici,2
+Saffi,Microcriminalita,Vandalismi,1
+Saffi,Ambientale,Inquinamento atmosferico,1
+Saffi,Sociale,Bande giovanili,2
+Saffi,Microcriminalita,Truffe,1
+Saffi,Sociale,Anziani non autosufficienti,1
+Saffi,Sociale,Donne in difficolta,1
+Saffi,Microcriminalita,Spaccio,1
+Saffi,Sociale,Tossicodipendenti,1
+Saffi,Sociale,Senza fissa dimora,1
+Barca,Ambientale,Rifiuti/rottami,21
+Barca,Sociale,Altro,1
+Barca,Sociale,Bivacco,8
+Barca,Microcriminalita,Vandalismi,2
+Barca,Ambientale,Scarichi idrici,2
+Barca,Ambientale,Dissesto idro-geologico,1
+Barca,Ambientale,Inquinamento atmosferico,2
+Barca,Microcriminalita,Furti/rapine,1
+Barca,Sociale,Nomadi,1
+Barca,Ambientale,Inquinamento acustico,3
+Barca,Ambientale,Sporcizia/deiezioni/problemi igienici,3
+Barca,Microcriminalita,Comportamenti sanzionabili,1
+Barca,Ambientale,Altro,1
+Mazzini,Sociale,Bivacco,12
+Mazzini,Ambientale,Rifiuti/rottami,39
+Mazzini,Sociale,Nomadi,2
+Mazzini,Sociale,Senza fissa dimora,4
+Mazzini,Ambientale,Sporcizia/deiezioni/problemi igienici,12
+Mazzini,Ambientale,Inquinamento atmosferico,2
+Mazzini,Microcriminalita,Occupazioni abusive,4
+Mazzini,Sociale,Conflitti,2
+Mazzini,Ambientale,Inquinamento acustico,4
+Mazzini,Microcriminalita,Furti/rapine,4
+Mazzini,Microcriminalita,Vandalismi,1
+Mazzini,Microcriminalita,Comportamenti sanzionabili,2
+Mazzini,Sociale,Prostituzione,2
+Mazzini,Ambientale,Altro,1
+Mazzini,Sociale,Altro,2
+Mazzini,Sociale,Tossicodipendenti,2
+Mazzini,Sociale,Mendicanti,1
+Mazzini,Sociale,Bande giovanili,1
+Mazzini,Ambientale,Scarichi idrici,2
+Mazzini,Sociale,Anziani non autosufficienti,1
+Mazzini,Sociale,Adulti in difficolta,1
+San Vitale,Sociale,Tossicodipendenti,2
+San Vitale,Ambientale,Rifiuti/rottami,54
+San Vitale,Sociale,Nomadi,22
+San Vitale,Sociale,Conflitti,4
+San Vitale,Microcriminalita,Vandalismi,5
+San Vitale,Sociale,Bivacco,10
+San Vitale,Sociale,Senza fissa dimora,7
+San Vitale,Ambientale,Sporcizia/deiezioni/problemi igienici,12
+San Vitale,Microcriminalita,Comportamenti sanzionabili,1
+San Vitale,Sociale,Mendicanti,3
+San Vitale,Microcriminalita,Occupazioni abusive,3
+San Vitale,Sociale,Altro,1
+San Vitale,Ambientale,Inquinamento acustico,19
+San Vitale,Sociale,Bande giovanili,3
+San Vitale,Ambientale,Scarichi idrici,3
+San Vitale,Ambientale,Inquinamento atmosferico,3
+San Vitale,Microcriminalita,Spaccio,2
+San Vitale,Sociale,Adulti in difficolta,1
+San Vitale,Ambientale,Altro,1
+San Vitale,Sociale,Punkabbestia,1
+Marconi,Ambientale,Rifiuti/rottami,64
+Marconi,Microcriminalita,Vandalismi,1
+Marconi,Ambientale,Sporcizia/deiezioni/problemi igienici,34
+Marconi,Sociale,Mendicanti,7
+Marconi,Sociale,Bivacco,24
+Marconi,Sociale,Senza fissa dimora,14
+Marconi,Sociale,Bande giovanili,8
+Marconi,Ambientale,Inquinamento atmosferico,2
+Marconi,Microcriminalita,Comportamenti sanzionabili,10
+Marconi,Ambientale,Inquinamento acustico,13
+Marconi,Sociale,Tossicodipendenti,3
+Marconi,Ambientale,Neve,1
+Marconi,Sociale,Punkabbestia,2
+Marconi,Sociale,Altro,6
+Marconi,Ambientale,Scarichi idrici,1
+Marconi,Sociale,Adulti in difficolta,3
+Marconi,Sociale,Nomadi,2
+Marconi,Microcriminalita,Spaccio,5
+Marconi,Microcriminalita,Videosorveglianza,1
+Marconi,Microcriminalita,Furti/rapine,1
+Marconi,Microcriminalita,Truffe,1
+Marconi,Sociale,Conflitti,1
+San Ruffillo,Ambientale,Rifiuti/rottami,22
+San Ruffillo,Sociale,Bivacco,6
+San Ruffillo,Ambientale,Inquinamento acustico,5
+San Ruffillo,Microcriminalita,Comportamenti sanzionabili,2
+San Ruffillo,Ambientale,Neve,1
+San Ruffillo,Sociale,Nomadi,1
+San Ruffillo,Ambientale,Sporcizia/deiezioni/problemi igienici,3
+San Ruffillo,Ambientale,Scarichi idrici,5
+San Ruffillo,Microcriminalita,Vandalismi,3
+San Ruffillo,Sociale,Conflitti,1
+San Ruffillo,Ambientale,Dissesto idro-geologico,1
+San Ruffillo,Ambientale,Inquinamento atmosferico,5
+San Ruffillo,Sociale,Senza fissa dimora,1
+San Ruffillo,Microcriminalita,Videosorveglianza,1
+San Ruffillo,Sociale,Bande giovanili,1
+San Donato,Ambientale,Rifiuti/rottami,43
+San Donato,Ambientale,Inquinamento acustico,24
+San Donato,Microcriminalita,Truffe,3
+San Donato,Ambientale,Dissesto idro-geologico,1
+San Donato,Ambientale,Inquinamento atmosferico,4
+San Donato,Sociale,Bivacco,24
+San Donato,Microcriminalita,Comportamenti sanzionabili,1
+San Donato,Ambientale,Sporcizia/deiezioni/problemi igienici,7
+San Donato,Sociale,Bande giovanili,3
+San Donato,Ambientale,Scarichi idrici,2
+San Donato,Sociale,Mendicanti,1
+San Donato,Sociale,Senza fissa dimora,3
+San Donato,Sociale,Nomadi,8
+San Donato,Sociale,Tossicodipendenti,7
+San Donato,Microcriminalita,Occupazioni abusive,1
+San Donato,Sociale,Altro,4
+San Donato,Microcriminalita,Spaccio,8
+San Donato,Sociale,Conflitti,7
+San Donato,Ambientale,Neve,1
+San Donato,Microcriminalita,Vandalismi,2
+San Donato,Sociale,Punkabbestia,3
+San Donato,Sociale,Prostituzione,1
+San Donato,Microcriminalita,Furti/rapine,2
+Galvani,Sociale,Senza fissa dimora,12
+Galvani,Ambientale,Rifiuti/rottami,48
+Galvani,Ambientale,Sporcizia/deiezioni/problemi igienici,15
+Galvani,Microcriminalita,Comportamenti sanzionabili,5
+Galvani,Sociale,Mendicanti,3
+Galvani,Ambientale,Inquinamento acustico,16
+Galvani,Sociale,Bivacco,7
+Galvani,Ambientale,Inquinamento atmosferico,2
+Galvani,Sociale,Conflitti,6
+Galvani,Microcriminalita,Vandalismi,2
+Galvani,Sociale,Tossicodipendenti,2
+Galvani,Ambientale,Neve,1
+Galvani,Microcriminalita,Occupazioni abusive,5
+Galvani,Sociale,Donne in difficolta,1
+Galvani,Sociale,Bande giovanili,5
+Galvani,Sociale,Altro,2
+Galvani,Ambientale,Scarichi idrici,2
+Galvani,Microcriminalita,Videosorveglianza,2
