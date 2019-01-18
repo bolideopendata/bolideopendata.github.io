@@ -589,11 +589,12 @@ $(document).ready(function() {
                                                         {
                                                             "label": "Risultati Camera Italia",
                                                             data: [32.68, 18.76, 17.35, 14.00, 4.35, 3.39, 2.56, 6.91],
+                                                            backgroundColor: "#808080"
                                                         },
                                                         {
                                                             "label": "Risultati Camera Bologna",
                                                             data: [21.90, 29.28, 13.59, 9.62, 3.58, 8.04, 6.23, 7.76],
-                                                            backgroundColor: "#545556"
+                                                            backgroundColor: "#b3b3b3"
                                                         }
                                                     ]
                                                 };
