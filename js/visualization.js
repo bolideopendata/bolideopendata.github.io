@@ -186,7 +186,7 @@ $(document).ready(function() {
                                                                     "data": [24718, 24819, 24833, 24709, 25112, 25178, 25510, 25815],
                                                                     "type": "line",
                                                                     "fill": true,
-                                                                    backgroundColor: "rgb(169,169,169)",
+                                                                    borderColor: "rgb(169,169,169)",
                                                                 }
                                                             ]
                                                         };
