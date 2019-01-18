@@ -169,7 +169,7 @@ $(document).ready(function() {
                                                                     "data": listIndex,
                                                                     "type": "line",
                                                                     "fill": false,
-                                                                    "borderColor": "rgb(255, 0, 0)",
+                                                                    "borderColor": "#f4a256",
                                                                     "spanGaps": true,
                                                                 },
                                                                 {
@@ -177,7 +177,7 @@ $(document).ready(function() {
                                                                     "data": listRedditi,
                                                                     "type": "line",
                                                                     "fill": false,
-                                                                    "borderColor": "rgb(54, 162, 235)",
+                                                                    "borderColor": "#ee444e",
                                                                 },
                                                                 {
                                                                     "label": "Reddito Medio Bologna",
@@ -704,8 +704,10 @@ $(document).ready(function() {
                                                     switch ($(this).val()) {
                                                         case 'camera':
                                                             $('#EleChartrad').remove();
+                                                            $('#empty').remove();                
                                                             $('#EleChartbar').remove();
                                                             $('#chartContainerEle').append('<canvas id="EleChartrad"><canvas>');
+                                                           $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartbar"><canvas>');
                                                             grafiele(dataelecam, dataelecamtot);
                                                             break
