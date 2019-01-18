@@ -169,7 +169,7 @@ $(document).ready(function() {
                                                                     "data": listIndex,
                                                                     "type": "line",
                                                                     "fill": false,
-                                                                    "borderColor": "#f4a256",
+                                                                    backgroundColor: "#f4a256",
                                                                     "spanGaps": true,
                                                                 },
                                                                 {
@@ -177,14 +177,14 @@ $(document).ready(function() {
                                                                     "data": listRedditi,
                                                                     "type": "line",
                                                                     "fill": false,
-                                                                    "borderColor": "#ee444e",
+                                                                    backgroundColor: "#ee444e",
                                                                 },
                                                                 {
                                                                     "label": "Reddito Medio Bologna",
                                                                     "data": [24718, 24819, 24833, 24709, 25112, 25178, 25510, 25815],
                                                                     "type": "line",
                                                                     "fill": true,
-                                                                    "borderColor": "rgb(169,169,169)",
+                                                                    backgroundColor: "rgb(169,169,169)",
                                                                 }
                                                             ]
                                                         };
