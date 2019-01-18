@@ -543,11 +543,13 @@ $(document).ready(function() {
                                             if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                 $('#ELEButton').remove();
                                                 $('#EleChartrad').remove();
+                                                $('#empty').remove();
                                                 $('#EleChartbar').remove();
                                                 $('#pulsanteELE').append('<div class="row" id="ELEButton"><form><label class="radio-inline btn btn-dark"><input type="radio" id="camera" value="camera" name="radioele" autocomplete="off" checked>Camera dei Deputati</label><label class="radio-inline btn btn-dark"><input type="radio" id="senato" value="senato" name="radioele" autocomplete="off">Senato</label></form>');
                                                 //$('#pulsanteELE').append('<div class="row" id="ELEButton"><form><label class="class="radio-inline active"><input type="radio" id="camera" value="camera" name="radioele" autocomplete="off" checked>Camera dei Deputati</label><label class="radio-inline"><input type="radio" id="senato" value="senato" name="radioele" autocomplete="off">Senato</label></form>');
-                                                $('#chartContainerEle').append('<canvas id="EleChartrad"><canvas>');
-                                                $('#chartContainerEle').append('<canvas id="EleChartbar"><canvas>');
+                                                $('#chartContainerEle').append('<canvas id="EleChartrad"></canvas>');
+                                                 $('#chartContainerEle').append('<div id="empty"></div>');
+                                                $('#chartContainerEle').append('<canvas id="EleChartbar"></canvas>');
                                                 var datisenatozona = [];
                                                 datisenatozona.push(arrayItem["Percentuale voti Movimento 5 Stelle Senato"]);
                                                 datisenatozona.push(arrayItem["Percentuale voti Partito Democratico Senato"]);
@@ -582,7 +584,7 @@ $(document).ready(function() {
                                                     datasets: [{
                                                             "label": "Risultati Camera Zona",
                                                             data: daticamerazona,
-                                                            backgroundColor: "red"
+                                                            backgroundColor: "#ee444e"
                                                         },
                                                         {
                                                             "label": "Risultati Camera Italia",
