@@ -39,10 +39,7 @@ Il piano di lavoro è stato suddiviso nelle seguenti sezioni:
     2. [Metadati](#metadati)
         1. [Metadatazione dei dataset iniziali](#metadatazione-dei-dataset-iniziali)
         2. [Metadatazione dei dataset finali](#metadatazione-dei-dataset-finali)
-    3. [Provenance](#provenance)
-        1. [Provenance dei dataset iniziali](#provenance-dei-dataset-iniziali)
-        2. [Provenance dei dataset finali](#provenance-dei-dataset-finali)
-    4. [URI](#uri)
+    3. [URI](#uri)
         1. [URI dei dataset iniziali](#uri-dei-dataset-iniziali)
         2. [URI dei dataset finali](#uri-dei-dataset-finali)
 6. [Analisi della sostenibilità](#analisi-della-sostenibilità)
@@ -139,20 +136,20 @@ _______________________________________________________________
 ## Requisiti 
 I requisiti necessari, stabiliti dalle **Linee guida nazionali per la valorizzazione del patrimonio informativo pubblico** alla voce [Qualità dei dati](https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/bozza/aspettiorg.html#qualita-dei-dati), per controllare il livello di qualità informativa sono:
 
-|  | Accuratezza | Completezza <br> (dati) | Coerenza | Tempestività |
+|  | Accuratezza | Completezza | Coerenza | Tempestività |
 | -------| ----------- | --------- | ----- | ----- |
 | **Politiche** |  |  |  |  |  |
-| 1.0 - 1.1 - 2.0 | alcuni totali inseriti nella nomenclatura; <br> ambiguità semantica (*Totale voti di cui*); <br> | True | uso arbitrario di uppercase e lowercase; | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
+| 1.0 - 1.1 - 2.0 | alcuni totali inseriti nella nomenclatura; <br> ambiguità semantica (*Totale voti di cui*); <br> | 100% | uso arbitrario di uppercase e lowercase; | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
 | **Redditi** |  |  |  |  |  |
-| 3.0 - 3.7 | grossolanità della sintassi di nomenclatura; | True | sovraffollamento di semi-colon (2011); <br> "*SENZA FISSA DIMORA*" e "*NON RESIDENTI NELL' ANNO DI IMPOSTA*" presenti sono nel 2014; | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
+| 3.0 - 3.7 | grossolanità della sintassi di nomenclatura; | 100% | sovraffollamento di semi-colon (2011); <br> "*SENZA FISSA DIMORA*" e "*NON RESIDENTI NELL' ANNO DI IMPOSTA*" presenti sono nel 2014; | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
 | **Aree** |  |  |  |  |  |
-| 4.0 | nomenclatura non armonizzata con [4.1] | True | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
-| 4.1 | nomenclatura incoerente; | True | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
+| 4.0 | nomenclatura non armonizzata con [4.1] | 100% | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
+| 4.1 | nomenclatura incoerente; | 100% | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
 | **Segnalazioni** |  |  |  |  |  |
 | 5.0 | nomenclature non armonizzate con [5.1]; <br> sintassi di *TIPO_AREA_* | True, rischio di de-anonimizzazione | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
-| 5.1 | semantica troppo generica di *Category* <br> semantica poco chiara in alcuni casi di *Subcategory_1*, *Subcategory_2*, *Subcategory_3* | mancano spiegazioni di *Category*; <br> mancano spiegazioni di *Subcategory_1*, *Subcategory_2*, *Subcategory_3*; | presenza di segnalazioni de-anonimizzate; | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
-| 6.0 | differenza tra *Età* ed *Età grandi* poco chiara | True, rischio di de-anonimizzazione | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
-| 7.0 | *offset* delle coordinate: in media {0.00005 N, 0.00106 E}  | True | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
+| 5.1 | semantica troppo generica di *Category* <br> semantica poco chiara in alcuni casi di *Subcategory_1*, *Subcategory_2*, *Subcategory_3* | 89.45%: mancano spiegazioni di *Category*; <br> mancano spiegazioni di *Subcategory_1*, *Subcategory_2*, *Subcategory_3*; | presenza di segnalazioni de-anonimizzate; | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
+| 6.0 | differenza tra *Età* ed *Età grandi* poco chiara | 100%; rischio di de-anonimizzazione | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
+| 7.0 | *offset* delle coordinate: in media {0.00005 N, 0.00106 E} | 100% | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
 
 I requisiti aggiuntivi che abbiamo stabilito per controllare il livello di qualità informativa sono:
 
@@ -161,8 +158,7 @@ I requisiti aggiuntivi che abbiamo stabilito per controllare il livello di quali
 | **Completezza**<br>(del **dataset**) | Percentuale di valori non-nulli nel dataset | Script(**mettere link**) |
 | **Disponibilità** | Analisi dell'URI | [URI dei dataset](#uri-dei-dataset) |
 | **Processabilità** | Analisi dei formati | [Formati](#formati) |
-| **Credibilità** | Metadati di *provenance* | [Provenance](#provenance) |
-| **Conformità** | Metadati descrittivi | [Metadati](#metadati) |
+| **Credibilità** | Metadatazione | [Metadati](#metadati) |
 
 ### Indici di completezza
 Gli indici di completezza che abbiamo calcolato sono i seguenti:
@@ -200,7 +196,6 @@ _______________________________________________________________
 # Analisi etico-giuridica
 
 ## Privacy
-
 ### Checklist giuridica
 L'analisi giuridica è necessaria per garantire sostenibilità nel tempo del processo di produzione e pubblicazione dei dati e creare un servizio equilibrato nel rispetto della funzione pubblica e dei diritti dei singoli individui. L’analisi giuridica delle fonti mira quindi a valutare questi delicati equilibri, evidenziando limitazioni d’uso, finalità di competenza, determinazione dei diritti e dei termini di licenza.
 
@@ -428,7 +423,6 @@ Abbiamo poi lavorato sullo *shapefile* delle Aree Statistiche (4.0): il sistema 
 ***
 
 #### DATASET FINALI
-
 | **Privacy** | Domande | ANALISI POLITICHE |  SEGNALAZIONI | ZONE | 
 | ----------- | --------| ------|--------|-------|
 | | sono i dati liberi da ogni informazione                    personale che possa identificare in modo                       diretto l’individuo?|sì |sì| sì |
@@ -479,7 +473,7 @@ La licenza associata a questo gruppo di dataset è la [**CC0 1.0**](https://crea
 
 | Creative Commons | Attribuzione Zero |
 | :----------------: | :-----------------: |
-|![](cc.png) | ![](zero.png)
+|![](https://bolideopendata.github.io/bolideopendata/documentazione/images/cc.png) | ![](https://bolideopendata.github.io/bolideopendata/documentazione/images/zero.png)
 
 Sulla pagina di ogni dataset è presente un [link](http://dati.comune.bologna.it/node/5) che porta ad una pagina del sito che descrive il diritto di riutilizzo dei dataset licenziati in questo modo. 
 
@@ -493,7 +487,7 @@ La licenza associata a questo gruppo di dataset è la [**CC-BY 3.0 IT**](https:/
 
 | Creative Commons | Attribuzione |
 | :----------------: | :-----------------: |
-|![](cc.png) | ![](by.png)
+|![](https://bolideopendata.github.io/bolideopendata/documentazione/images/cc.png) | ![](https://bolideopendata.github.io/bolideopendata/documentazione/images/by.png)
 
 Le licenze per l’open data con richiesta di attribuzione e condivisione allo stesso modo consentono di condividere, adattare e creare un datataset, anche per finalità commerciali, nel rispetto però di due vincoli: 
 - attribuire la paternità del dataset, fornire un link alla licenza e indicare le modifiche; 
@@ -507,28 +501,28 @@ Per pubblicare i nostri dataset abbiamo scelto la licenza [IODL 2.0](https://www
 * non implica trasferimenti di diritto di titolarità sulla banche di dati, sui dati e sulle informazioni pubbliche;
 * la versione 2.0, in particolare, permette di creare un lavoro derivato ed esercitare su di esso gli stessi diritti, per esempio attraverso la *mashup* con altre informazioni, utilizzando anche dati rilasciati con altre licenze *attribution* (che richiedono all’utente la sola indicazione della fonte,) come le licenze Creative Commons Attribution (CC-BY).
 
-![](logo_iodl_esteso.png)
+![](https://bolideopendata.github.io/bolideopendata/documentazione/images/logo_iodl_esteso.png)
 
 ### Librerie
 Le librerie che abbiamo utilizzato per compilare i codici Javascript, Python e HTML sono:
 
 | Libreria | Licenza |
 | -------- | ------- |
-| pandas | [Nuova licenza BSD (3 clausole)] |
-| Jquery | [MIT License] |
-| Bootstrap | [MIT License] |
-| Leaflet | [Licenza FreeBSD (2 clausole)] |
-| Chartjs | [MIT License] |
-| chartjs-plugin-labels | [MIT License] |
-| shapely | [Nuova licenza BSD (3 clausole)] |
+| pandas | [Nuova licenza BSD (3 clausole)](https://opensource.org/licenses/BSD-3-Clause) |
+| Jquery | [MIT License](https://opensource.org/licenses/MIT) |
+| Bootstrap | [MIT License](https://opensource.org/licenses/MIT) |
+| Leaflet | [Licenza FreeBSD (2 clausole)](https://opensource.org/licenses/BSD-2-Clause) |
+| Chartjs | [MIT License](https://opensource.org/licenses/MIT) |
+| chartjs-plugin-labels | [MIT License](https://opensource.org/licenses/MIT) |
+| shapely | [Nuova licenza BSD (3 clausole)](https://opensource.org/licenses/BSD-3-Clause) |
 
 ### Codice
-La licenza del nostro codice è [GNU-GPL].
+La licenza del nostro codice è [GNU-GPL](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ### Documentazione
-La licenza della documentazione di Bootstrap è [CC-BY 3.0 Unported]. 
+La licenza della documentazione di Bootstrap è [CC-BY 3.0 Unported](https://creativecommons.org/licenses/by/3.0/). 
 
-La licenza di questa documentazione è [CC-BY 4.0].
+La licenza di questa documentazione è [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Finalità
 
@@ -557,19 +551,10 @@ La finalità dei dataset è quella di esporre in Open Data i nomi delle aree Sta
 
 I dataset sono stati scelti per essere usati come dataset di raccordo per permettere la conversione/accorpamento dalle aree statistiche a zone.
 
-|
-
-|
-
-|
-
 #### DATASET CENSIMENTO
+La finalità dei dataset è quella di esporre in Open Data la Popolazione residente a Bologna per età, sesso, cittadinanza, quartiere, zona, area statistica e sezione di censimento per l'anno 2017.
 
-|
-
-|
-
-|
+Il dataset è stato scelto ai fini di estrapolare i residenti di Bologna per zona
 
 #### DATASET ZONE
 La finalità del dataset è quella di evidenziare la divisione del Comune di Bologna in *18 zone*, ovvero i vecchi quartieri che nel 1985 sono stati accorpati negli attuali 9 quartieri. I quartieri sono composti da zone che sono composte da aree statistiche, dunque è possibile relazionare queste tre differenti modalità di suddivisione del territorio bolognese. 
@@ -579,7 +564,7 @@ Il dataset è stato scelto perché la divisione in zone è più specifica della 
 ### DATASET FINALI
 La finalità dei dataset finali è quella di esporre in Open Data alcuni dati relativi la situazione politico-economica-sociale Bolognese degli ultimi anni. In particolare:
 
-#### Dataset 1:
+#### Dataset 1: 
 All'interno del primo dataset ritroviamo i dati divisi per zona di Bologna di: redditi medi pro-capite dei contribuenti bolognesi dal 2009 al 2016, i risutati degli scrutini alle elezioni politiche per l'elezione al Senato della Repubblica e alla Camera dei Deputati del 4.3.2018, e il numero di residenti.
 
 #### Dataset 2:
@@ -629,20 +614,7 @@ I dataset pubblicati su [OpenData Bologna](http://dati.comune.bologna.it/) sono 
 | Licenza | tipo di licenza associata al dataset |
 
 ### Metadatazione dei dataset finali
-
-|
-
-|
-
-|
-
-[METADATAZIONE CICCIONA PATATONA]
-
-|
-
-|
-
-|
+Durante il processo di metadatazione abbiamo seguito la documentazione del [Profilo Applicativo di metadatazione DCAT-AP_IT](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/dcat-ap_it.html). Per documentare la *provenance* dei dataset finali abbiamo usato la specifica [PROV-O](https://www.w3.org/TR/prov-o/) dello standard di riferimento **PROV**. Per documentare la qualità dei dataset abbiamo usato il [Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/).
 
 ## URI
 E' assolutamente necessario garantire che gli URI siano **persistenti**, **dereferenziabili** e **non ambigui**. Dovrebbero essere supportati da un'infrastruttura affidabile.
@@ -660,9 +632,7 @@ Per quanto riguarda il nostro dataset mashato, abbiamo deciso di mantenere l'inf
 
 ### URI dei dataset iniziali
 Gli URI dei dataset presentano almeno due aspetti problematici:
-
 1. la **_semantica_** non perfettamente chiara;`
-
 2. l'**_inconsistenza del pattern_**, dovuta probabilmente all'impiego di un meccanismo di **_auto-increment_**.
 
 In via ipotetica, proponiamo un possibile perfezionamento degli URI dei dataset iniziali:
@@ -690,45 +660,14 @@ In via ipotetica, proponiamo un possibile perfezionamento degli URI dei dataset 
 Popolazione residente per età, sesso, cittadinanza, quartiere e zona area statistica e sezione censimento
 
 ### URI dei dataset finali
+Abbiamo pubblicato i dataset finali con i seguenti URI:
 
-|
-
-|
-
-ROBA A CASO MANNAGGIA 
-
-|
-
-|
-
-## Provenance
-### Provenance dei dataset iniziali
-
-|
-
-|
-
-ROBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBA
-
-|
-
-|
-
-### Provenance dei dataset finali
-
-|
-
-|
-
-ROBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBETTTTTTA
-
-|
-
-|
+* Dataset 1: [https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv](https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv)
+* Dataset 2: [https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_2017_czrm.csv](https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_2017_czrm.csv)
+* Dataset 3: [https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson](https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson)
 _______________________________________________________________
 
 # Analisi della sostenibilità
-
 Nella comunicazione della Commissione pubblicata sulla Gazzetta ufficiale dell'Unione Europea [2014/C 240/01](https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:52014XC0724(01)&from=IT) del 24/07/2014, al paragrafo 4.1.2 si legge: 
 - *nell’ambiente in linea, invece, la totalità del corrispettivo potrebbe essere limitata ai costi collegati direttamente alla manutenzione e al funzionamento dell’infrastruttura (ossia della banca dati elettronica) nella misura necessaria a riprodurre il documento e a metterlo a disposizione di un riutilizzatore in più. Considerate l’esiguità e la tendenza al ribasso dei costi operativi medi di una banca dati, è probabile che l’importo sia prossimo allo zero. Si raccomanda pertanto agli enti pubblici di valutare a cadenza periodica i costi e benefici potenziali della politica di costo zero e della politica dei costi marginali, tenendo presente che la tariffazione com porta in sé dei costi (gestione delle fatture, monitoraggio e amministrazione dei pagamenti ecc.). In conclusione, il metodo dei costi marginali può essere applicato per recuperare le spese sostenute per la riproduzione di una copia supplementare e la distribuzione fisica dei documenti non digitali, mentre **per i documenti digitali (file) divulgati per via elettronica (ossia scaricati) si raccomanderebbe una politica di costo zero.***
 
