@@ -137,7 +137,6 @@ $(document).ready(function() {
                                                       //  firsttime = false;
                                                   //  }
 
-                                                    function altro() {
                                                         var listRedditi = [];
                                                         listRedditi.push(arrayItem["Reddito medio pro-capite 2009"]);
                                                         listRedditi.push(arrayItem["Reddito medio pro-capite 2010"]);
