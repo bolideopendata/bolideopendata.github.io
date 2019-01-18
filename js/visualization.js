@@ -14,16 +14,17 @@ $(document).ready(function() {
             map.setMaxBounds(limiti);
             // Settaggio colore feature geojson
             function getColor(d) {
-                return d > 33600 ? '#194d33' :
-                    d > 27200 ? '#2d8659' :
-                    d > 20800 ? '#40bf80' :
-                    d > 14400 ? '#79d2a6' :
-                    '#b3e6cc';
+                return d > 33600 ? "#1f6061" :
+                    d > 27200 ? "#2f9395" :
+                    d > 20800 ? "#3dc0c2" :
+                    d > 14400 ? "#77d3d4" :
+                    "#b1e6e7";
             };
+            
 
             function stylegeo(feature) {
                 return {
-                    color: '#f5f5f0',
+                    color: "#184e4e",
                     fillColor: getColor(feature.properties.Censimento2017_zona),
                     fillOpacity: 0.6,
                 };
@@ -64,7 +65,7 @@ $(document).ready(function() {
 
             function highlight(layer) {
                 layer.setStyle({
-                    color: 'black',
+                    color: "#123a3a",
                     weight: 6,
                     //dashArray: ''
                 });
