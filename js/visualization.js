@@ -547,7 +547,7 @@ $(document).ready(function() {
                                                 $('#EleChartrad').remove();
                                                 $('#empty').remove();
                                                 $('#EleChartbar').remove();
-                                                $('#pulsanteELE').append('<div class="row" id="ELEButton"><div class="col-l-8 text-left"><form><label class="radio-inline btn btn-dark"><input type="radio" id="camera" value="camera" name="radioele" autocomplete="off" checked>Camera dei Deputati</label><label class="radio-inline btn btn-dark"><input type="radio" id="senato" value="senato" name="radioele" autocomplete="off">Senato</label></form></div><div class="col-l-4 text-right"><span class="badge badge-dark" id="elettori"></span></div>');                                               
+                                                $('#pulsanteELE').append('<div class="row" id="ELEButton"><div class="col-s-8 text-left"><form><label class="radio-inline btn btn-dark"><input type="radio" id="camera" value="camera" name="radioele" autocomplete="off" checked>Camera dei Deputati</label><label class="radio-inline btn btn-dark"><input type="radio" id="senato" value="senato" name="radioele" autocomplete="off">Senato</label></form></div><div class="col-s-4 text-right"id="elettori"><span class="btn btn-dark btn-lg disabled"></span></div></div>');                                               
                                                 $('#chartContainerEle').append('<canvas id="EleChartrad"></canvas>');
                                                  $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                 $('#chartContainerEle').append('<canvas id="EleChartbar"></canvas>');
@@ -701,7 +701,7 @@ $(document).ready(function() {
                                                         "options": opzionibarsenato
                                                     });
                                                 };
-                                                $('#elettori').append('<p id="votanti">' + arrayItem["Totale Voti Validi Senato"]+ '</p>');
+                                                $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
                                                 grafiele(dataelecam, dataelecamtot);
 
                                                 $('input[type=radio][name=radioele]').change(function() {
@@ -711,7 +711,7 @@ $(document).ready(function() {
                                                             $('#votanti').remove();
                                                             $('#empty').remove();                
                                                             $('#EleChartbar').remove();
-                                                            $('#elettori').append('<p id="votanti">' + arrayItem["Totale Voti Validi Camera"]+ '</p>');
+                                                            $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartrad"><canvas>');
                                                            $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartbar"><canvas>');
@@ -722,7 +722,7 @@ $(document).ready(function() {
                                                             $('#votanti').remove();
                                                             $('#empty').remove();   
                                                             $('#EleChartbar').remove();
-                                                            $('#elettori').append('<p id="votanti">' + arrayItem["Totale Voti Validi Senato"]+ '</p>');
+                                                            $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">' + arrayItem["Totale Voti Validi Senato"]+ '</span>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartrad"><canvas>');
                                                             $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartbar"><canvas>');
