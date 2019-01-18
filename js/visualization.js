@@ -618,16 +618,17 @@ $(document).ready(function() {
                                                     datasets: [{
                                                             "label": "Risultati Senato Zona",
                                                             data: datisenatozona,
-                                                            backgroundColor: "red"
+                                                            backgroundColor: "#ee444e"
                                                         },
                                                         {
                                                             "label": "Risultati Senato Italia",
                                                             data: [32.22, 19.14, 17.61, 14.43, 4.26, 3.28, 2.37, 6.69],
+                                                            backgroundColor: "#808080"
                                                         },
                                                         {
                                                             "label": "Risultati Senato Bologna",
                                                             data: [21.97, 28.15, 13.99, 9.75, 3.48, 9.56, 5.43, 7.67],
-                                                            backgroundColor: "#545556"
+                                                            backgroundColor: "#b3b3b3"
                                                         }
                                                     ]
                                                 };
@@ -670,7 +671,9 @@ $(document).ready(function() {
                                                     "scale": {
                                                         "ticks": {
                                                             "beginAtZero": true,
-                                                            "max": 35
+                                                            "max": 35,
+                                                             "callback": function(value, index, values) {
+                                                                            return value + '%';}
                                                         }
                                                     },
                                                     legend: {
