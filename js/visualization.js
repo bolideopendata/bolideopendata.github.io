@@ -640,7 +640,8 @@ $(document).ready(function(){
 														}
 													},
 													legend: {
-														    display: false
+														    //display: false
+															display: true
 														 },
 											   		};
 									    
