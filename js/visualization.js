@@ -266,7 +266,7 @@ $(document).ready(function(){
 									    $('#CategorieChart').remove();
 									    $('#SegnalazioniButton').remove();
 									    //$('#pulsanteSEGN').append('<div class="row" id="SegnalazioniButton"><form><label class="class="radio-inline active"><input type="radio" id="segnalazioni" value="segnalazioni" name="radioseg" autocomplete="off" checked>Tutte le Segnalazioni </label><input type="radio" id="sociale" value="sociale" name="radioseg" autocomplete="off"> Sociale </label><label class="radio-inline"><input type="radio" id="ambientale" value="ambientale" name="radioseg" autocomplete="off"> Ambientale </label><label class="class="radio-inline active"><input type="radio" id="microcriminalita" value="microcriminalita" name="radioseg" autocomplete="off"> Microcriminalità </label></form></div>');
-                    							    $('#pulsanteSEGN').append('<div class="row" id="SegnalazioniButton"><form><div class="col-xs-4 text-left"><label class="radio-inline btn btn-dark"><input type="radio" id="segnalazioni" value="segnalazioni" name="radioseg" autocomplete="off" checked>Tutte le Segnalazioni </label></div><div class="col-xs-8 text-right"><label class="radio-inline btn btn-danger"><input type="radio" id="sociale" value="sociale" name="radioseg" autocomplete="off"> Sociale </label><label class="radio-inline btn btn-success"><input type="radio" id="ambientale" value="ambientale" name="radioseg" autocomplete="off"> Ambientale </label><label class="radio-inline active btn btn-warning"><input type="radio" id="microcriminalita" value="microcriminalita" name="radioseg" autocomplete="off"> Microcriminalità </label></div></form></div>');
+                    							    $('#pulsanteSEGN').append('<div class="row" id="SegnalazioniButton"><form><div class="col-xs-4 text-left"><label class="radio-inline btn btn-dark"><input type="radio" id="segnalazioni" value="segnalazioni" name="radioseg" autocomplete="off" checked>Tutte le Segnalazioni </label></div><div class="col-xs-8 text-right"><label class="radio-inline btn btn-danger" style="background: #a6206a !important;"><input type="radio" id="sociale" value="sociale" name="radioseg" autocomplete="off"> Sociale </label><label class="radio-inline btn btn-success" style="background: #2f9395 !important;"><input type="radio" id="ambientale" value="ambientale" name="radioseg" autocomplete="off"> Ambientale </label><label class="radio-inline btn btn-warning" style="background: #f4a256 !important;"><input type="radio" id="microcriminalita" value="microcriminalita" name="radioseg" autocomplete="off"> Microcriminalità </label></div></form></div>');
 									    $('#chartContainerSegn').append('<canvas id="CategorieChart"><canvas>');
 											Chart.pluginService.register({
 												beforeDraw: function (chart) {
@@ -355,7 +355,7 @@ $(document).ready(function(){
 														datasets: [{
 															data: Valamb,
 															backgroundColor: [
-															  "#ecf8f6", "#daf1ed", "#c7ebe5", "#b4e4dc", "#a1ddd3", "#8fd6ca", "#7cd0c2", "#69c9b9", "#56c2b0", "#44bba7", "#3da997", "#369686"
+															  "#2f9395", "#329894", "#369e93", "#39a392", "#3da891", "#40ae90", "#43b390", "#47b88f", "#4abd8e", "#4ec38d", "#51c88c"
 															],
 														}]
 													};
@@ -365,7 +365,7 @@ $(document).ready(function(){
 														datasets: [{
 															data: Valsoc,
 															backgroundColor: [
-																"#f2eef7", "#e5ddee", "#d8cce6", "#cbbbdd", "#beaad5", "#b198cd", "#a487c4", "#9776bc", "#8a65b3", "#7d54ab", "#704c9a", "#644389"
+																 "#a6206a", "#ad2067", "#b41f64", "#bb1f61", "#c21e5e", "#c91e5a", "#d01e57", "#d71d54", "#de1d51", "#e51c4e", "#ec1c4b"
 															],
 															
 														}]
