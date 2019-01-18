@@ -170,6 +170,7 @@ $(document).ready(function() {
                                                                     "type": "line",
                                                                     "fill": false,
                                                                     backgroundColor: "#f4a256",
+                                                                     borderColor: "#f4a256",
                                                                     "spanGaps": true,
                                                                 },
                                                                 {
@@ -178,6 +179,7 @@ $(document).ready(function() {
                                                                     "type": "line",
                                                                     "fill": false,
                                                                     backgroundColor: "#ee444e",
+                                                                    borderColor: "#ee444e",
                                                                 },
                                                                 {
                                                                     "label": "Reddito Medio Bologna",
@@ -716,8 +718,10 @@ $(document).ready(function() {
                                                             break
                                                         case 'senato':
                                                             $('#EleChartrad').remove();
+                                                            $('#empty').remove();   
                                                             $('#EleChartbar').remove();
                                                             $('#chartContainerEle').append('<canvas id="EleChartrad"><canvas>');
+                                                            $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartbar"><canvas>');
                                                             grafiele(dataelesen, dataelesentot)
                                                             break
