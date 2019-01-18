@@ -337,14 +337,14 @@ $(document).ready(function(){
 														datasets: [{
 															data: [arrayItem["Totale Sociale"], arrayItem["Totale Ambientale"], arrayItem["Totale Microcriminalita"]],
 															backgroundColor: [
-															  "#8a65b3",
-															  "#3da997",
-															  "#ffa345"
+															  "#a6206a",
+															  "#2f9395",
+															  "#f4a256"
 															],
 															hoverBackgroundColor: [
-															  "#8a65b3",
-															  "#3da997",
-															  "#ffa345"
+															  "#a6206a",
+															  "#2f9395",
+															  "#f4a256"
 															]
 														}]
 													};
