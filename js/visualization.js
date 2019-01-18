@@ -120,7 +120,7 @@ $(document).ready(function(){
 							
 							$.ajax({
 							    dataType: "json",
-							    url: "geojson_folder/redditizone.json",
+							    url: "js/json/redditizone.json",
 							    success: function(dati) {
 								dati.forEach(function(arrayItem) {
 								    if (arrayItem["Zona"] == feature.properties.Nome_zona) {
@@ -257,7 +257,7 @@ $(document).ready(function(){
 					//inizio Segnalazioni
 							$.ajax({
 							    dataType: "json",
-							    url: "geojson_folder/jsonsegnalazioni.json",
+							    url: "js/json/jsonsegnalazioni.json",
 							    success: function(datisegn) {
 								datisegn.forEach(function(arrayItem) {
 								    if (arrayItem["Zona"] == feature.properties.Nome_zona) {
@@ -509,7 +509,7 @@ $(document).ready(function(){
 					//inizio Politiche
 							$.ajax({
 							    dataType: "json",
-							    url: "geojson_folder/elezioni.json",
+							    url: "js/json/elezioni.json",
 							    success: function(datisegn) {
 								datisegn.forEach(function(arrayItem) {
 								    if (arrayItem["Zona"] == feature.properties.Nome_zona) {
