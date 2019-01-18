@@ -90,23 +90,6 @@ Nella documentazione i dataset pubblicati nella tabella precedente vengono racco
 | **_D. CENSIMENTO_** | 6.0 |
 | D. ZONE | 7.0 |
 
-## Dataset puliti
-I dataset che abbiamo utilizzato, ma ripuliti:
-    
-| Dataset ID | URI (pulito) |
-| ---------- | ------------ |
-| 1.0 |  |  
-| 1.1 |  |  
-| 2.0 |  |  
-| 3.0 |  |  
-| 3.1 |  |  
-| 4.0 |  |  
-| 4.1 |  |  
-| 5.0 |  |  
-| 5.1 |  |
-| 6.0 |  |
-| 7.0 |  |
-
 ## Dataset intermedi
 I dataset che abbiamo generato nel corso del progetto integrando i dati selezionati all' interno dei dataset ripuliti:
 
@@ -114,8 +97,14 @@ I dataset che abbiamo generato nel corso del progetto integrando i dati selezion
 | ---------- | --------- | --------- | ---------- | --- | --- | --- | --- | --- | --- |
 | POLITICHE SENATO | 26.01.04_risultati_politiche_2018_bologna_liste_senato.csv | aree_statistiche.csv | | | | | | | |
 | POLITICHE CAMERA | 26.01.06_risultati_politiche_2018_bologna_liste_camera_collegio6 | 26.01.08_risultati_politiche_2018_bologna_liste_camera_collegio7.csv | aree_statistiche.csv | | | | | | |
+| POLITICHE MINISTERO INTERNI |  |  |  |  |  |  |  |  |  |
 | REDDITI | redditi_2009_per_area_statistica.csv | redditi_2010_per_area_statistica.csv | redditi_2011_per_area_statistica.csv | redditi2012_areastat.csv | redditi2013_areastat.csv | redditi2014_areastat.csv | redditi2015_areastat.csv | redditi2016_areastat.csv | aree_statistiche.csv |
+| FOI BOLOGNA PER ANNO | | | | | | | | | |
 | SEGNALAZIONI | 38.00.03_segnalazioni_czrm2017_area_statistica.zip | 38.00.05_segnalazioni_czrm2017_tot_tipologia.csv |  aree_statistiche.csv | | | | | | |
+| CENSIMENTO |  |  |  |  |  |  |  |  |  |
+| SEGGI ELETTORALI | | | | | | | | | |
+| AREASTAT.JSON | | | | | | | | | |
+| ZONE CODICEZONA QUARTIERE | | | | | | | | | |
 
 ## Dataset finali
 I nostri dataset finali, risultanti dall'integrazione dei dati contenuti all'interno dei dataset intermedi:
@@ -190,7 +179,7 @@ Gli indici di completezza che abbiamo calcolato sono i seguenti:
 Dalla tabella è possibile osservare come i dataset scelti siano tendenzialmente completi dal punto di vista dei valori non-nulli. Un'eccezione a questa tendenza è rappresentata dal Dataset Segnalazioni 5.1, con un indice di completezza pari a 89.45%. Il conteggio dei valori non-nulli totali, inoltre, ci ha permesso fin da subito di osservare altre peculiarità riguardanti le popolazioni dei vari dataset. E' interessante notare soprattutto osservare la tendenza sostanzialmente uniforme (92) all'interno della serie dei Redditi, ad eccezione di 3.2 (Redditi del 2011), con ben 3097 (!) valori non-nulli, e di 3.5 (Redditi del 2014), con due valori in più rispetto al normale (94).
 
 ## Misure di qualità nella metadatazione
-Vedere sezione [Metadatazione dei dataset finali](#metadatazione-dei-dataset-finali) per l'inserimento delle misure di qualità secondo le best practices contenute nel [Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/).
+Si veda la sezione [Metadatazione dei dataset finali](#metadatazione-dei-dataset-finali) per l'inserimento delle misure di qualità secondo le best practices contenute nel [Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/).
 _______________________________________________________________
 
 # Analisi etico-giuridica
