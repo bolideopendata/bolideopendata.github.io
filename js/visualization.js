@@ -130,7 +130,8 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('.information').html('');
-                                                    $('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
+                                                    $('.information').html('<div class="card text-white bg-secondary mb-3"> <h2 class="card-header">'+ arrayItem["Zona"] +'</h2> <div class="card-body"> <p class="card-text"></p> </div> </div>');
+                                                    //$('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
 
                                                     //if (firsttime == true) {
                                                      //   $('.playground').html('');
