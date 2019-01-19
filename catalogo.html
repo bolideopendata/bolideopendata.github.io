@@ -166,6 +166,11 @@ dct: http://purl.org/dc/terms/" lang="en" >
               <td>Zone Bologna</td>
               <td> <a href="https://bolideopendata.github.io/bolideopendata/metadata_zone_bologna.html"> https://bolideopendata.github.io/bolideopendata/metadata_zone_bologna.html</a></td>
             </tr>
+	      <tr>
+                      <td>URL di download</td>
+                         <td><a property="dcat:downloadURL" id="cat" href="#">catalogo.zip (185 KB)</a>
+                         </td>
+                               </tr>
             </tbody>
             </table>
 	  <br>
@@ -218,6 +223,27 @@ dct: http://purl.org/dc/terms/" lang="en" >
             </div>
 
         </footer>
+	<script>
+
+                        $('#cat').on('click', function () {
+                            $.ajax({
+                                url: 'dataset/set-finali/Catalogo.zip',
+                                method: 'GET',
+                                xhrFields: {
+                                    responseType: 'blob'
+                                },
+                                success: function (data) {
+                                    var a = document.createElement('a');
+                                    var url = window.URL.createObjectURL(data);
+                                    a.href = url;
+                                    a.download = 'catalogo.zip';
+                                    a.click();
+                                    window.URL.revokeObjectURL(url);
+                                }
+                            });
+                        });
+
+                        </script>
 
 </body>
 </html>
