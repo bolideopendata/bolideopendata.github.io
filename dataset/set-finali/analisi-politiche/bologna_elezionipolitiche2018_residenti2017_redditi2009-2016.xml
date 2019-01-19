@@ -46,7 +46,7 @@
       </ns0:dcatapitAgent>
     </dcat:contactPoint>
 
-    <dc:rightsHolder rdf:resource="Comune di Bologna">
+    <dc:rightsHolder rdf:resource="Comune di Bologna"/>
     <dc:publisher rdf:resource="http://bolideopendata.github.io/team/bolideopendatateam"/>
     <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
     <prov:wasDerivedFrom rdf:resource="http://dati.comune.bologna.it/download/file/fid/1136"/>
