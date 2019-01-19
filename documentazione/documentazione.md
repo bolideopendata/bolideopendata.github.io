@@ -705,18 +705,24 @@ La pagina HTML dedicata alla visualizzazione dei dati è stata creata attraverso
 
 Dal momento che il formato .json è open e nativamente supportato da Javascript, per facilitare l'utilizzo dei dati nell'architettura della visualizzazione i singoli dataset sono stati convertiti in formato .json e sezionati:
 
-* LISTA JSON FINALI
+Al fine di rendere la visualizzazione più completa abbiamo creato due dataset intermedi supplementari: 'politiche_bologna_nazionali.csv' e 'redditi_foi_bologna_per_anno.csv'. 
+
+I dati in 'politiche_bologna_nazionali.csv' sono stati calcolati con la seguente formula: partito1_zona_1 + ... parito1_zona_n / voti_tot_zona_1 + ... + voti_tot_zona_n. In seguito i risultati sono stati raffrontati con i dati presenti sul sito del Ministero dell' Interno (es: [Senato Italia](https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=I&tpe=A&lev0=0&levsut0=0&es0=S&ms=S))
+
+I dati di 'redditi_foi_bologna_per_anno.csv' corrispondono ai dati presenti sul sito del Ministero dell'Interno.
+
+Inoltre, al fine della visualizzazione, abbiamo convertito il .csv intermedio riguardante le Segnalazioni in un file .json con una struttura particolare, contenente una serie di liste di dizionari annidate. Il file .json è stato creato con l'algoritmo '**converter_csv_to_special_json(data)**'.
 
 ## Mappa
 La quantità e la varietà di informazioni da visualizzare ha richiesto un'attenta organizzazione dello spazio della pagina HTML del progetto. Dal momento che abbiamo scelto come punto focale per la raccolta dei nostri dati le zone della città di Bologna, la mappa della città divisa in **zone** risulta essere lo strumento ideale per iniziare la navigazione all'interno dei nostri dataset. Tale mappa è stata realizzata utilizzando i dati geografici di OpenStreetMap, un archivio di dati aperto finalizzato alla creazione di mappe, mediante Leaflet, una libreria Javascript dedicata alla programmazione delle mappe. Tramite Javascript e con l'ausilio di Leaflet viene visualizzato il .geojson interattivo delle zone di Bologna, con la possibilità da parte dell'utente di poter selezionare la singola zona. Per dare un peso statistico alle zone abbiamo scelto di creare una scala cromatica per differenziare le zone in base alla densità abitativa (cioé dei residenti in base ai dati del censimento 2017). 
 
 Le cinque fasce demografiche sono state calcolate prendendo come riferimento la zona con meno abitanti (8820) e quella col maggior numero di abitanti (38358). La scala parte da 8000 abitanti per poi giungere a 40000 abitanti con step da 6400 abitanti (come spiegato nell'apposita legenda).
 
-## SEZIONE ZONA SELEZIONATA
+### SEZIONE ZONA SELEZIONATA
 Alla mappa cittadina è dedicata metà della pagina del nostro sito. Nel momento della selezione di una Zona di Bologna, la seconda metà della pagina viene popolata dalla visualizzazione dei dati riferiti alla zona specifica.
 Per mantenere la visualizzazione pulita, e non disperdere verticalmente le informazioni, si è scelto di inserire i grafici delle singole sezioni (elezioni, reddito, segnalazioni) in appositi accordion (finestre a scomparsa), con la possibilità da parte dell'utente di poter aprire le sezioni desiderate per visualizzare più grafici contemporneamente.
 
-### Elezioni politiche
+#### Elezioni politiche
 La prima "finestra" è dedicata ai dati delle elezioni politiche del 4 Marzo 2018.
 La visualizzazione dei dati elettorali è distribuita in 2 grafici, realizzati tramite la libreria Chartjs (Javascript), un tool open source per la realizzazione di grafici, strumento molto interessante per il supporto che riceve della comunità di sviluppatori che forniscono tool avanzati per la personalizzazione.
 
@@ -729,19 +735,12 @@ Nel secondo grafo troviamo una tabella di istogrammi orizzontali multipli, per e
 
 Il sistema bicamerale italiano comporta elezioni sia per la Camera dei Deputati che per il Senato, dunque la visualizzazione, tramite radio button, permette di cambiare i dati per vedere separatamente entrambe le votazioni (il voto al Senato è consentito ai cittadini italiani che abbiano compiuto i 25 anni d'età).
 
-### Reddito
+#### Reddito
 La seconda "finestra" è dedicata alla rappresentazione dei dati di reddito della zona dal 2009 al 2016, mediante un grafo a linee multiple. In primis la scala del grafo è stata standardizzata lungo l'asse Y con una scala a base 10000€ che parte da 18000€ fino a 58000€. Questo procedimento risulta un accorgimento importante per la qualità della visualizzazione dal momento che permette di visualizzare i redditi di tutte le zone sulla stessa scala, a prescindere dall'effettivo reddito medio di una determinata zona. Ovviamente tale accorgimento va a generalizzare la visualizzazione del reddito di una singola area, per questo motivo, tramite radio button, si può passare ad una visualizzazione più dettagliata per accedere, consapevolmente, ad una visualizzazione su scala locale (con i minimi e i massimi dell'asse Y rapportati esclusivamente alla singola Zona).
   
 Inoltre, in entrambe le modalità di visualizzazione, l'andamento del reddito medio della zona è paragonato alla media del reddito dell'intera città (dato calcolato e conservato nel dataset intermedio: "redditi_bologna_per_anno.csv"). Infine, per valorizzare l'andamento del reddito negli anni, e permettere analisi critiche, è stata introdotta una linea che mostra l'andamento del reddito medio della zona nel 2009 negli anni successivi attraverso il coefficente FOI (Indice dei prezzi al consumo per le famiglie di operai e impiegati), dato che permette di valutare l'andamento dell'inflazione, più semplicemente, l'ipotetica crescita del reddito 2009 negli anni successivi per mantenerne invariato il potere di acquisto.
 
-### Segnalazioni
+#### Segnalazioni
 Nel realizzare la visualizzazione delle segnalazioni dei cittadini nella zona selezionata è stata tenuta in conto la peculiarità della tipologia di dato. Le segnalazioni per zona sono dati prettamente testuali (stringhe) con dati numerici relativi alla frequenza delle categorie e sottocategorie del dataset. Questo scenario rende effettivamente complessa una visualizzazione grafica tramite grafo, tuttavia si è giunti ad elaborare una rappresentazione mediante un grafico doughnut e 3 grafici pie.
 
 Il grafico *doughnut* rappresenta per ogni zona la distribuzione delle 3 categorie di segnalazioni (Categoria ambientale, sociale e microcriminalità), mostrando il numero delle singole ed evidenziandone in maniera evidente il totale complessivo al centro (in modo da scongiurare eventuali ambiguità, il 50% di 2 segnalazioni è evidentemente diversa dal 50% di 200). In seguito, mediante un radio button è possibile selezionare la visualizzazione delle sottocategorie di una singola categoria tramite 3 grafi *pie* (uno per categoria). Qui, attraverso una gradazione di colore (lo stesso indicante la categoria nel grafo *doughnut*) vengono mostrate tutte le sottocategorie. In questa fase è stata di fondamentale importanza l'utilizzo dell'estensione "*chartjs-plugin-piechart-outlabels*" per poter visualizzare in maniera diretta (senza dover trascinare il mouse sul grafico) le etichette (*labels*) indicanti il nome della sottocategoria e il numero di segnalazioni ad essa correlate.
-
-ROBBA_FABBIO:  --- mettiamo in Visualizzazione
-        * Al fine di rendere la visualizzazione più completa abbiamo creato due dataset intermedi supplementari: 'politiche_bologna_nazionali.csv' e 'redditi_foi_bologna_per_anno.csv'. 
-            -- I dati in 'politiche_bologna_nazionali.csv':
-                - Riguardanti Bologna sono ottenuti da: partito1_zona_1 + ... parito1_zona_n / voti_tot_zona_1 + ... + voti_tot_zona_n, e poi raffrontati con i dati presenti sul sito del Ministero dell' Interno (es: Senato Italia: https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=I&tpe=A&lev0=0&levsut0=0&es0=S&ms=S)
-            -- I dati di 'redditi_foi_bologna_per_anno.csv' corrispondono ai dati presenti sul sito del Ministero dell'Interno.
-        * Inoltre, al fine della visualizzazione, abbiamo convertito il csv intermedio riguardante le Segnalazioni in un file json con una struttura particolare: contiene liste di dizionari annidate. Il file json è stato creato con l'algoritmo 'converter_csv_to_special_json(data)'.
