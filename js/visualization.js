@@ -130,7 +130,7 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('.information').html('');
-                                                    $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona '+ arrayItem["Zona"] +'</h3> <div class="card-body text-right"> <ul style="list-style-type:none"> <li><h5> Quartiere: '+ feature.properties.Nome_quartiere +'</h5></li> <li><h5> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h5></li> </ul> </div> </div>');
+                                                    $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona '+ arrayItem["Zona"] +'</h3> <div class="card-body text-right"> <ul style="list-style-type:none"> <li> Quartiere: '+ feature.properties.Nome_quartiere +'</li> <li> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</li> </ul> </div> </div>');
                                                     //$('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
 
                                                     //if (firsttime == true) {
@@ -557,7 +557,7 @@ $(document).ready(function() {
                                                 $('#EleChartrad').remove();
                                                 $('#empty').remove();
                                                 $('#EleChartbar').remove();
-                                                $('#pulsanteELE').append('<div class="row" id="ELEButton"> <div class="col-lg-6"> <form><label class="radio-inline btn btn-dark"><input type="radio" id="camera" value="camera" name="radioele" autocomplete="off" checked>Camera dei Deputati</label> <label class="radio-inline btn btn-dark"><input type="radio" id="senato" value="senato" name="radioele" autocomplete="off">Senato</label> </form> </div> <div class="text-right col-lg-6" id="elettori"></div> </div>');                                               
+                                                $('#pulsanteELE').append('<div class="row" id="ELEButton"> <div class="col-lg-6"> <form><label class="radio-inline btn btn-dark"><input type="radio" id="camera" value="camera" name="radioele" autocomplete="off" checked> Camera dei Deputati </label> <label class="radio-inline btn btn-dark"><input type="radio" id="senato" value="senato" name="radioele" autocomplete="off"> Senato </label> </form> </div> <div class="text-right col-lg-6" id="elettori"></div> </div>');                                               
                                                 $('#chartContainerEle').append('<canvas id="EleChartrad"></canvas>');
                                                  $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                 $('#chartContainerEle').append('<canvas id="EleChartbar"></canvas>');
@@ -724,7 +724,7 @@ $(document).ready(function() {
                                                         "options": opzionibarsenato
                                                     });
                                                 };
-                                                $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">Voti validi: ' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
+                                                $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled"> Voti validi: ' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
                                                 grafiele(dataelecam, dataelecamtot);
 
                                                 $('input[type=radio][name=radioele]').change(function() {
