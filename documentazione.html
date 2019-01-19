@@ -4,33 +4,44 @@
 
 	    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
-            <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-            <style id="jsbin-css">#map { height: 600px; border:solid;} .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+            <style id="jsbin-css">.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
 	    .legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
        	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
-	    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
-	    <script src="js/json/Zone_Bologna.js"></script>
+	    
 
     </head>
 
     <body>	
          
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">BOLIDE</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    </div>
-                </div>
-            </nav>
+	  <a class="navbar-brand" href="#">BOLIDE</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+		<a class="nav-link" href="https://bolideopendata.github.io/bolideopendata/index.html">Home</a>
+	      </li>
+	      <li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  Metadata
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item" href="https://bolideopendata.github.io/bolideopendata/catalogo.html">Catalogo</a>
+	          <div class="dropdown-divider"></div>
+		  <a class="dropdown-item" href="https://bolideopendata.github.io/bolideopendata/metadata_redditi_elezioni_residenti.html">Redditi Elezioni Residenti</a>
+		  <a class="dropdown-item" href="https://bolideopendata.github.io/bolideopendata/metadata_segnalazioni_bologna_2017.html">Segnalazioni Bologna 2017</a>
+		  <a class="dropdown-item" href="https://bolideopendata.github.io/bolideopendata/metadata_zone_bologna.html">Zone Bologna</a>
+		</div>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-link" href="https://bolideopendata.github.io/bolideopendata/documentazione.html">Documentazione <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 
             <br><br>
             <div class="container-fluid">
@@ -46,7 +57,7 @@
                     <li>Fabio Mariani</li>
                     <li>Valentina Pasqual</li>
                     </ul>
-                    <p>Si inserisce in questo contesto BOLIDE (BOLigna In Dati Elettorali), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le Best Practices della classificazione "5 Stelle Open Data". Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di Semantic Web, e prevede: 1) dati disponibili sul web con una licenza aperta; 2) dati in formato strutturato per la facile interpretazione da parte di un sofware 3) dati in un formato non proprietario 4) uso di standard aperti definiti dalla W3C, come RDF, per l'identificazione di oggetti 5) presenza di collegamenti ad altri dati (Linked Open Data).</p>
+                    <p>Si inserisce in questo contesto BOLIDE (BOLogna In Dati Elettorali), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le Best Practices della classificazione "5 Stelle Open Data". Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di Semantic Web, e prevede: 1) dati disponibili sul web con una licenza aperta; 2) dati in formato strutturato per la facile interpretazione da parte di un sofware 3) dati in un formato non proprietario 4) uso di standard aperti definiti dalla W3C, come RDF, per l'identificazione di oggetti 5) presenza di collegamenti ad altri dati (Linked Open Data).</p>
                     
                     <p>L'Output del lavoro è presentato sottoforma di un Sito Web con (relativa documentazion) che possa permettere, a diverse tipologie di utenti, il riuso delle risorse informative ai fini di studio e ricerca. Tale risorsa contiene:</p>
                     
