@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+<script>
+var body_location = 'documentazione/documentazione.md';
+                
+        function getText(myUrl){
+            var result = null;
+            $.ajax( { url: myUrl, 
+                      type: 'get', 
+                      dataType: 'html',
+                      async: false,
+                      success: function(data) { result = data; } 
+                    }
+            );
+            FileReady = true;
+            return result;
+        }
+        var markdown_source = getText(body_location);
+        // convert markdown to html
+        var output = markdown.toHTML( markdown_source );
+        document.write(output);
+
+</script>
+</body>
+</html>
