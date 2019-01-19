@@ -5,7 +5,7 @@ Il progetto è stato sviluppato nell'ambito dell' esame di *Open Access and Digi
 - Fabio Mariani
 - Valentina Pasqual
 
-Si inserisce in questo contesto **BOLIDE** (Bologna In dati elettroi, il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le *Best Practices* della classificazione "[** 5 Stelle Open Data**"].  Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di *Semantic Web*, e prevede: 
+Si inserisce in questo contesto **BOLIDE** (BOLogna In Dati Elettorali), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le *Best Practices* della classificazione "[** 5 Stelle Open Data**"].  Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di *Semantic Web*, e prevede: 
 1) dati disponibili sul web con una licenza aperta; 
 2) dati in formato strutturato per la facile interpretazione da parte di un software;
 3) dati in un formato non proprietario;
@@ -15,7 +15,7 @@ Si inserisce in questo contesto **BOLIDE** (Bologna In dati elettroi, il cui obi
 L'output del lavoro è presentato sottoforma di un Sito Web che possa permettere, a diverse tipologie di utenti, il riuso delle risorse informative ai fini di studio e ricerca. Tale risorsa contiene:
 - la documentazione del progetto;
 - l'analisi etico-giuridica e tecnica dei dataset utilizzati come fonte;
-- nuovi dataset puliti, de-anonimizzati e mashati;
+- nuovi dataset puliti, de-anonimizzati e *mashati*;
 - il modello RDF, in accordo con ontologie condivise dalla comunità di riferimento;
 - una data visualization fruibile anche dagli utenti meno esperti.
 
@@ -58,7 +58,7 @@ Partendo da questa considerazione abbiamo deciso di analizzare la situazione pol
 _______________________________________________________________
 
 # Dataset
-Ai fini del progetto abbiamo utilizzato dataset singoli e serie di dataset pubblicati su [OpenData Bologna](http://dati.comune.bologna.it), Sito Web del progetto **OpenData Comune di Bologna** dedicato alla trasparenza e accessibilità dei dati aperti, secondo i principi dell'Open Government. All'interno dei sito il Comune di Bologna pubblica e mette a disposizione interessanti collezioni di dataset di natura sociale, economica, geografica e politica, in formato open, relative alla Città Metropolitana di Bologna. 
+Ai fini del progetto abbiamo utilizzato dataset singoli e serie di dataset pubblicati su [OpenData Bologna](http://dati.comune.bologna.it), sito Web del progetto **OpenData Comune di Bologna** dedicato alla trasparenza e accessibilità dei dati aperti, secondo i principi dell'Open Government. All'interno del sito il Comune di Bologna pubblica e mette a disposizione interessanti collezioni di dataset di natura sociale, economica, geografica e politica, in formato open, relative alla Città Metropolitana di Bologna. 
 
 
 ## Dataset usati
@@ -112,17 +112,9 @@ I dataset che abbiamo generato nel corso del progetto integrando i dati selezion
 | ZONE CODICEZONA QUARTIERE | aree_statistiche.csv | 26.01.06_risultati_politiche_2018_bologna_liste_camera_collegio6 | 26.01.08_risultati_politiche_2018_bologna_liste_camera_collegio7.csv | 26.01.04_risultati_politiche_2018_bologna_liste_senato.csv | | | | | |
 
 ## Dataset finali
-I nostri dataset finali, risultanti dall'integrazione dei dati contenuti all'interno dei dataset intermedi:
+I nostri dataset finali, risultanti dall'integrazione dei dati contenuti all'interno dei dataset intermed, sono raggruppati all'interno del seguente catalogo:
 
-|
-
-|
-
-[**LINK PAGINA DATASET FINALI DEL SITO**]
-
-|
-
-|
+* https://bolideopendata.github.io/bolideopendata/catalogo.html
 _______________________________________________________________
 
 # Analisi della qualità informativa
@@ -146,14 +138,15 @@ I requisiti necessari, stabiliti dalle **Linee guida nazionali per la valorizzaz
 | 7.0 | *offset* delle coordinate: in media {0.00005 N, 0.00106 E} | 100% | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
 
 I requisiti aggiuntivi che abbiamo stabilito per controllare il livello di qualità informativa sono:
+
+|  |  |  |
 | -------| ----------- | --------- |
-| **Completezza**<br>(del **dataset**) | Percentuale di valori non-nulli nel dataset | [Script](https://bolideopendata.github.io/bolideopendata/tool/funzioni/completezza.py) |
 | **Disponibilità** | Analisi dell'URI | [URI dei dataset](#uri-dei-dataset) |
 | **Processabilità** | Analisi dei formati | [Formati](#formati) |
 | **Credibilità** | Metadatazione | [Metadati](#metadati) |
 
-### Indici di completezza
-Gli indici di completezza che abbiamo calcolato sono i seguenti:
+### Indici di completezza 
+Gli indici di completezza, calcolati con l'algoritmo [completezza.py](https://bolideopendata.github.io/bolideopendata/tool/funzioni/completezza.py), sono i seguenti:
 
 | Dataset | Valori totali | Valori nulli | Completezza |
 | ------- | ------------- | ------------ | ----------- |
@@ -191,8 +184,7 @@ _______________________________________________________________
 ### Checklist giuridica
 L'analisi giuridica è necessaria per garantire sostenibilità nel tempo del processo di produzione e pubblicazione dei dati e creare un servizio equilibrato nel rispetto della funzione pubblica e dei diritti dei singoli individui. L’analisi giuridica delle fonti mira quindi a valutare questi delicati equilibri, evidenziando limitazioni d’uso, finalità di competenza, determinazione dei diritti e dei termini di licenza.
 
-Per attuarla, abbiamo utilizzato una *check list* di riferimento per valutare tutti gli aspetti giuridici del ciclo di vita dei dataset. La check list è formata da una serie
-di domande, per ciascun aspetto, a cui rispondere con Sì, No o Non Verificabile (?).
+Per attuarla, abbiamo utilizzato una *check list* di riferimento per valutare tutti gli aspetti giuridici del ciclo di vita dei dataset. La check list è formata da una serie di domande, per ciascun aspetto, a cui rispondere con Sì, No o Non Verificabile (?).
 
 | **Privacy** | Domande | D.Elezioni |  D.Redditi | D.Segnalazioni | D.Aree Statistiche |
 | ----------- | --------| ------|--------|-------|---------|
@@ -231,7 +223,7 @@ di domande, per ciascun aspetto, a cui rispondere con Sì, No o Non Verificabile
 
 ## Misure di de-identificazione e pulitura
 ### Misure di de-identificazione
-Nell'elaborazione della check-list abbiamo preso coscienza di criticità all'interno di alcuni dataset riguardanti la presenza di possibili personal data. I dati che si confermano essere *non-personal data* possono essere infatti usati liberamente, cioè senza restrizioni legali, ma qualora dati specifici possano rientrare nella categoria di *personal data*, o se incrociati con altri dati reperibili sul web possano portare all'identificazione dell'individuo e/o dei suoi personal data, si incorrerebbe in grosse problematiche legali.
+Nell'elaborazione della check-list abbiamo preso coscienza, all'interno di alcuni dataset, di criticità riguardanti la presenza di possibili dati sensibili. Qualora dati specifici rientrino nella categoria di *personal data*, o, se incrociati con altri dati reperibili sul Web, si incorrerebbe in grosse problematiche legali.
 
 L'Articolo 4 del Regolamento Europeo Generale sulla Protezione dei Dati (EU RGPD) definisce il concetto di *personal data*: per dato personale si intende:
 *"qualsiasi informazione riguardante una persona fisica identificata o identificabile («interessato»); si considera identificabile la persona fisica che può essere identificata, direttamente o indirettamente, con particolare riferimento a un identificativo come il nome, un numero di identificazione, dati relativi all'ubicazione, un identificativo online o a uno o più elementi caratteristici della sua identità fisica, fisiologica, genetica, psichica, economica, culturale o sociale" [...] 
@@ -252,19 +244,19 @@ La pulitura è stata effettuata con:
 
 Oltre alla problematica riguardante i dati personali, abbiamo riscontrato altre criticità riguardanti la pulizia del dataset:
 
-- Non esistono linee guida interne per la compilazione dei dataset in una maniera univoca: alcuni CSV utilizzano come separatore la virgola, altri il punto e virgola e altri ancora la tabulazione;
+- non esistono linee guida interne per la compilazione dei dataset in una maniera univoca: alcuni CSV utilizzano come separatore la virgola, altri il punto e virgola e altri ancora la tabulazione;
 
-- non esistono vocabolari interni di nomi. Un altro problema è stato quello riguardante la nomenclatura delle intestazioni, che risulta sempre diversa anche all'interno della stessa serie di dataset (ad esempio: *N_contribuenti* ; *N. Contribuenti* ; ...) e dei nomi quali nomi di vie/zone/quartieri, che non hanno una forma codificata, e vengono chiamati sempre in modo differente (ad esempio: *Sant'Orsola* ; *S.Orsola*; *Sant Orsola* ; ...);
+- non esistono vocabolari interni di nomi. Un altro problema è stato quello riguardante la nomenclatura delle intestazioni, che risulta sempre diversa anche all'interno della stessa serie di dataset (ad esempio: *N_contribuenti* ; *N. Contribuenti* ; ...) e di nomi quali nomi di vie/zone/quartieri, che non hanno una forma codificata, e vengono chiamati sempre in modo differente (ad esempio: *Sant'Orsola* ; *S.Orsola*; *Sant Orsola* ; ...);
 
-- vi è un problema roblema con le parole accentate: all'interno del testo, le parole accentate sono codificate secondo modalità differenti. A volte viene utilizzata la lettera accentata, facendo emergere però problematiche di codifica; altre volte invece viene impropriamente utilizzato l'apostrofo.
+- vi è un problema con le parole accentate: all'interno del testo, esse sono codificate secondo modalità differenti. A volte viene utilizzata la lettera accentata, facendo emergere però problematiche di codifica; altre volte invece viene impropriamente utilizzato l'apostrofo;
 
-- Nel sito non è presente una descrizione dettagliata del dataset di cui è disponibile il download
+- nel sito non è presente una descrizione dettagliata del dataset di cui è disponibile il download;
 
-- Sono presenti errori di battitura per quanto riguarda le stringhe di testo
+- sono presenti errori di battitura per quanto riguarda le stringhe di testo;
 
 In generale, nel corso della pulizia dei vari dataset, abbiamo:
-1. reso le intestazioni delle colonne subito comprensibili e uniformi; abbiamo quindi semplificato i loro nomi ed eliminato i caratteri speciali.
-2. uniformato i nomi all'interno dei file.
+1. reso le intestazioni delle colonne subito comprensibili e uniformi; abbiamo quindi semplificato i loro nomi ed eliminato i caratteri speciali;
+2. uniformato i nomi all'interno dei file;
 3. copiato le versioni pulite dei dataset, in formato CSV e con codifica UTF-8.
 
 #### DATASET REDDITI
@@ -279,11 +271,11 @@ In Italia il Segreto Statistico è di fatto regolamentato dall'art.9 del DL n.32
 *1. I dati raccolti nell'ambito di rilevazioni statistiche comprese nel programma statistico nazionale da parte degli uffici di statistica non possono essere esternati se non in forma aggregata, in modo che non se ne possa trarre alcun riferimento relativamente a persone identificabili e possono essere utilizzati solo per scopi statistici.
 2. I dati di cui al comma 1 non possono essere comunicati o diffusi, se non in forma aggregata e secondo modalità che rendano non identificabili gli interessati ad alcun soggetto esterno, pubblico o privato, né ad alcun ufficio della pubblica amministrazione. In ogni caso, i dati non possono essere utilizzati al fine di identificare nuovamente gli interessati.*
 
-##### Pulitura, De-identificazione e *Merging*
+##### Pulitura, de-identificazione e *merging*
 La fase di **pulitura** ha previsto le seguenti operazioni:
 
 1. *Eliminazione di colonne*; in particolare: 
-    * abbiamo eliminato le colonne che non servivano agli scopi del nostro lavoro: tra '*Reddito imponibile ai fini dell'irpef*' e '      *Reddito imponibile ai fini dell' addizionale irpef*' abbiamo scelto di mantenere unicamente il primo, perché quello comunale (il secondo) è un parziale di quello totale (il primo). Per eliminare i dati relativi a questa intestazione abbiamo utilizzato l'algoritmo '**elimina_colonna(data)**' in "Reddito_per_Area.py";
+    * abbiamo eliminato le colonne che non servivano agli scopi del nostro lavoro: tra '*Reddito imponibile ai fini dell'irpef*' e '      *Reddito imponibile ai fini dell' addizionale irpef*' abbiamo scelto di mantenere unicamente il primo, perché quello comunale (il secondo) è un parziale di quello totale (il primo). Per eliminare i dati relativi a questa intestazione abbiamo utilizzato Data Curator;
 
 2. *Modifica delle stringhe d'intestazione*; in particolare:
     * abbiamo uniformato le stringhe in modo tale da essere identiche in tutti i dataset della serie (maiuscole e minuscole; trattini, etc...). Per esempio: 
@@ -300,7 +292,7 @@ La fase di **pulitura** ha previsto le seguenti operazioni:
 
 5. *Correzione di errori di battitura*; ad es. "*Triumrato*" al posto di "*Triumvirato*".
 
-In sede di **de-identificazione** è possibile applicare delle tecniche di anonimizzazione ai valori che sotto ad una certa soglia possono rappresentare un rischio di re-identificazione, come il *Numero contribuenti*. Per quanto riguarda i valori potenzialmente sensibili, come il *Reddito imponibile ai fini irpef*, è possibile anonimizzare i valori precisi convertendoli in valori arrotondati secondo la distribuzione in *scaglioni IRPEF*.
+In sede di **de-identificazione** è possibile applicare delle tecniche di anonimizzazione ai valori che sotto ad una certa soglia possono rappresentare un rischio di re-identificazione, come il *Numero contribuenti*.
 
 In fase di **_merging_** abbiamo usato l'algoritmo **process_data(data)** per creare una lista di dizionari. Con l'algoritmo **reddito_medio_per_zona(data)** abbiamo accorpato le aree statistiche per formare le zone corrispondenti, confrontando il dataset con la lista di dizionari prodotta dall'algoritmo **diz_aree_in_zone(csv_file)** applicato al DATASET AREE STATISTICHE 4.1. Per ogni zona abbiamo calcolato la media pro-capite (distriuzione del reddito = reddito_area_1 + ... + reddito_area_n // n_contribuenti_1 + ... + n_contribuenti_n). Con **merge_dataset(data1, data2, data3, data4, data5, data6, data7, data8)** abbiamo raggruppato le distribuzioni del reddito per anno e per zona in un unico dataset. 
 
@@ -310,26 +302,25 @@ Il dataset è stato stampato in formato .csv tramite la libreria *pandas*. Infin
 ##### Revisione preliminare: criticità
 Il dataset presenta criticità nei dati relativi a *Category*: in questa colonna sembra che a volte sia stata copiata la segnalazione fatta dal cittadino, parola per parola, senza che sia stato fatto un lavoro di controllo e anonimizzazione sulle informazioni (potenzialmente o palesemente sensibili) ivi contenute. 
 
-Abbiamo lavorato su '38.00.03_segnalazioni_czrm2017_area_statistica', un file di estensione *.shp* che abbiamo convertito in formato *geojson* con l'algoritmo **shp2geojson(input_path, output_path)** in (##IL FILE CHE CONTIENE LO SCRIPT LO SALVERA' FABIO) e successivamente in formato *.csv* con un [convertitore online](http://convertcsv.com/geojson-to-csv.htm). L'output di questo processo è il file 'Segnalazioni2017AreaStatPub.csv'.
+Abbiamo lavorato su '38.00.03_segnalazioni_czrm2017_area_statistica', un file di estensione *.shp* che abbiamo convertito in formato *geojson* con l'algoritmo **shp2geojson(input_path, output_path)** e successivamente in formato *.csv* con un [convertitore online](http://convertcsv.com/geojson-to-csv.htm).
 
-Tale dataset riporta l'indirizzo preciso, corredato da numero civico, di dove una segnalazione è stata fatta, riportandone anche le coordinate *X*, *Y*. In questo modo è possibile sapere l'esatto punto di Bologna dove vi è una problematica espressa in una segnalazione. 
+Il dataset risultante riporta l'indirizzo preciso, corredato da numero civico, di dove una segnalazione è stata fatta, riportandone anche le coordinate *X*, *Y*. In questo modo è possibile sapere l'esatto punto di Bologna dove vi è una problematica espressa in una segnalazione. 
 
 Il problema si pone soprattutto se la segnalazione riguarda un'altra persona, come: 
-- l'avvistamento di una prostituta. Segnalazione che compare piu' volte. Tale segnalazione è particolarmente grave, per diverse motivazioni. In primo luogo non è verificabile che il soggetto in questione svolga effettivamente attività di prostituzione. Nel caso in cui sia invece effettivamente questo il caso, viene messo in Open Data la presenza di un'attività spesso collegata ad organizzazioni criminali, tratta di essere umani, discriminazione, e violenza;
-- in un altro caso si viene a conoscenza che alcuni ragazzini stanno in quel punto ogni giorno, per cui qualcuno potrebbe facilmente rintracciarli;
-- in altri casi ancora si viene a conoscenza di problematiche personali di due persone che si trovano presumibilmente spesso in quel punto.
-
+- l'avvistamento di una prostituta (segnalazione che compare piu' volte). Tale segnalazione è particolarmente grave, per diverse motivazioni: in primo luogo non è verificabile che il soggetto in questione svolga effettivamente attività di prostituzione; in caso contrario, viene messo in Open Data la presenza di un'attività spesso collegata ad organizzazioni criminali, tratta di essere umani, discriminazione, e violenza;
+- in un altro caso si viene a conoscenza che alcuni soggetti sensibili (presumibilmente minori) si trovano spesso in un determinato luogo, per cui risultano essere facilmente rintracciabili;
+- in altri casi ancora si viene a conoscenza di problematiche personali di due persone che si trovano presumibilmente spesso in quel luogo.
 
 ##### Pulitura, De-identificazione e Merge
-In fase di **pulitura** e **de-identificazione** abbiamo operato una serie di operazioni sui due dataset in questione:
+In fase di **pulitura** e **de-identificazione** abbiamo eseguito una serie di operazioni sui due dataset in questione:
 
 * per quanto riguarda il primo dataset, con l'eliminazione dell'intera colonna *Category* abbiamo eliminato sia i dati ridondanti che i dati sensibili;
 
-* per quanto riguarda il secondo dataset, la soluzione al problema è stata non considerare gli indirizzi delle segnalazioni, fornendo unicamente il dato dell'area della segnalazione. Quindi abbiamo creato un dataset intermedio derivato da 'Segnalazioni2017AreaStatPub.csv', contenente unicamente i dati relativi a "*Ticketid*" e "*Tipo Area*". Il file originale presenta però in "*Tipo Area*" diverse diciture prima del nome dell'area ("*Area Statistica:*" e "*Percorso di Ascolto |*"). Abbiamo eliminato le diciture, lasciando solo il nome della zona, con l'algoritrmo '**pulitore_data_geo(data_geo)**' in 'Segnalazioni_2017.py'. L'output è un file intermedio 'Segnalazioni_file_per_merge.csv'. 
+* per quanto riguarda il secondo dataset, la soluzione al problema è stata quella di non considerare gli indirizzi delle segnalazioni, fornendo unicamente il dato dell'area della segnalazione. Ulteriori operazioni di pulitura sono state attuate con l'algoritrmo '**pulitore_data_geo(data_geo)**' (come la rimozione di "*Area Statistica:*" e "*Percorso di Ascolto |*").
 
 A questo punto abbiamo ripreso il dataset '38.00.05_segnalazioni_czrm2017_tot_tipologia.csv'. Abbiamo selezionato solo le categorie di segnalazioni che ci interessano: "*Degrado sociale*, *Degrado ambientale*" e "*Microciminalità*". La scelta delle categorie da mantenere è stata fatta da noi considerando gli elementi nel dataset che ci sono sembrati più calzanti con le nostre finalità. Questo processo di pulitura è stato realizzato tramite l'algoritmo "**pulire_segnalazioni(data_segnalazioni)**". 
 
-In fase di **merging** abbiamo creato un dataset di raffronto tra aree statistiche e zone con **diz_aree_in_zone(csv_file)**. Poi abbiamo incrociato 'Segnalazioni_file_per_merge.csv' e '38.00.05_segnalazioni_czrm2017_tot_tipologia.csv', per convertire tutti i valori di "*Ticketid*" nelle loro corrispondenti aree statistiche, attraverso l'algoritmo "**incrociatore_segnalazioni(data_segnalazioni, data_geo)**". Gli output dei due algoritmi precedenti sono stati utilizzati come input in **segnalazioni_per_zone(diz_zone_aree, segnalazioni_aree**, in modo da sostituire il nome di ogni area statistica con la zona corrispondente. 
+In fase di **merging** abbiamo creato un dataset di raffronto tra aree statistiche e zone con **diz_aree_in_zone(csv_file)**. Poi abbiamo incrociato il dataset che stiamo trattando e '38.00.05_segnalazioni_czrm2017_tot_tipologia.csv', per convertire tutti i valori di "*Ticketid*" nelle loro corrispondenti aree statistiche, attraverso l'algoritmo "**incrociatore_segnalazioni(data_segnalazioni, data_geo)**". Gli output dei due algoritmi precedenti sono stati utilizzati come input in **segnalazioni_per_zone(diz_zone_aree, segnalazioni_aree**, in modo da sostituire il nome di ogni area statistica con la zona corrispondente. 
 
 Attraverso l'algoritmo **counter_segnalazioni(segnalazioni_zone, segnalazioni_zone2)** sono stati rimossi tutti i duplicati e ne è stata contata la frequenza in *Numero Segnalazioni*. Con l'algoritmo **delete_descrizione(data)** abbiamo eliminato tutti i dati relativi alla *Descrizione* della segnalazione, poiché questi dati in origine si sono rivelati essere eccessivamente specifici rispetto ai fini del nostro progetto. Abbiamo eliminato il dato *Segnalazioni* (ridondante, dato che il dataset è in sé composto da segnalazioni!) e l'abbiamo sostituito con il contenuto di *Descrizione*; nel caso invece in cui *Segnalazione* risultasse un valore vuoto, l'abbiamo sostituito con "*Altro*".
 
@@ -338,7 +329,7 @@ L'ultimo step è stato quindi il calcolo del numero totale di ogni segnalazione 
 Il dataset è stato stampato in formato .csv tramite la libreria *pandas*. Infine abbiamo fatto un controllo manuale del dataset per verificarne la correttezza.
 
 ##### Revisione finale
-In fase di revisione finale abbiamo rilevato criticità  di carattere etico riguardante la categorizzazione "Degrado Sociale", sotto cui erano inserite tutte le segnalazioni che comprendevano, tra le altre cose, soggetti quali prostitute, anziani invalidi, tossicodipendenti etc. Abbiamo quindi deciso di cambiare il nome delle tipologie di segnalazioni, per evitare nomenclature collegabili ad un giudizio negativo legato a tali soggetti. Le categorie da: "Degrado Ambientale", "Degrado Sociale", e "Microcriminalità" sono state quindi modiicate in "Sociale", "Ambientale", "Microcriminalità". L'algoritmo che abbiamo utilizzato è stato: **pulizia_segnalazioni_2_(data_segnalazioni)**
+In fase di revisione finale abbiamo rilevato criticità di carattere etico riguardante la categorizzazione "*Degrado Sociale*", sotto cui erano inserite tutte le segnalazioni che comprendevano, tra le altre cose, soggetti quali prostitute, anziani invalidi, tossicodipendenti etc. Abbiamo quindi deciso di cambiare il nome delle tipologie di segnalazioni, per evitare nomenclature collegabili ad un giudizio negativo legato a tali soggetti. Le categorie da: "Degrado Ambientale", "Degrado Sociale", e "Microcriminalità" sono state quindi modiicate in "Sociale", "Ambientale", "Microcriminalità". L'algoritmo che abbiamo utilizzato è stato: **pulizia_segnalazioni_2_(data_segnalazioni)**
 
 #### DATASET AREE STATISTICHE 4.1
 ##### Revisione preliminare: criticità
@@ -367,49 +358,49 @@ Le operazioni di pulizia effettuate solo le seguenti:
 - uniformate le stringhe in modo tale da essere identiche nei due dataset politici (maiuscole e minuscole);
 - modificato i nomi dei partiti per corrispondere al nome vigente ufficiale del partito (precedentemente erano sigle o denominati in modo errato).
 
-Per quanto riguarda il processo di **_merging_** di 2.0:
+Per quanto riguarda il processo di **_merging_** di [2.0](#dataset-usati):
 
-* considerando che il file raw contiene i dati delle elezioni politiche in relazione alle sezioni elettorali, ma il focus del nostro progetto è sulle zone, abbiamo utilizzato 'sez_elettorali_in_zone_Senato(data)' effettuare questa conversione;
+* considerando che il file raw contiene i dati delle elezioni politiche in relazione alle sezioni elettorali, ma il focus del nostro progetto è sulle zone, abbiamo utilizzato l'algoritmo '**sez_elettorali_in_zone_Senato(data)**' effettuare questa conversione;
 
-* Utilizzando 'calcolo_percentuale(data)' abbiamo calcolato la percentuale dei voti di ogni partito rispetto al totale del voti ogni zona. La formula da noi utilizzata è: n_voti_partito_n * 100 / tot_voti;
+* utilizzando l'algoritmo '**calcolo_percentuale(data)**' abbiamo calcolato la percentuale dei voti di ogni partito rispetto al totale del voti ogni zona. La formula da noi utilizzata è: {*n_voti_partito_x * 100 / tot_voti*};
 
-* Abbiamo utilizzato 'controllo_percentuale(data)' per verificare la correttezza delle nostre percentuali.
+* abbiamo utilizzato l'algoritmo '**controllo_percentuale(data)**' per verificare la correttezza delle nostre percentuali.
 
-Il nostro dataset intermedio contiene quindi, per ogni zona il numero di voti di un partito, la sua percentuale ed infine il totale dei voti validi. 
+Per ogni zona, il nostro dataset intermedio contiene: il numero di voti di un partito, la sua percentuale e il totale dei voti validi. 
 
-Per quanto riguarda il processo di **_merging_** di 1.0 e 1.1:
+Per quanto riguarda il processo di **_merging_** di [1.0 e 1.1](#dataset-usati):
 
-* Considerando che in questo caso i dataset di input sono 2 (Collegio 6 e Collegio 7), abbiamo applicato 'merge(data)'.
+* Considerando che in questo caso i dataset di input sono 2 (Collegio 6 e Collegio 7), abbiamo applicato l'algoritmo '**merge(data)**'.
 
-* avendo a questo punto un unico dataset, abbiamo riutilizzato gli stessi algoritmi usati per 2.0. L'algoritmo **sez_elettorali_in_zone_Senato(data)** è stato modificato ad hoc per via della presenza di una lista (quella dei Forconi) nel dataset 2.0 che non ha riscontro in 1.0 e 1.1.
+* avendo a questo punto un unico dataset, abbiamo riutilizzato gli stessi algoritmi usati per 2.0. L'algoritmo **sez_elettorali_in_zone_Senato(data)** è stato modificato *ad hoc* per via della presenza di una lista (*Movimento per i Forconi*) nel dataset [2.0](#dataset-usati) che non ha riscontro in [1.0 e 1.1](#dataset-usati).
 
 #### DATASET CENSIMENTO
 ##### Revisione preliminare: criticità
 Nel dataset abbiamo riscontrato alcuni problemi, tra cui:
 * il *tab-separated value*;
-* le problematiche già affrontate nei DATASET REDDITI e DATASET SEGNALAZIONI: i dati esposti sono molto specifici ed accurati; vi sono casi in cui questi dati sono rapportati ad aree molto ristrette, quindi facilmente suscettibili ad essere strumento di de-anonimizzazione. Infatti, incrociando questo dataset con altri, vi è la possibilità di risalire a dati sensibili. 
+* le problematiche già affrontate nel dataset Redditi e nel dataset Segnalazioni. I dati esposti sono infatti molto specifici ed accurati; vi sono casi in cui questi dati sono rapportati ad aree molto ristrette, quindi facilmente suscettibili ad essere strumento di de-anonimizzazione. Infatti, incrociando questo dataset con altri, vi è la possibilità di risalire a dati sensibili.
 
 ##### De-anonimizzaizone, pulitura e *merging*
 In fase di **_pulitura_** abbiamo trasformato il file in *comma-separated value*. 
 
 In fase di **_de-anonimizzaizone_** abbiamo mantenuto unicamente i dati riguardanti *Zona* e *Residenti*, dato che non contengono dati sensibili e sono utili al fine del nostro progetto.
 
-Il dataset è stato definitivamente pulito con **merge_zone_residenti(data)**. In questo modo abbiamo ottenuto il numero di residenti per zona. Il risultato è il dataset intermedio "*censimento_intermedio.csv*".
+Il dataset è stato definitivamente pulito con l'algoritmo **merge_zone_residenti(data)**. In questo modo abbiamo ottenuto il numero di residenti per zona. Il risultato è il dataset intermedio "*censimento_n_residenti.csv*".
 
 #### DATASET ZONE 7.0 & DATASET AREE STATISTICHE 4.0
 ##### Revisione preliminare & pulitura
 
-Per poter manipolare i dati geospaziali all'interno del dataset abbiamo dovuto convertire il formato da .shp a .geojson tramite l'algoritmo **shp2geojson**. Le coordinate nello *shapefile* delle zone hanno come riferimento l'**UTMA ED50**, il sistema di coordinate locale dell'Emilia Romagna. Ciò porta ad un bug di conversione in *.geojson*, che invece usa come sistema di riferimento delle coordinate WGS84 (un formato globale). Inoltre, qualora si volesse lavorare con il file *shapefile* originario, si nota un grave *offset* delle coordinate.
+Per poter manipolare i dati geospaziali all'interno del dataset abbiamo dovuto convertire il formato da .shp a .geojson tramite l'algoritmo **shp2geojson**. Le coordinate nello *shapefile* delle zone hanno come riferimento l'**UTMA ED50**, il sistema di coordinate locale dell'Emilia Romagna. Ciò porta ad un bug di conversione in *.geojson*, che invece usa come sistema di riferimento delle coordinate **WGS84** (un formato globale). Inoltre, qualora si volesse lavorare con il file *shapefile* originario, si potrebbe notare un grave *offset* delle coordinate.
 
-Abbiamo poi lavorato sullo *shapefile* delle Aree Statistiche (4.0): il sistema di riferimento delle coordinate utilizzato in questo caso è l'**ED50 UTM Zone 32N** (un sistema europeo). Essendo un formato più diffuso, è possibile convertire direttamente in .geojson attraverso l'algoritmo **shp2geojson**. La precisione di descrizione è quindi maggiore. Ciò ci ha permesso di eseguire il **_merging_** delle aree statistiche per creare le zone tramite il programma open-source QGIS seguendo le informazioni contenute nel DATASET AREE STATISTICE 4.1.
+Abbiamo poi lavorato sullo *shapefile* delle Aree Statistiche ([4.0](#dataset-usati)): il sistema di riferimento delle coordinate utilizzato in questo caso è l'**ED50 UTM Zone 32N** (un sistema europeo). Essendo un formato più diffuso, è possibile convertire direttamente in .geojson attraverso l'algoritmo **shp2geojson**. La precisione di descrizione è quindi maggiore. Ciò ci ha permesso di eseguire il **_merging_** delle aree statistiche per creare le zone tramite il programma open-source QGIS seguendo le informazioni contenute nel [4.1](#dataset-usati).
 
 ***
 
 #### DATASET FINALI
 ##### Merging
-* I dataset intermedi di REDDITI, POLITICHE SENATO, POLITICHE CAMERA e CENSIMENTO sono stati incrociati per creare il primo dataset finale. Nei due dataset delle POLITICHE le zone segnalate in codice numerico sono state convertite nei rispettivi nomi propri tramite l'algoritmo **numeri_in_nomi_zone(data_politiche)**. Successivamente, tramite l'algoritmo **merge_finale(data1, data2, data3, data4)**, i quattro dataset sono stati incrociati in un' unica banca dati, usando i nomi delle zone come *pivot*. Infine l'output è stato rilasciato in formato .csv tramite la libreria *pandas*.
+* I dataset intermedi di Redditi, Politiche Senato, Politiche Camera e Censimento sono stati incrociati per creare il primo dataset finale. Nei due dataset delle Politiche le zone segnalate in codice numerico sono state convertite nei rispettivi nomi propri tramite l'algoritmo **numeri_in_nomi_zone(data_politiche)**. Successivamente, tramite l'algoritmo **merge_finale(data1, data2, data3, data4)**, i quattro dataset sono stati incrociati in un' unica banca dati, usando i nomi delle zone come *pivot*. Infine l'output è stato rilasciato in formato .csv tramite la libreria *pandas*.
 
-* Il dataset intermedio riguardante le SEGNALAZIONI **_segnalazioni_bologna_2017_** non ha subito ulteriori operazioni di *merging*, non essendo compatibile con gli altri dataset in termini di disposizione delle informazioni al suo interno.
+* Il dataset intermedio riguardante le Segnalazioni **_segnalazioni_bologna_2017_** non ha subito ulteriori operazioni di *merging*, non essendo compatibile con gli altri dataset in termini di disposizione delle informazioni al suo interno.
 
 * Per quanto riguarda il terzo dataset, pubblicato in formato *.geojson*, si veda la sezione dedicata alla [Visualizzazione](#visualizzazione).
 
@@ -450,7 +441,7 @@ Abbiamo poi lavorato sullo *shapefile* delle Aree Statistiche (4.0): il sistema 
 | | in che forma si possono creare sinergie tra il portale “Amministrazione trasparente” e il portal open data per minimizzare le inconsistenze e favorire la trasparenza del dato aperto? |/ |/|/| 
 
 ## Licenze
-L'informazione sul tipo di licenza è metadato indispensabile per determinare come poter riutilizzare il dataset. Essa deve essere **sempre** specificata, mettendola in evidenza in forma *human-* e *machine-readable*, indicando:
+L'informazione sul tipo di licenza costituisce un metadato indispensabile per determinare come poter riutilizzare il dataset. Essa deve essere **sempre** specificata, mettendola in evidenza in forma *human-* e *machine-readable*, indicando:
 
 * nome;
 * versione;
@@ -458,15 +449,15 @@ L'informazione sul tipo di licenza è metadato indispensabile per determinare co
 
 I dataset pubblicati su OpenData Bologna rispettano queste condizioni.
 
-### Dataset
+### Licenze dei dataset
 #### DATASET REDDITI, DATASET POLITICHE
-La licenza associata a questo gruppo di dataset è la [**CC0 1.0**](https://creativecommons.org/publicdomain/zero/1.0/deed.it) (Donazione al Pubblico Dominio). 
+La licenza associata a questi gruppi di dataset è la [**CC0 1.0**](https://creativecommons.org/publicdomain/zero/1.0/deed.it) (Donazione al Pubblico Dominio). 
 
 | Creative Commons | Attribuzione Zero |
 | :----------------: | :-----------------: |
 |![](https://bolideopendata.github.io/bolideopendata/documentazione/images/cc.png) | ![](https://bolideopendata.github.io/bolideopendata/documentazione/images/zero.png)
 
-Sulla pagina di ogni dataset è presente un [link](http://dati.comune.bologna.it/node/5) che porta ad una pagina del sito che descrive il diritto di riutilizzo dei dataset licenziati in questo modo. 
+Sulla pagina di ogni dataset è presente un [link](http://dati.comune.bologna.it/node/5) che porta ad una decrizione del diritto di riutilizzo dei dataset licenziati in questo modo. 
 
 Il dichiarante “*apertamente, pienamente, permanentemente, irrevocabilmente e incondizionatamente rinuncia, abbandona e cede ogni proprio diritto d’autore e connesso, ogni relativa pretesa, rivendicazione, causa e azione, sia al momento nota o ignota (includendo espressamente le pretese presenti come quelle future) relativa all’opera*”. 
 
@@ -474,7 +465,7 @@ In altre parole, il dataset è dedicato al pubblico dominio attraverso la rinunc
 
 
 #### DATASET SEGNALAZIONI, DATASET AREE STATISTICHE
-La licenza associata a questo gruppo di dataset è la [**CC-BY 3.0 IT**](https://creativecommons.org/licenses/by/3.0/deed.it).
+La licenza associata a questi gruppi di dataset è la [**CC-BY 3.0 IT**](https://creativecommons.org/licenses/by/3.0/deed.it).
 
 | Creative Commons | Attribuzione |
 | :----------------: | :-----------------: |
@@ -484,13 +475,14 @@ Le licenze per l’open data con richiesta di attribuzione e condivisione allo s
 - attribuire la paternità del dataset, fornire un link alla licenza e indicare le modifiche; 
 - distribuire eventuali lavori derivati con la stessa licenza che governa il lavoro originale, con divieto di restrizioni legali e/o tecnologiche aggiuntive. 
 
+La paternità dei dataset è del Comune di Bologna.
 
 #### Dataset finali
 
 Per pubblicare i nostri dataset abbiamo scelto la licenza [IODL 2.0](https://www.dati.gov.it/content/italian-open-data-license-v20). Essa:
 * consente di condividere, modificare, usare e riusare i dataset, i dati e le informazioni al loro interno, garantendo la stessa libertà per altri;
-* non implica trasferimenti di diritto di titolarità sulla banche di dati, sui dati e sulle informazioni pubbliche;
-* la versione 2.0, in particolare, permette di creare un lavoro derivato ed esercitare su di esso gli stessi diritti, per esempio attraverso la *mashup* con altre informazioni, utilizzando anche dati rilasciati con altre licenze *attribution* (che richiedono all’utente la sola indicazione della fonte,) come le licenze Creative Commons Attribution (CC-BY).
+* non implica trasferimenti di diritto di titolarità sulle banche di dati, sui dati e sulle informazioni pubbliche;
+* la versione 2.0, in particolare, permette di creare un lavoro derivato ed esercitare su di esso gli stessi diritti, per esempio attraverso il *mashup* con altre informazioni, utilizzando anche dati rilasciati con altre licenze *attribution* (che richiedono all’utente la sola indicazione della fonte) come le licenze Creative Commons Attribution (**CC-BY**).
 
 ![](https://bolideopendata.github.io/bolideopendata/documentazione/images/logo_iodl_esteso.png)
 
@@ -536,24 +528,24 @@ Il dataset è stato scelto al fine di esaminare l’andamento medio del reddito 
 #### DATASET POLITICHE
 La finalità del dataset è quella di esporre in Open Data i risultati degli scrutini alle elezioni politiche del 4 marzo 2018, per l’elezione al Senato della Repubblica e alla Camera dei Deputati.
 
-I file sono estratti dal data entry dall’Ufficio Servizi Elettorali del Comune di Bologna.
+I file sono estratti dal *data entry* dall’Ufficio Servizi Elettorali del Comune di Bologna.
 
 Il dataset è stato scelto al fine di conoscere la percentuale di voto di una determinata lista alle elezioni politiche del 4 marzo 2018, per l’elezione al Senato della Repubblica e alla Camera dei Deputati, in una determinata zona della città.
 
 #### DATASET SEGNALAZIONI 
-La finalità dei dataset è quella di esporre in Open Data le segnalazioni registrate attraverso il Citizen Relationship Management: strumento di contatto diretto tra amministrazione e cittadini che segnalano problemi all’interno del comprensorio Bolognese. Tali segnalazioni di situazioni di disagio sono inoltre mappate e geolocalizzate all’interno una determinata area cittadina.
+La finalità dei dataset è quella di esporre in Open Data le segnalazioni registrate attraverso il *Citizen Relationship Management*, strumento di contatto diretto tra amministrazione e cittadini, i quali segnalano problemi all’interno del comprensorio Bolognese. Tali segnalazioni di situazioni di disagio sono inoltre mappate e geolocalizzate all’interno una determinata area cittadina.
 
 Il dataset è stato scelto al fine di comprendere la natura e la quantità di problemi legati al degrado ambientale, urbano e al disagio sociale, in una determinata zona della città, registrati attraverso il Citizen Relationship Management. 
 
 #### DATASET AREE STATISTICHE
-La finalità dei dataset è quella di esporre in Open Data i nomi delle aree Statistiche e dei quartieri e i relativi codici.
+La finalità dei dataset è quella di esporre in Open Data le differnti modalità di suddivisione territoriale di Bologna.
 
 I dataset sono stati scelti per essere usati come dataset di raccordo per permettere la conversione/accorpamento dalle aree statistiche a zone.
 
 #### DATASET CENSIMENTO
-La finalità dei dataset è quella di esporre in Open Data la Popolazione residente a Bologna per età, sesso, cittadinanza, quartiere, zona, area statistica e sezione di censimento per l'anno 2017.
+La finalità dei dataset è quella di esporre in Open Data la popolazione residente a Bologna per età, sesso, cittadinanza, quartiere, zona, area statistica e sezione di censimento per l'anno 2017.
 
-Il dataset è stato scelto ai fini di estrapolare i residenti di Bologna per zona
+Il dataset è stato scelto ai fini di estrapolare i residenti di Bologna per zona.
 
 #### DATASET ZONE
 La finalità del dataset è quella di evidenziare la divisione del Comune di Bologna in *18 zone*, ovvero i vecchi quartieri che nel 1985 sono stati accorpati negli attuali 9 quartieri. I quartieri sono composti da zone che sono composte da aree statistiche, dunque è possibile relazionare queste tre differenti modalità di suddivisione del territorio bolognese. 
@@ -561,16 +553,16 @@ La finalità del dataset è quella di evidenziare la divisione del Comune di Bol
 Il dataset è stato scelto perché la divisione in zone è più specifica della divisione in quartieri, e meno specifica della divisione in aree statistiche, quindi rappresenta un buon compromesso per visualizzare i dati che ci interessano.
 
 ### DATASET FINALI
-La finalità dei dataset finali è quella di esporre in Open Data alcuni dati relativi la situazione politico-economica-sociale Bolognese degli ultimi anni. In particolare:
+La finalità dei dataset finali è quella di esporre in Open Data alcuni dati relativi alla situazione politico-economica-sociale Bolognese degli ultimi anni. In particolare:
 
 #### Dataset 1: 
-All'interno del primo dataset ritroviamo i dati divisi per zona di Bologna di: redditi medi pro-capite dei contribuenti bolognesi dal 2009 al 2016, i risutati degli scrutini alle elezioni politiche per l'elezione al Senato della Repubblica e alla Camera dei Deputati del 4.3.2018, e il numero di residenti.
+All'interno del primo dataset ritroviamo i dati divisi per zona di Bologna di: redditi medi pro-capite dei contribuenti bolognesi dal 2009 al 2016, i risutati degli scrutini alle elezioni politiche per l'elezione al Senato della Repubblica e alla Camera dei Deputati del 4.3.2018, e il numero di residenti del 2017.
 
 #### Dataset 2:
-All'interno del secondo dataset ritroviamo i dati i dati divisi per zona di Bologna delle segnalazioni riguardanti il degrado ambientale, urbano, sociale e microcriminalità divisi per categoria, sottocategoria e numero di segnalazioni.
+All'interno del secondo dataset ritroviamo i dati divisi per zona di Bologna delle segnalazioni riguardanti le segnalazioni di tipo ambientale, sociale e sulla microcriminalità, divisi per categoria, sottocategoria e numero di segnalazioni.
 
 #### Dataset 3:
-Dato che i dati forniti dal portale OpenData Bologna sono in formato .shp, è stato necessario fare il porting al formato .geojsn, supportato nativamente da Javascript (linguaggio usato per programmare in ambiente web), quindi senza avere più la necessità di conversioni ulteriori. Il file originale delle zone presenta dei gravi errori di *offset* in termini di latitudine e longitudine che creano squilibrio nella visualizzazione. La creazione di questo file è stata determinata dalla necessità di un file .geojson delle zone di Bologna per ottimizzare la visualizzazione.
+Dato che i dati forniti dal portale OpenData Bologna sono in formato .shp, è stato necessario fare il porting al formato .geojson, supportato nativamente da Javascript (linguaggio usato per programmare in ambiente web), quindi senza avere più la necessità di conversioni ulteriori. La creazione di questo file è stata determinata dalla necessità di un file .geojson delle zone di Bologna per ottimizzare la visualizzazione.
 _______________________________________________________________
 
 # Analisi tecnica
@@ -583,7 +575,7 @@ La pubblicazione di dataset in open Data richiede che i dati siano resi disponib
 
 I dataset che abbiamo utilizzato sono pubblicati nei seguenti formati:
 * **CSV**: in termini di *Processabilità*, i dataset sono quindi *machine-readable* e in formato aperto ma non corredati da metadati;
-* i DATASET AREE STATISTICHE e DATASET SEGNALAZIONI sono corredati da un insieme di file in formato **.shp** (*shapefile*, uno standard per dati vettoriali spaziali), con file aggiuntivi (**.sph** per le forme geometriche, **.dbf** per gli attributi delle forme geometriche, **.shx** come indice delle forme geometriche, **.prj** per le impostazioni del sistema di riferimento) da sui dipendono interpretazione ed utilizzo. 
+* i dataset Aree statistiche e Segnalazioni sono corredati da un insieme di file in formato **.shp** (*shapefile*, uno standard per dati vettoriali spaziali), con file aggiuntivi (**.sph** per le forme geometriche, **.dbf** per gli attributi delle forme geometriche, **.shx** come indice delle forme geometriche, **.prj** per le impostazioni del sistema di riferimento) da sui dipendono interpretazione ed utilizzo. 
 
 ### Distribuzioni
 Abbiamo deciso di pubblicare i dataset finali in 3 distribuzioni: 
@@ -597,7 +589,6 @@ Si veda la [pagina di pubblicazione del dataset](https://bolideopendata.github.i
 La metadatazione ricopre un ruolo essenziale laddove i dati sono esposti a utenti terzi e a software. I metadati, infatti, consentono una maggiore comprensione e rappresentano la chiave attraverso cui abilitare più agevolmente la ricerca, la scoperta, l’accesso e quindi il riuso dei dati stessi. La classificazione qualitativa dei metadati si fonda su due fattori principali: legame tra dato-metadati e livello di dettaglio.
 
 ### Metadatazione dei dataset iniziali
-
 Il livello del modello per i metadati raggiunto dai dataset è il **Livello 2**:
 * Legame dato-metadato debole: i dati sono accompagnati da metadati esterni, inclusi nella pagina di download;
 * Livello di dettaglio generale: i metadati forniscono informazioni relativamente a un dataset, quindi sono informazioni condivise dall’insieme di dati interni a quel dataset.
@@ -619,6 +610,14 @@ I dataset pubblicati su [OpenData Bologna](http://dati.comune.bologna.it/) sono 
 
 ### Metadatazione dei dataset finali
 Durante il processo di metadatazione abbiamo seguito la documentazione del [Profilo Applicativo di metadatazione DCAT-AP_IT](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/dcat-ap_it.html). Per documentare la *provenance* dei dataset finali abbiamo usato la specifica [PROV-O](https://www.w3.org/TR/prov-o/) dello standard di riferimento **PROV**. Per documentare la qualità dei dataset abbiamo usato il [Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/).
+
+Abbiamo compilato i metadati in Turtle:
+
+* [Metadati del dataset 1](https://bolideopendata.github.io/bolideopendata/metadata_bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.html)
+
+* [Metadati del dataset 2](https://bolideopendata.github.io/bolideopendata/metadata_segnalazioni_bologna_2017.html)
+
+* [Metadati del dataset 3](https://bolideopendata.github.io/bolideopendata/metadata_zone_bologna.html)
 
 ## URI
 E' assolutamente necessario garantire che gli URI siano **persistenti**, **dereferenziabili** e **non ambigui**. Dovrebbero essere supportati da un'infrastruttura affidabile.
@@ -661,26 +660,24 @@ In via ipotetica, proponiamo un possibile perfezionamento degli URI dei dataset 
 | http://dati.comune.bologna.it/download/file/fid/4321 | http://dati.comune.bologna.it/dataset/popolazione/residenti- |
 | http://dati.comune.bologna.it/download/file/fid/1737 | http://dati.comune.bologna.it/dataset/zone/zone-18 |
 
-Popolazione residente per età, sesso, cittadinanza, quartiere e zona area statistica e sezione censimento
-
 ### URI dei dataset finali
 Abbiamo pubblicato i dataset finali con i seguenti URI:
 
-* Dataset 1: [https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv](https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv)
-* Dataset 2: [https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv](https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv)
-* Dataset 3: [https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson](https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson)
+* **Dataset 1**: [https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv](https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv) ; [https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.xml](https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.xml) ; [https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.json](https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.json);
+* **Dataset 2**: [https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv](https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv) ; [https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.xml](https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.xml) ; [https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.json](https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.json);
+* **Dataset 3**: [https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson](https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson) ; [https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.xml](https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.xml);
 _______________________________________________________________
 
 # Analisi della sostenibilità
-Gli open data, affinché siano utili, devono essere rilevanti, aggiornati ed accessibili. La sostenibilità di un dataset è rappresentata dalla sua pubblicazione regolare nel tempo. Esso dovrebbe essere supportato da:
+Gli Open Dta, affinché siano utili, devono essere rilevanti, aggiornati ed accessibili. La sostenibilità di un dataset è rappresentata dalla sua pubblicazione regolare nel tempo. Essa dovrebbe essere supportata da:
 
 * **finanziamento** dell'*update* sostenuto nel tempo;
 * **supporto** da parte di un organismo professionale, ben inserito nell'ecosistema degli Open Data;
-* **riutilizzo** su ampia scala da parte di possibili utenti interessati ad usufruire dei dati pubblicati;
+* **riutilizzo** su ampia scala da parte di possibili utenti interessati ad usufruire dei dati pubblicati.
 
 Nel nostro caso, possiamo proporre in via ipotetica un possibile modello organizzativo di sostenibilità, basato sui seguenti elementi:
 
-* [Provenance](#metadati) e [Tempestività](#requisiti): le informazioni riguardanti la fonte dei dati (OpenData Bologna) sono state integrate nei metadati associati ai dataset da noi pubblicati; il requisito di tempestività viene rispettato a patto che le date di ultimo aggiornamento rientrino nell'arco di tempo coperto dalla frequenza di aggiornamento (5 anni per il dataset 1, 1 anno per il dataset 2);
+* [Provenance](#metadati) e [Tempestività](#requisiti): le informazioni riguardanti la fonte dei dati (OpenData Bologna) sono state integrate nei metadati associati ai dataset da noi pubblicati; il requisito di tempestività viene rispettato a patto che le date di ultimo aggiornamento rientrino nell'arco di tempo coperto dalla frequenza di aggiornamento (5 anni per il dataset 1, 1 anno per il dataset 2, irregolare per il dataset 3);
 
 * il supporto economico potrebbe provenire dal Comune di Bologna stesso oppure dall'[AgID](https://www.agid.gov.it/), due possibili agenti potenzialmente interessati a sostenere la qualità informativa del nostro lavoro (si veda, ad esempio, [http://dati.comune.bologna.it/casi-uso](http://dati.comune.bologna.it/casi-uso)). Il nostro modello pertiene ad una politica basata sui **costi marginali**, per cui il nostro interesse sarebbe quello di sostenere una pubblicazione duratura e di qualità dei dataset a costo zero o prossimo allo zero. Nella comunicazione della Commissione pubblicata sulla Gazzetta ufficiale dell'Unione Europea [2014/C 240/01](https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:52014XC0724(01)&from=IT) del 24/07/2014, al paragrafo 4.1.2 si legge: *nell’ambiente in linea, invece, la totalità del corrispettivo potrebbe essere limitata ai costi collegati direttamente alla manutenzione e al funzionamento dell’infrastruttura (ossia della banca dati elettronica) nella misura necessaria a riprodurre il documento e a metterlo a disposizione di un riutilizzatore in più. Considerate l’esiguità e la tendenza al ribasso dei costi operativi medi di una banca dati, è probabile che l’importo sia prossimo allo zero. Si raccomanda pertanto agli enti pubblici di valutare a cadenza periodica i costi e benefici potenziali della politica di costo zero e della politica dei costi marginali, tenendo presente che la tariffazione com porta in sé dei costi (gestione delle fatture, monitoraggio e amministrazione dei pagamenti ecc.). In conclusione, il metodo dei costi marginali può essere applicato per recuperare le spese sostenute per la riproduzione di una copia supplementare e la distribuzione fisica dei documenti non digitali, mentre **per i documenti digitali (file) divulgati per via elettronica (ossia scaricati) si raccomanderebbe una politica di costo zero.*** 
 
@@ -688,22 +685,20 @@ Nel nostro caso, possiamo proporre in via ipotetica un possibile modello organiz
 
 * puntiamo ad un riutilizzo piuttosto allargato dei dati che abbiamo pubblicato, forti dell'ampio ventaglio di tematiche coperte (ad esempio: redditi, elezioni politiche, partecipazione attiva del cittadino, ecc...) e della possibilità concreta di ulteriori incroci con altri dataset. 
 
-* offriamo una casella di comunicazione diretta e via mail con l'utente, per garantire un'approccio quanto più aperto e tempestivo rispetto a feedback, richieste, ulteriori informazioni e quant'altro;
+* offriamo una casella di comunicazione con l'utente (*feedback form*), per garantire un'approccio quanto più aperto e tempestivo rispetto a richieste, ulteriori informazioni e quant'altro.
 
 Per adesso, abbiamo potuto eseguire nel concreto queste operazioni al fine di migliorare la sostenibilità dei dataset:
 * il mantenimento della serie storica e soprattutto il suo carico informativo nel suo complesso;
 * l'utilizzo di [URI persistenti](#uri);
-* l'integrazione dei dati con una serie di **metadati**, secondo le linee guida fornite da AGiD e dal profilo DCAT-AP_IT, e in particolar modo dai **metadati di provenance** modellati sullo standard **PROV-O**.
+* l'integrazione dei dati con una serie di **metadati**, secondo le linee guida fornite da AGiD e dal profilo **DCAT-AP_IT** integrato con ontologie quali **PROV-O**, FOAF, eccetera.
 _______________________________________________________________
 
 # Visualizzazione
 La pagina HTML dedicata alla visualizzazione dei dati è stata creata attraverso l'utilizzo della libreria *Bootstrap*, un set di strumenti *open source* utile a mantenere la pagina pulita in termini di design e di funzionalità. Tutti i dati visualizzati sono caricati sul sito tramite *Ajax*, uno strumento incluso nella libreria Javascript *Jquery* che permette di caricare informazione in tempo reale dalla nostra repository al sito Web finale. 
 
-Dal momento che il formato .json è open e nativamente supportato da Javascript, per facilitare l'utilizzo dei dati nell'architettura della visualizzazione i singoli dataset sono stati convertiti in formato .json e sezionati:
+Dal momento che il formato .json è open e nativamente supportato da Javascript, per facilitare l'utilizzo dei dati nell'architettura della visualizzazione i singoli dataset sono stati convertiti in formato .json e sezionati. Al fine di rendere la visualizzazione più completa abbiamo creato due dataset intermedi supplementari: 'politiche_bologna_nazionali.csv' e 'redditi_foi_bologna_per_anno.csv'. 
 
-Al fine di rendere la visualizzazione più completa abbiamo creato due dataset intermedi supplementari: 'politiche_bologna_nazionali.csv' e 'redditi_foi_bologna_per_anno.csv'. 
-
-I dati in 'politiche_bologna_nazionali.csv' sono stati calcolati con la seguente formula: partito1_zona_1 + ... parito1_zona_n / voti_tot_zona_1 + ... + voti_tot_zona_n. In seguito i risultati sono stati raffrontati con i dati presenti sul sito del Ministero dell' Interno (es: [Senato Italia](https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=I&tpe=A&lev0=0&levsut0=0&es0=S&ms=S)).
+I dati in 'politiche_bologna_nazionali.csv' sono stati calcolati con la seguente formula: {**partito1_zona_1 + ... parito1_zona_n / voti_tot_zona_1 + ... + voti_tot_zona_n**}. In seguito i risultati sono stati raffrontati con i dati presenti sul sito del Ministero dell' Interno (ad esempio: [Senato Italia](https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=I&tpe=A&lev0=0&levsut0=0&es0=S&ms=S)).
 
 I dati di 'redditi_foi_bologna_per_anno.csv' corrispondono ai dati presenti sul sito del Ministero dell'Interno.
 
@@ -714,16 +709,15 @@ La quantità e la varietà di informazioni da visualizzare ha richiesto un'atten
 
 Le cinque fasce demografiche sono state calcolate prendendo come riferimento la zona con meno abitanti (8820) e quella col maggior numero di abitanti (38358). La scala parte da 8000 abitanti per poi giungere a 40000 abitanti con step da 6400 abitanti (come spiegato nell'apposita legenda).
 
-### SEZIONE ZONA SELEZIONATA
+### Zona selezionata
 Alla mappa cittadina è dedicata metà della pagina del nostro sito. Nel momento della selezione di una Zona di Bologna, la seconda metà della pagina viene popolata dalla visualizzazione dei dati riferiti alla zona specifica.
 Per mantenere la visualizzazione pulita, e non disperdere verticalmente le informazioni, si è scelto di inserire i grafici delle singole sezioni (elezioni, reddito, segnalazioni) in appositi accordion (finestre a scomparsa), con la possibilità da parte dell'utente di poter aprire le sezioni desiderate per visualizzare più grafici contemporneamente.
 
 #### Elezioni politiche
-La prima "finestra" è dedicata ai dati delle elezioni politiche del 4 Marzo 2018.
-La visualizzazione dei dati elettorali è distribuita in 2 grafici, realizzati tramite la libreria Chartjs (Javascript), un tool open source per la realizzazione di grafici, strumento molto interessante per il supporto che riceve della comunità di sviluppatori che forniscono tool avanzati per la personalizzazione.
+La prima "finestra" è dedicata ai dati delle elezioni politiche del 4 Marzo 2018. La visualizzazione dei dati elettorali è distribuita in 2 grafici, realizzati tramite la libreria *Chartjs* (Javascript), un tool open source per la realizzazione di grafici, strumento molto interessante per il supporto che riceve della comunità di sviluppatori che forniscono tool avanzati per la personalizzazione.
 
-Nonostante il dataset fornisca dati elettorali di tutti i partiti partecipanti alle elezioni 2018, è stato scelto di ridurre la visualizzazione ai soli partiti che abbiano superato, nel comune di Bologna, la soglia del 3% (soglia di sbarramento nazionale), dunque: Movimento 5 Stelle, Partito Democratico, Lega Nord, Forza Italia, Fratelli D'Italia, Liberi E Uguali, Più Europa.
-Gli altri partiti sono invece raggruppati nella categoria "Altri Partiti".
+Nonostante il dataset fornisca dati elettorali di tutti i partiti partecipanti alle elezioni 2018, è stato scelto di ridurre la visualizzazione ai soli partiti che abbiano superato, nel comune di Bologna, la soglia del 3% (*soglia di sbarramento nazionale*), dunque: Movimento 5 Stelle, Partito Democratico, Lega Nord, Forza Italia, Fratelli D'Italia, Liberi E Uguali, Più Europa.
+Gli altri partiti sono invece raggruppati nella categoria "*Altri Partiti*".
 
 Il primo grafo è un modello Radar che mostra i risultati elettorali specifici della zona tramite un poligono che ha come vertici i singoli partiti.
 
@@ -732,11 +726,11 @@ Nel secondo grafo troviamo una tabella di istogrammi orizzontali multipli, per e
 Il sistema bicamerale italiano comporta elezioni sia per la Camera dei Deputati che per il Senato, dunque la visualizzazione, tramite radio button, permette di cambiare i dati per vedere separatamente entrambe le votazioni (il voto al Senato è consentito ai cittadini italiani che abbiano compiuto i 25 anni d'età).
 
 #### Reddito
-La seconda "finestra" è dedicata alla rappresentazione dei dati di reddito della zona dal 2009 al 2016, mediante un grafo a linee multiple. In primis la scala del grafo è stata standardizzata lungo l'asse Y con una scala a base 10000€ che parte da 18000€ fino a 58000€. Questo procedimento risulta un accorgimento importante per la qualità della visualizzazione dal momento che permette di visualizzare i redditi di tutte le zone sulla stessa scala, a prescindere dall'effettivo reddito medio di una determinata zona. Ovviamente tale accorgimento va a generalizzare la visualizzazione del reddito di una singola area, per questo motivo, tramite radio button, si può passare ad una visualizzazione più dettagliata per accedere, consapevolmente, ad una visualizzazione su scala locale (con i minimi e i massimi dell'asse Y rapportati esclusivamente alla singola Zona).
+La seconda "finestra" è dedicata alla rappresentazione dei dati di reddito della zona dal 2009 al 2016, mediante un grafo a linee multiple. In primis, la scala del grafo è stata standardizzata lungo l'asse Y con una scala a base 10000€ che parte da 18000€ fino a 58000€. Questo procedimento risulta un accorgimento importante per la qualità della visualizzazione dal momento che permette di visualizzare i redditi di tutte le zone sulla stessa scala, a prescindere dall'effettivo reddito medio di una determinata zona. Ovviamente tale accorgimento va a generalizzare la visualizzazione del reddito di una singola area. Per questo motivo, tramite *radio button*, si può passare ad una visualizzazione più dettagliata per accedere, consapevolmente, ad una visualizzazione su scala locale (con i minimi e i massimi dell'asse Y rapportati esclusivamente alla singola Zona).
   
 Inoltre, in entrambe le modalità di visualizzazione, l'andamento del reddito medio della zona è paragonato alla media del reddito dell'intera città (dato calcolato e conservato nel dataset intermedio: "redditi_bologna_per_anno.csv"). Infine, per valorizzare l'andamento del reddito negli anni, e permettere analisi critiche, è stata introdotta una linea che mostra l'andamento del reddito medio della zona nel 2009 negli anni successivi attraverso il coefficente FOI (Indice dei prezzi al consumo per le famiglie di operai e impiegati), dato che permette di valutare l'andamento dell'inflazione, più semplicemente, l'ipotetica crescita del reddito 2009 negli anni successivi per mantenerne invariato il potere di acquisto.
 
 #### Segnalazioni
-Nel realizzare la visualizzazione delle segnalazioni dei cittadini nella zona selezionata è stata tenuta in conto la peculiarità della tipologia di dato. Le segnalazioni per zona sono dati prettamente testuali (stringhe) con dati numerici relativi alla frequenza delle categorie e sottocategorie del dataset. Questo scenario rende effettivamente complessa una visualizzazione grafica tramite grafo, tuttavia si è giunti ad elaborare una rappresentazione mediante un grafico doughnut e 3 grafici pie.
+Nel realizzare la visualizzazione delle segnalazioni dei cittadini nella zona selezionata è stata tenuta in conto la peculiarità della tipologia di dato. Le segnalazioni per zona sono dati prettamente testuali (stringhe) con dati numerici relativi alla frequenza delle categorie e sottocategorie del dataset. Questo scenario rende effettivamente complessa una visualizzazione grafica tramite grafo; tuttavia si è giunti ad elaborare una rappresentazione mediante un grafico *doughnut* e 3 grafici *pie*.
 
-Il grafico *doughnut* rappresenta per ogni zona la distribuzione delle 3 categorie di segnalazioni (Categoria ambientale, sociale e microcriminalità), mostrando il numero delle singole ed evidenziandone in maniera evidente il totale complessivo al centro (in modo da scongiurare eventuali ambiguità, il 50% di 2 segnalazioni è evidentemente diversa dal 50% di 200). In seguito, mediante un radio button è possibile selezionare la visualizzazione delle sottocategorie di una singola categoria tramite 3 grafi *pie* (uno per categoria). Qui, attraverso una gradazione di colore (lo stesso indicante la categoria nel grafo *doughnut*) vengono mostrate tutte le sottocategorie. In questa fase è stata di fondamentale importanza l'utilizzo dell'estensione "*chartjs-plugin-piechart-outlabels*" per poter visualizzare in maniera diretta (senza dover trascinare il mouse sul grafico) le etichette (*labels*) indicanti il nome della sottocategoria e il numero di segnalazioni ad essa correlate.
+Il grafico *doughnut* rappresenta per ogni zona la distribuzione delle 3 categorie di segnalazioni (Categoria ambientale, Categoria sociale e Microcriminalità), mostrando il numero delle singole ed evidenziandone in maniera evidente il totale complessivo al centro (in modo da scongiurare eventuali ambiguità: il 50% di 2 segnalazioni è evidentemente diversa dal 50% di 200). In seguito, mediante un radio button è possibile selezionare la visualizzazione delle sottocategorie di una singola categoria tramite 3 grafi *pie* (uno per categoria). Qui, attraverso una gradazione di colore (lo stesso indicante la categoria nel grafo *doughnut*) vengono mostrate tutte le sottocategorie. In questa fase è stato di fondamentale importanza l'utilizzo dell'estensione "*chartjs-plugin-piechart-outlabels*" per poter visualizzare in maniera diretta (senza dover trascinare il mouse sul grafico) le etichette (*labels*) indicanti il nome della sottocategoria e il numero di segnalazioni ad essa correlate.
