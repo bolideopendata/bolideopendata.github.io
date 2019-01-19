@@ -1,29 +1,90 @@
 <html>
-<head>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-</head>
-<body>
-  <button type="button" id="GetFile">Get File!</button>
-<script>
+    <head>
+	    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 
-$('#GetFile').on('click', function () {
-    $.ajax({
-        url: 'documentazione/documentazione.md',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = 'myfile.md';
-            a.click();
-            window.URL.revokeObjectURL(url);
-        }
-    });
-});
+	    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+            <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+            <style id="jsbin-css">#map { height: 600px; border:solid;} .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+	    .legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
+       	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+	    <script src="js/json/Zone_Bologna.js"></script>
 
-</script>
-</body>
+    </head>
+
+    <body>	
+         
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">BOLIDE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    </div>
+                </div>
+            </nav>
+
+            <br><br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2"> </div>
+                <div class="col-lg-8">  
+                    <h3>Breve introduzione al progetto:</h3>
+                    <p>Il progetto è stato sviluppato nell'ambito dell' esame di Open Access and Digital Ethics del corso di laurea magistrale Digital Humanities and Digital Knowledge dell' Università di Bologna, da:</p>
+                    
+                    <ul>
+                    <li>Sebastian Barzaghi</li>
+                    <li>Alessandra Foschi</li>
+                    <li>Fabio Mariani</li>
+                    <li>Valentina Pasqual</li>
+                    </ul>
+                    <p>Si inserisce in questo contesto BOLIDE (BOLigna In Dati Elettorali), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le Best Practices della classificazione "5 Stelle Open Data". Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di Semantic Web, e prevede: 1) dati disponibili sul web con una licenza aperta; 2) dati in formato strutturato per la facile interpretazione da parte di un sofware 3) dati in un formato non proprietario 4) uso di standard aperti definiti dalla W3C, come RDF, per l'identificazione di oggetti 5) presenza di collegamenti ad altri dati (Linked Open Data).</p>
+                    
+                    <p>L'Output del lavoro è presentato sottoforma di un Sito Web con (relativa documentazion) che possa permettere, a diverse tipologie di utenti, il riuso delle risorse informative ai fini di studio e ricerca. Tale risorsa contiene:</p>
+                    
+                    <ul>
+                    <li><a href="https://github.com/bolideopendata/bolideopendata/blob/master/documentazione/documentazione.md">La documentazione del progetto</a></li>
+                    <li>l'analisi etico-giuridica e tecnica dei dataset utilizzati come fonte</li>
+                    <li>nuovi dataset puliti, de-anonimizzati e mashati</li>
+                    <li>il modello RDF, in accordo con ontologie condivise dalla comunità di riferimento</li>
+                    <li>una data visualization fruibile anche dagli utenti meno esperti</li>
+                    </ul>
+
+                    <h3>Scenario applicativo</h3>
+                    <p>Dalle elezioni del 1948, prime elezioni della storia italiana dopo il periodo di dittatura fascista in cui si potè votare per Camera e Senato, l’Emilia-Romagna ha sempre votato in maggioranza le forze di (centro)sinistra; le ultime Politiche del 4 marzo 2018 ci hanno invece restituito una differente cartina regionale. Partendo da questa considerazione abbiamo deciso di analizzare la situazione politico-economica-sociale Bolognese degli ultimi anni, per introdurre l'utente alla questione, lasciandolo però libero di analizzare ed interpretare tali dati a suo piacimento.</p>
+            </div>
+        <div class="col-lg-2"> </div>
+        </div>
+        </div>
+        <br>
+
+        <footer class="footer bg-dark text-white">
+
+            <div class="container-fluid text-center py-2" style="font-size: 80%" >
+                <b>Prowered by:</b>
+                <a href="https://jquery.com/" class="text-light bg-dark">Jquery</a>, 
+                <a href="https://getbootstrap.com/" class="text-light bg-dark">Bootstrap</a>, 
+                <a href="https://leafletjs.com/" class="text-light bg-dark">Leaflet</a>, 
+                <a href="https://www.chartjs.org/" class="text-light bg-dark">Chartjs</a>, 
+                <a href="https://github.com/emn178/chartjs-plugin-labels" class="text-light bg-dark">chartjs-plugin-labels</a>,
+                <a href="https://neckster.github.io/chartjs-plugin-piechart-outlabels/" class="text-light bg-dark">chartjs-plugins-piechart-outlabels</a>.
+            </div>
+
+            <div class="text-center py-2" style="font-size: 90%; padding:0">In ogni caso, i dati non possono essere utilizzati al fine di identificare nuovamente gli interessati.
+            <br>This website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light bg-dark"></a><b>CC BY-SA 4.0.</b></a>
+            </div>
+
+        </footer>
+        
+    </body>
+
 </html>
+
