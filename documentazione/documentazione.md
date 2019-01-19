@@ -305,7 +305,6 @@ In fase di **_merging_** abbiamo usato l'algoritmo **process_data(data)** per cr
 Il dataset è stato stampato in formato .csv tramite la libreria *pandas*. Infine abbiamo fatto un controllo manuale del dataset per verificarne la correttezza.
 
 #### DATASET SEGNALAZIONI : 
-
 ##### Revisione preliminare: criticità
 Il dataset presenta criticità nei dati relativi a *Category*: in questa colonna sembra che a volte sia stata copiata la segnalazione fatta dal cittadino, parola per parola, senza che sia stato fatto un lavoro di controllo e anonimizzazione sulle informazioni (potenzialmente o palesemente sensibili) ivi contenute. 
 
@@ -342,13 +341,7 @@ In fase di revisione finale abbiamo rilevato criticità  di carattere etico rigu
 #### DATASET AREE STATISTICHE 4.1
 ##### Revisione preliminare: criticità
 
-Il dataset contiene informazioni di natura geospaziale. In particolare:
-* *COD_AREAST* (Codice area statistica);
-* *NOMEAREAST* (Nome area statistica);
-* *COD_Q* (Codice quartiere);
-* *NOME_QUARTIERE* (Nome quartiere).
-
-I dati al suo interno non rientrano nella categoria di *personal data*, in quanto non rappresentano un rischio di de-anonimizzazione di per sé, ma potrebbero farlo se incrociati con altri dati, specialmente se i valori in *COD_AREAST*, mappati ai relativi valori presenti in *NOMEAREAST*, venissero incrociati con eventuali informazioni sensibili, contenute in altri dataset e riferibili a persone singole (i.e. reddito, vie, ecc...).
+Il dataset contiene informazioni di natura geospaziale. In particolare, i dati al suo interno non rientrano nella categoria di *personal data*, in quanto non rappresentano un rischio di de-anonimizzazione di per sé, ma potrebbero farlo se incrociati con altri dati, specialmente se i valori in *COD_AREAST*, mappati ai relativi valori presenti in *AREASTAT*, venissero incrociati con eventuali informazioni sensibili, contenute in altri dataset e riferibili a persone singole (i.e. reddito, vie, ecc...).
 
 Prestandosi bene come dataset di confronto, crediamo che il lavoro di de-anonimizzazione andrebbe fatto sugli eventuali altri dataset che potrebbero essere incrociati con questo. 
 
