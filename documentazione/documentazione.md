@@ -5,14 +5,19 @@ Il progetto è stato sviluppato nell'ambito dell' esame di *Open Access and Digi
 - Fabio Mariani
 - Valentina Pasqual
 
-Si inserisce in questo contesto **BOLIDE** (Bologna BLABLA), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le *Best Practices* della classificazione "**5 Stelle Open Data**".  Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di Semantic Web, e prevede: 1) dati disponibili sul web con una licenza aperta; 2) dati in formato strutturato per la facile interpretazione da parte di un sofware 3) dati in un formato non proprietario 4) uso di standard aperti definiti dalla W3C, come RDF, per l'identificazione di oggetti 5) presenza di collegamenti ad altri dati (Linked Open Data).
+Si inserisce in questo contesto **BOLIDE** (Bologna In dati elettroi, il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le *Best Practices* della classificazione "[** 5 Stelle Open Data**"].  Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di *Semantic Web*, e prevede: 
+1) dati disponibili sul web con una licenza aperta; 
+2) dati in formato strutturato per la facile interpretazione da parte di un software;
+3) dati in un formato non proprietario;
+4) uso di standard aperti definiti dalla W3C, come RDF, per l'identificazione di oggetti;
+5) presenza di collegamenti ad altri dati (Linked Open Data).
 
 L'output del lavoro è presentato sottoforma di un Sito Web che possa permettere, a diverse tipologie di utenti, il riuso delle risorse informative ai fini di studio e ricerca. Tale risorsa contiene:
-- la documentazione del progetto
-- l'analisi etico-giuridica e tecnica dei dataset utilizzati come fonte
-- nuovi dataset puliti, de-anonimizzati e mashati
-- il modello RDF, in accordo con ontologie condivise dalla comunità di riferimento
-- una data visualization fruibile anche dagli utenti meno esperti
+- la documentazione del progetto;
+- l'analisi etico-giuridica e tecnica dei dataset utilizzati come fonte;
+- nuovi dataset puliti, de-anonimizzati e mashati;
+- il modello RDF, in accordo con ontologie condivise dalla comunità di riferimento;
+- una data visualization fruibile anche dagli utenti meno esperti.
 
 ## Tabella dei contenuti
 Il piano di lavoro è stato suddiviso nelle seguenti sezioni:
@@ -87,7 +92,7 @@ Nella documentazione i dataset pubblicati nella tabella precedente vengono racco
 | D. REDDITI    | 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7 |
 | D. AREE STATISTICHE | 4.0, 4.1 |
 | D. SEGNALAZIONI | 5.0, 5.1 |
-| **_D. CENSIMENTO_** | 6.0 |
+| D. CENSIMENTO | 6.0 |
 | D. ZONE | 7.0 |
 
 ## Dataset intermedi
@@ -141,8 +146,6 @@ I requisiti necessari, stabiliti dalle **Linee guida nazionali per la valorizzaz
 | 7.0 | *offset* delle coordinate: in media {0.00005 N, 0.00106 E} | 100% | True | ["Scadenza regolare"](http://dati.comune.bologna.it/progetto) |
 
 I requisiti aggiuntivi che abbiamo stabilito per controllare il livello di qualità informativa sono:
-
-|  |  |  |
 | -------| ----------- | --------- |
 | **Completezza**<br>(del **dataset**) | Percentuale di valori non-nulli nel dataset | [Script](https://bolideopendata.github.io/bolideopendata/tool/funzioni/completezza.py) |
 | **Disponibilità** | Analisi dell'URI | [URI dei dataset](#uri-dei-dataset) |
@@ -227,7 +230,6 @@ di domande, per ciascun aspetto, a cui rispondere con Sì, No o Non Verificabile
 | | in che forma si possono creare sinergie tra il portale “Amministrazione trasparente” e il portal open data per minimizzare le inconsistenze e favorire la trasparenza del dato aperto? |/ |/|/|/| 
 
 ## Misure di de-identificazione e pulitura
-
 ### Misure di de-identificazione
 Nell'elaborazione della check-list abbiamo preso coscienza di criticità all'interno di alcuni dataset riguardanti la presenza di possibili personal data. I dati che si confermano essere *non-personal data* possono essere infatti usati liberamente, cioè senza restrizioni legali, ma qualora dati specifici possano rientrare nella categoria di *personal data*, o se incrociati con altri dati reperibili sul web possano portare all'identificazione dell'individuo e/o dei suoi personal data, si incorrerebbe in grosse problematiche legali.
 
@@ -250,11 +252,11 @@ La pulitura è stata effettuata con:
 
 Oltre alla problematica riguardante i dati personali, abbiamo riscontrato altre criticità riguardanti la pulizia del dataset:
 
-- Non esistono linee guida interne per la compilazione dei dataset in una maniera univoca: alcuni CSV utilizzano come separatore la virgola, altri il punto e virgola e altri ancora la tabulazione.
+- Non esistono linee guida interne per la compilazione dei dataset in una maniera univoca: alcuni CSV utilizzano come separatore la virgola, altri il punto e virgola e altri ancora la tabulazione;
 
-- Non esistono vocabolari interni di nomi. Un altro problema è stato quello riguardante la nomenclatura delle intestazioni, che risulta sempre diversa anche all'interno della stessa serie di dataset (ad esempio: *N_contribuenti* ; *N. Contribuenti* ; ...) e dei nomi quali nomi di vie/zone/quartieri, che non hanno una forma codificata, e vengono chiamati sempre in modo differente (ad esempio: *Sant'Orsola* ; *S.Orsola*; *Sant Orsola* ; ...)
+- non esistono vocabolari interni di nomi. Un altro problema è stato quello riguardante la nomenclatura delle intestazioni, che risulta sempre diversa anche all'interno della stessa serie di dataset (ad esempio: *N_contribuenti* ; *N. Contribuenti* ; ...) e dei nomi quali nomi di vie/zone/quartieri, che non hanno una forma codificata, e vengono chiamati sempre in modo differente (ad esempio: *Sant'Orsola* ; *S.Orsola*; *Sant Orsola* ; ...);
 
-- Problema con le parole accentate: all'interno del testo, le parole accentate sono codificate secondo modalità differenti. A volte viene utilizzata la lettera accentata, facendo emergere però problematiche di codifica, altre volte invece viene impropriamente utilizzato l'apostrofo.
+- vi è un problema roblema con le parole accentate: all'interno del testo, le parole accentate sono codificate secondo modalità differenti. A volte viene utilizzata la lettera accentata, facendo emergere però problematiche di codifica; altre volte invece viene impropriamente utilizzato l'apostrofo.
 
 - Nel sito non è presente una descrizione dettagliata del dataset di cui è disponibile il download
 
@@ -267,7 +269,7 @@ In generale, nel corso della pulizia dei vari dataset, abbiamo:
 
 #### DATASET REDDITI
 ##### Revisione preliminare: criticità
-I dati contenuti in essi potrebbero rientrare nella categoria di *personal data* se incrociati con altri dati. In particolare:
+I dati contenuti potrebbero rientrare nella categoria di *personal data* se incrociati con altri dati. In particolare:
 * se l'*Area statistica* include un territorio particolarmente limitato, e
 * se il *Numero contribuenti* è particolarmente ridotto,
 vi è il rischio che, facendo la media statistica del reddito per contribuente in quella determinata area, sia semplice identificare quei contribuenti, abitanti in quella determinata zona e con quel determinato reddito. 
@@ -340,7 +342,6 @@ In fase di revisione finale abbiamo rilevato criticità  di carattere etico rigu
 
 #### DATASET AREE STATISTICHE 4.1
 ##### Revisione preliminare: criticità
-
 Il dataset contiene informazioni di natura geospaziale. In particolare, i dati al suo interno non rientrano nella categoria di *personal data*, in quanto non rappresentano un rischio di de-anonimizzazione di per sé, ma potrebbero farlo se incrociati con altri dati, specialmente se i valori in *COD_AREAST*, mappati ai relativi valori presenti in *AREASTAT*, venissero incrociati con eventuali informazioni sensibili, contenute in altri dataset e riferibili a persone singole (i.e. reddito, vie, ecc...).
 
 Prestandosi bene come dataset di confronto, crediamo che il lavoro di de-anonimizzazione andrebbe fatto sugli eventuali altri dataset che potrebbero essere incrociati con questo. 
