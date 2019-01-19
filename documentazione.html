@@ -3,26 +3,26 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
+  <button type="button" id="GetFile">Get File!</button>
 <script>
-var body_location = 'documentazione/documentazione.md';
-                
-        function getText(myUrl){
-            var result = null;
-            $.ajax( { url: myUrl, 
-                      type: 'get', 
-                      dataType: 'html',
-                      async: false,
-                      success: function(data) { result = data; } 
-                    }
-            );
-            FileReady = true;
-            return result;
+
+$('#GetFile').on('click', function () {
+    $.ajax({
+        url: 'documentazione/documentazione.md',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'myfile.pdf';
+            a.click();
+            window.URL.revokeObjectURL(url);
         }
-        result.appendTo(document.body);
-        //var markdown_source = getText(body_location);
-        // convert markdown to html
-        //var output = markdown.toHTML( markdown_source );
-        //document.write(output);
+    });
+});
 
 </script>
 </body>
