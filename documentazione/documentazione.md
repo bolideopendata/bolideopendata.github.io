@@ -7,7 +7,7 @@ Il progetto è stato sviluppato nell'ambito dell' esame di *Open Access and Digi
 
 Si inserisce in questo contesto **BOLIDE** (Bologna BLABLA), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le *Best Practices* della classificazione "**5 Stelle Open Data**".  Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di Semantic Web, e prevede: 1) dati disponibili sul web con una licenza aperta; 2) dati in formato strutturato per la facile interpretazione da parte di un sofware 3) dati in un formato non proprietario 4) uso di standard aperti definiti dalla W3C, come RDF, per l'identificazione di oggetti 5) presenza di collegamenti ad altri dati (Linked Open Data).
 
-L'Output del lavoro è presentato sottoforma di un Sito Web che possa permettere, a diverse tipologie di utenti, il riuso delle risorse informative ai fini di studio e ricerca. Tale risorsa contiene:
+L'output del lavoro è presentato sottoforma di un Sito Web che possa permettere, a diverse tipologie di utenti, il riuso delle risorse informative ai fini di studio e ricerca. Tale risorsa contiene:
 - la documentazione del progetto
 - l'analisi etico-giuridica e tecnica dei dataset utilizzati come fonte
 - nuovi dataset puliti, de-anonimizzati e mashati
@@ -516,6 +516,8 @@ La licenza della documentazione di Bootstrap è [CC-BY 3.0 Unported](https://cre
 La licenza di questa documentazione è [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ### Altre licenze
+La licenza del sito su cui abbiamo pubblicato la visualizzazione, i dataset e i relativi metadati è [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
 La licenza dei dati distribuiti da OpenStreetMaps è [ODbL](https://opendatacommons.org/licenses/odbl/).
 
 La licenza della cartografia contenuta nelle tavole di OpenStreetMaps è [CC-BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
@@ -588,7 +590,7 @@ Abbiamo deciso di pubblicare i dataset finali in 3 distribuzioni:
 * **JSON**;
 * **CSV**.
 
-Si veda la pagina di pubblicazione del dataset, sotto la voce [Distribuzioni].
+Si veda la [pagina di pubblicazione del dataset](https://bolideopendata.github.io/bolideopendata/).
 
 ## Metadati
 La metadatazione ricopre un ruolo essenziale laddove i dati sono esposti a utenti terzi e a software. I metadati, infatti, consentono una maggiore comprensione e rappresentano la chiave attraverso cui abilitare più agevolmente la ricerca, la scoperta, l’accesso e quindi il riuso dei dati stessi. La classificazione qualitativa dei metadati si fonda su due fattori principali: legame tra dato-metadati e livello di dettaglio.
@@ -700,7 +702,7 @@ Dal momento che il formato .json è open e nativamente supportato da Javascript,
 
 Al fine di rendere la visualizzazione più completa abbiamo creato due dataset intermedi supplementari: 'politiche_bologna_nazionali.csv' e 'redditi_foi_bologna_per_anno.csv'. 
 
-I dati in 'politiche_bologna_nazionali.csv' sono stati calcolati con la seguente formula: partito1_zona_1 + ... parito1_zona_n / voti_tot_zona_1 + ... + voti_tot_zona_n. In seguito i risultati sono stati raffrontati con i dati presenti sul sito del Ministero dell' Interno (es: [Senato Italia](https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=I&tpe=A&lev0=0&levsut0=0&es0=S&ms=S))
+I dati in 'politiche_bologna_nazionali.csv' sono stati calcolati con la seguente formula: partito1_zona_1 + ... parito1_zona_n / voti_tot_zona_1 + ... + voti_tot_zona_n. In seguito i risultati sono stati raffrontati con i dati presenti sul sito del Ministero dell' Interno (es: [Senato Italia](https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=I&tpe=A&lev0=0&levsut0=0&es0=S&ms=S)).
 
 I dati di 'redditi_foi_bologna_per_anno.csv' corrispondono ai dati presenti sul sito del Ministero dell'Interno.
 
