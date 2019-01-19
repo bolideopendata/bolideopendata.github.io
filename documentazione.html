@@ -17,7 +17,7 @@ $('#GetFile').on('click', function () {
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'myfile.pdf';
+            a.download = 'myfile.md';
             a.click();
             window.URL.revokeObjectURL(url);
         }
