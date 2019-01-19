@@ -702,7 +702,6 @@ $(document).ready(function() {
                                                         }
                                                     },
                                                     legend: {
-                                                        fontColor: "black",
                                                         display: true
                                                     },
                                                 };
