@@ -18,10 +18,11 @@ var body_location = 'documentazione/documentazione.md';
             FileReady = true;
             return result;
         }
-        var markdown_source = getText(body_location);
+        result.appendTo(document.body);
+        //var markdown_source = getText(body_location);
         // convert markdown to html
-        var output = markdown.toHTML( markdown_source );
-        document.write(output);
+        //var output = markdown.toHTML( markdown_source );
+        //document.write(output);
 
 </script>
 </body>
