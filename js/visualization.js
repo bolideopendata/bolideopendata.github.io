@@ -62,6 +62,8 @@ $(document).ready(function() {
             }).addTo(map);
 
             //var firsttime = true;
+            var limiti = geojson.getBounds();
+            map.setMaxBounds(limiti);
 
             function highlight(layer) {
                 layer.setStyle({
@@ -130,7 +132,7 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('.information').html('');
-                                                    $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona '+ arrayItem["Zona"] +'</h3> <div class="card-body text-right"> <ul style="list-style-type:none"> <li> Quartiere: '+ feature.properties.Nome_quartiere +'</li> <li> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</li> </ul> </div> </div>');
+                                                    $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona '+ arrayItem["Zona"] +'</h3> <div class="card-body text-right pb-0"> <ul style="list-style-type:none"> <li><h6> Quartiere: '+ feature.properties.Nome_quartiere +'</h6></li> <li><h6> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h6></li> </ul> </div> </div>');
                                                     //$('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
 
                                                     //if (firsttime == true) {
