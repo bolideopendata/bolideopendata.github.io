@@ -51,9 +51,8 @@
       </rdf:Description>
     </dcat:contactPoint>
 
-    <dc:rightsHolder rdf:resource="http://bolideopendata.github.io/team/bolideopendatateam"/>
+    <dc:rightsHolder rdf:resource="Comune di Bologna"/>
     <dc:publisher rdf:resource="http://bolideopendata.github.io/team/bolideopendatateam"/>
-    <dc:creator rdf:resource="http://bolideopendata.github.io/team/bolideopendatateam"/>
     <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
     <prov:wasDerivedFrom rdf:resource="http://dati.comune.bologna.it/node/1184"/>
   </rdf:Description>
