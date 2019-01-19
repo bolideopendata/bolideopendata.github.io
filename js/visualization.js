@@ -1,4 +1,5 @@
 $(document).ready(function() {
+            $("elezioniPUL").hide();
             var map = L.map('map', {
                 maxZoom: 18,
                 minZoom: 12,
@@ -132,9 +133,10 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('#welcome').remove();
-                                                    $('#elezioniPUL').text('ELEZIONI POLITICHE 4 MARZO 2018');
-                                                    $('#redditiPUL').text('REDDITO PRO-CAPITE 2009-2016');
-                                                    $('#segnalazioniPUL').text('SEGNALAZIONI CZRM 2017');
+                                                    $("elezioniPUL").show();
+                                                    //$('#elezioniPUL').text('ELEZIONI POLITICHE 4 MARZO 2018');
+                                                   // $('#redditiPUL').text('REDDITO PRO-CAPITE 2009-2016');
+                                                    //$('#segnalazioniPUL').text('SEGNALAZIONI CZRM 2017');
                                                     $('.information').html('');
                                                     $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona '+ arrayItem["Zona"] +'</h3> <div class="card-body text-right pb-0"> <ul style="list-style-type:none"> <li><h6> Quartiere: '+ feature.properties.Nome_quartiere +'</h6></li> <li><h6> Abitanti (2017): '+ feature.properties.Censimento2017_zona +'</h6></li> </ul> </div> </div>');
                                                     //$('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
