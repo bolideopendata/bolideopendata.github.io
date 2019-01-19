@@ -446,12 +446,12 @@ $(document).ready(function() {
                                                     plugins: {
                                                         outlabels: {
                                                             text: '%l %v',
-                                                            color: 'black',
+                                                            //color: 'black',
                                                             stretch: 45,
                                                             font: {
                                                                 //resizable: true,
-                                                                minSize: 13,
-                                                                maxSize: 13
+                                                                minSize: 12,
+                                                                maxSize: 12
                                                             }
                                                         },
                                                     },
