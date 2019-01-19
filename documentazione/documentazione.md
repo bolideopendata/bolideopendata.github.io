@@ -86,7 +86,7 @@ Nella documentazione i dataset pubblicati nella tabella precedente vengono racco
 | D. POLITICHE  | 1.0, 1.1, 2.0 |
 | D. REDDITI    | 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7 |
 | D. AREE STATISTICHE | 4.0, 4.1 |
-| D. CITIZEN MANAGEMENT | 5.0, 5.1 |
+| D. SEGNALAZIONI | 5.0, 5.1 |
 | **_D. CENSIMENTO_** | 6.0 |
 | D. ZONE | 7.0 |
 
@@ -95,16 +95,16 @@ I dataset che abbiamo generato nel corso del progetto integrando i dati selezion
 
 | Dataset Intermedio | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 |
 | ---------- | --------- | --------- | ---------- | --- | --- | --- | --- | --- | --- |
-| POLITICHE SENATO | 26.01.04_risultati_politiche_2018_bologna_liste_senato.csv | aree_statistiche.csv | | | | | | | |
+| POLITICHE SENATO | 26.01.04_risultati_politiche_2018_bologna_liste_senato.csv | aree_statistiche.csv | - | - | - | | | | |
 | POLITICHE CAMERA | 26.01.06_risultati_politiche_2018_bologna_liste_camera_collegio6 | 26.01.08_risultati_politiche_2018_bologna_liste_camera_collegio7.csv | aree_statistiche.csv | | | | | | |
-| POLITICHE MINISTERO INTERNI |  |  |  |  |  |  |  |  |  |
+| POLITICHE MINISTERO INTERNI | [dati Ministero](https://elezionistorico.interno.gov.it/index.php) | POLITICHE SENATO | POLITICHE CAMERA |  |  |  |  |  |  |
 | REDDITI | redditi_2009_per_area_statistica.csv | redditi_2010_per_area_statistica.csv | redditi_2011_per_area_statistica.csv | redditi2012_areastat.csv | redditi2013_areastat.csv | redditi2014_areastat.csv | redditi2015_areastat.csv | redditi2016_areastat.csv | aree_statistiche.csv |
-| FOI BOLOGNA PER ANNO | | | | | | | | | |
+| FOI BOLOGNA PER ANNO | [dati ISTAT](https://rivaluta.istat.it/) | REDDITI | | | | | | | |
 | SEGNALAZIONI | 38.00.03_segnalazioni_czrm2017_area_statistica.zip | 38.00.05_segnalazioni_czrm2017_tot_tipologia.csv |  aree_statistiche.csv | | | | | | |
-| CENSIMENTO |  |  |  |  |  |  |  |  |  |
-| SEGGI ELETTORALI | | | | | | | | | |
-| AREASTAT.JSON | | | | | | | | | |
-| ZONE CODICEZONA QUARTIERE | | | | | | | | | |
+| CENSIMENTO | annuale_popolazione_residente_sezioni_aree_qze_sesso (*pulito*) |  |  |  |  |  |  |  |  |
+| SEGGI ELETTORALI | conversione da *.shp* a *.csv* | | | | | | | | |
+| AREASTAT.JSON | conversione da *.shp* a *.geojson* | | | | | | | | |
+| ZONE CODICEZONA QUARTIERE | aree_statistiche.csv | 26.01.06_risultati_politiche_2018_bologna_liste_camera_collegio6 | 26.01.08_risultati_politiche_2018_bologna_liste_camera_collegio7.csv | 26.01.04_risultati_politiche_2018_bologna_liste_senato.csv | | | | | |
 
 ## Dataset finali
 I nostri dataset finali, risultanti dall'integrazione dei dati contenuti all'interno dei dataset intermedi:
@@ -412,6 +412,11 @@ Abbiamo poi lavorato sullo *shapefile* delle Aree Statistiche (4.0): il sistema 
 ***
 
 #### DATASET FINALI
+##### Merging
+
+
+
+
 | **Privacy** | Domande | ANALISI POLITICHE |  SEGNALAZIONI | ZONE | 
 | ----------- | --------| ------|--------|-------|
 | | sono i dati liberi da ogni informazione                    personale che possa identificare in modo                       diretto l’individuo?|sì |sì| sì |
