@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html prefix="dcat: http://www.w3.org/ns/dcat#
+dqv: http://www.w3.org/ns/dqv#
+dct: http://purl.org/dc/terms/" lang="en" >
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <title>Redditi Elezioni Residenti</title>
+  <!-- <meta content="width=device-width,initial-scale=1" name="viewport"/> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <style type="text/css">
+   .container {
+    font-family: sans-serif;
+    max-width: 968px;
+    margin: 0 auto;
+  }
+  .human-readable-example {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    color: #333;
+    width: 100%;
+  }
+  .human-readable-example td {
+    padding: 6px 3px 6px 3px;
+  }
+  .human-readable-example tr:first-child td:first-child {
+    width: 25%;
+  }
+  .human-readable-example tr:nth-child(even) {
+    background-color: #F7F7F7;
+  }
+  .human-readable-example tr:nth-child(odd) {
+    background-color: #FFFFFF;
+  }
+  div.example {
+    padding: 0.5em;
+    border-left: 0.5em solid #E0CB52;
+    border-color: #E0CB52;
+    background: none repeat scroll 0% 0% #FCFAEE;
+  }
+  a {
+    color: #00C;
+    text-decoration: none;
+  }
+  a[href]:hover {
+    background: none repeat scroll 0% 0% #FFA;
+  }
+  form#duv-feedback {
+    width: 48%;
+    display: block;
+  }
+  form#duv-feedback fieldset label {
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+  }
+  form#duv-feedback fieldset label.radio-motivation {
+    display: inline;
+    margin-right: 10px;
+  }
+  form#duv-feedback fieldset textarea {
+    width: 100%;
+  }
+  pre#rdf-duv-feedback-turtle {
+    white-space: pre-wrap;
+  }
+  section:target, div:target, tbody:target, tr:target {
+    background: #F7F1D0;
+    border: 1px dashed red;
+    padding: 10px;
+    border-top-right-radius: 15px;
+  }
+  #td-version {
+    width: 16px;
+  }
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Navbar</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link" href="#">Features</a>
+	      <a class="nav-item nav-link" href="#">Pricing</a>
+	    </div>
+	  </div>
+	</nav>
+  <div class="container">
+    
+    <!--<h1>Bus stops of MyCity</h1>
+    <div id="abstract">
+      <p>This is the human-readable version of <a href="http://w3.org/TR/dwbp/#basicExample">examples</a> used in the <a href="http://w3.org/TR/dwbp/"><abbr title="Data on the Web Best Practices">DWBP</abbr> document</a>. Please note that, as this is a fictional example, hyperlinks to the data.mycity.example.com domain simply link to example.com which defreferences to an explanation that the domain is designed for use in examples and serves no other function. </p>
+    </div>-->
+
+    <section resource="#timetable-001" typeof="dcat:Dataset" id="dataset-section">
+      <div id="dataset-description">
+        <h2>Dataset 1 </h2>
+        <table class="human-readable-example" summary="This table has the dataset description. The first column has the keywords and the seconde has the values.">
+          <tbody>
+              <tr>
+                  <td>Identificativo</td>
+                  <td property="dct:identifier">bolideopendata:D.1</td>
+                </tr>
+            <tr>
+              <td>Titolo</td>
+              <td property="dct:title">Redditi Elezioni Residenti</td>
+            </tr>
+              <tr>
+                  <td>URI</td>
+                  <td>https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti</td>
+              </tr>
+              <tr id="locale-parameters">
+                  <td>Lingua</td>
+                  <td>Italiano</td>
+                </tr>
+              <tr>
+            <tr>
+              <td>Descrizione</td>
+              <td property="dct:description">Il dataset contiene i dati divisi per zona di Bologna di: redditi medi pro-capite dei contribuenti bolognesi dal 2009 al 2016, i risutati degli scrutini alle elezioni politiche per l'elezione al Senato della Repubblica e alla Camera dei Deputati del 4.3.2018, e il numero di residenti</td>
+            </tr>
+            <tr>
+                <td>Versione</td>
+                <td><span property="owl:versionInfo" > 0.1.0</span></td>
+              </tr>
+            <tr id="locale-parameters">
+              <td>Provenance</td>
+              <td><a property="prov:wasDerivedFrom" href="http://dati.comune.bologna.it/"> Progetto Open Data - Comune di Bologna</a></td>
+              </tr>
+              <td>Copertura temporale</td>
+              <td><a property="dct:temporal" >2009 - 2018</a></td>
+              </tr>
+              <tr >
+                  <td>Copertura geografica</td>
+                  <td><a property="dct:spatial" href="https://www.geonames.org/3181928/"> Bologna, Italia</a></td>
+                  </tr>
+              <tr>
+                <td>Temi</td>
+                <td><span property="dcat:theme">economia e finanze</span>, <span property="dcat:keyword">popolazione e società</span>, <span property="dcat:keyword">governo e settore pubblico </span></td>
+              </tr>
+              <tr>
+                <td>Sottotemi</td>
+                <td><span property="dcat:subject">elezioni nazionali</span>, <span property="dcat:keyword">distribuzione del reddito</span>, <span property="dcat:keyword">residenza</span></td>
+              </tr>
+            <tr>
+              <td>Keywords</td>
+              <td><span property="dcat:keyword">elezioni</span>, <span property="dcat:keyword">Bologna</span>, <span property="dcat:keyword">redditi</span></td>
+            </tr>
+          </tbody>
+          <tbody id="provenance-info">
+                <tr>
+                    <td id="rightsHolder">Titolare</td>
+                    <td property="dct:rightsHolder" typeof="foaf:Organization prov:Agent"><span property="foaf:name">Bolide Open Data Team</span></td>
+                  </tr>
+                  <tr>
+                      <td id="publisher">Editore</td>
+                      <td property="dct:publisher" typeof="foaf:Organization prov:Agent"><span property="foaf:name">Bolide Open Data Team</span></td>
+                    </tr>
+                    <tr>
+                        <td id="creator">Autore</td>
+                        <td property="dct:creator" typeof="foaf:Organization prov:Agent"><span property="foaf:name">Bolide Open Data Team</span></td>
+                      </tr>
+                      <tr>
+                          <td>Punto di contatto</td>
+                          <td><a property="dcat:contactPoint" href="mailto:bolideopendata@gmail.com"> bolideopendata@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Frequenza di aggiornamento</td>
+                            <td><a property="dct:accrualPeriodicity" > Quinquennale</a></td>
+                          </tr>
+                      <td>Data ultima modifica</td>
+                      <td><span property="dct:modified" content="2015-05-05" datatype="xsd:date">2019-01-19</span></td>
+                    </tr>
+                    <tr>
+                      <td>Data di rilascio</td>
+                      <td><span property="dct:issued" content="2015-05-05" datatype="xsd:date">2019-01-19</span></td>
+                    </tr>
+                    <tr>
+                        <td>Formato della data</td>
+                        <td>ISO 8601</td>
+                      </tr>
+
+              </tbody>
+            </table>
+          </div>
+        
+          <div class="container">
+          
+
+          <div id="dataset-distributions">
+            <h2></h2>
+
+            <h3 property="dcat:distribution" resource="#timetable-001-RDF">Distribuzione RDF-XML</h3>
+            <table resource="#timetable-001-RDF" typeof="dcat:Distribution" class="human-readable-example"  summary="This table describes the RDF distribution of the dataset. The first column has the keywords and the seconde has the values." >
+              <tbody>
+                <tr>
+                  <td>Titolo</td>
+                  <td property="dct:title">Distribuzione RDF-XML redditi_elezioni_residenti</td>
+                </tr>
+                <tr>
+                  <td>Descrizione</td>
+                  <td property="dct:description">Distribuzione RDF-XML del dataset redditi_elezioni_residenti</td>
+                </tr>
+                <tr>
+                  <td>Formato</td>
+                  <td property="dcat:format">RDF-XML</td>
+                </tr>
+                <tr>
+                  <td>Licenza</td>
+                  <td> <a href="https://www.dati.gov.it/content/italian-open-data-license-v20"> Italian Open Data License </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>URL di accesso</td>
+                  <td><a property="dcat:accessURL" href="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.xml">https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.xml</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 id="timetable-001-CSV" property="dcat:distribution" resource="#timetable-001-CSV"> Distribuzione CSV</h3>
+            <table about="#timetable-001-CSV" typeof="dcat:Distribution" class="human-readable-example"  summary="This table describes the CSV distribution of the dataset. The first column has the keywords and the seconde has the values.">
+                <tbody>
+                    <tr>
+                      <td>Titolo</td>
+                      <td property="dct:title">Distribuzione CSV redditi_elezioni_residenti</td>
+                    </tr>
+                    <tr>
+                      <td>Descrizione</td>
+                      <td property="dct:description">Distribuzione CSV del dataset redditi_elezioni_residenti</td>
+                    </tr>
+                    <tr>
+                      <td>Formato</td>
+                      <td property="dcat:format">CSV</td>
+                    </tr>
+                    <tr>
+                      <td>Licenza</td>
+                      <td> <a href="https://www.dati.gov.it/content/italian-open-data-license-v20"> Italian Open Data License </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>URL di accesso</td>
+                      <td><a property="dcat:accessURL" href="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv">https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3 property="dcat:distribution" resource="#timetable-001-RDF">Distribuzione JSON</h3>
+                <table resource="#timetable-001-RDF" typeof="dcat:Distribution" class="human-readable-example"  summary="This table describes the RDF distribution of the dataset. The first column has the keywords and the seconde has the values." >
+                    <tbody>
+                        <tr>
+                          <td>Titolo</td>
+                          <td property="dct:title">Distribuzione JSON redditi_elezioni_residenti</td>
+                        </tr>
+                        <tr>
+                          <td>Descrizione</td>
+                          <td property="dct:description">Distribuzione JSON del dataset redditi_elezioni_residenti</td>
+                        </tr>
+                        <tr>
+                          <td>Formato</td>
+                          <td property="dcat:format">JSON</td>
+                        </tr>
+                        <tr>
+                          <td>Licenza</td>
+                          <td> <a href="https://www.dati.gov.it/content/italian-open-data-license-v20"> Italian Open Data License </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>URL di accesso</td>
+                          <td><a property="dcat:accessURL" href="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.json">https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.json</a>
+                          </td>
+                        </tr>
+
+                          <tr>
+                      </tbody>
+                    </table>
+
+</html>
