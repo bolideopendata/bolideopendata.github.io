@@ -181,7 +181,7 @@ dct: http://purl.org/dc/terms/" lang="en" >
                       </tr>
 	  		<tr>
                           <td>URL di download</td>
-                          <td><a property="dcat:downloadURL" href=""></a></td>
+                          <td><a property="dcat:downloadURL" id="red_el_res" href="#">redditi_elezioni_residenti.zip (15.6 KB)</a></td>
                         </tr>
 
               </tbody>
@@ -216,7 +216,7 @@ dct: http://purl.org/dc/terms/" lang="en" >
                 </tr>
                 <tr>
                   <td>URL di accesso</td>
-                  <td><a property="dcat:accessURL" href="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.xml">https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.xml</a></td>
+                  <td><a property="dcat:accessURL" href="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.xml">https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.xml</a></td>
 		</tr>
               </tbody>
             </table>
@@ -245,7 +245,7 @@ dct: http://purl.org/dc/terms/" lang="en" >
                     </tr>
                     <tr>
                       <td>URL di accesso</td>
-                      <td><a property="dcat:accessURL" href="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv">https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv</a>
+                      <td><a property="dcat:accessURL" href="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv">https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv</a>
                       </td>
                     </tr>
 	          
@@ -276,7 +276,7 @@ dct: http://purl.org/dc/terms/" lang="en" >
                         </tr>
                         <tr>
                           <td>URL di accesso</td>
-                          <td><a property="dcat:accessURL" href="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.json">https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.json</a>
+                          <td><a property="dcat:accessURL" href="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.json">https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.json</a>
                           </td>
 			</tr>
                       </tbody>
@@ -301,4 +301,25 @@ dct: http://purl.org/dc/terms/" lang="en" >
 
         </footer>
 	</body>
+	<script>
+
+	$('#red_el_res').on('click', function () {
+	    $.ajax({
+		url: 'dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.zip',
+		method: 'GET',
+		xhrFields: {
+		    responseType: 'blob'
+		},
+		success: function (data) {
+		    var a = document.createElement('a');
+		    var url = window.URL.createObjectURL(data);
+		    a.href = url;
+		    a.download = 'redditi_elezioni_residenti.zip';
+		    a.click();
+		    window.URL.revokeObjectURL(url);
+		}
+	    });
+	});
+
+</script>
 </html>
