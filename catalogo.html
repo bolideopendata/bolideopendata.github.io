@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html prefix="dcat: http://www.w3.org/ns/dcat#
+dqv: http://www.w3.org/ns/dqv#
+dct: http://purl.org/dc/terms/" lang="en" >
+<head>
+  <title>Catalogo progetto Bolide Open Data</title>
+  <!--- <meta content="width=device-width,initial-scale=1" name="viewport" /> --->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <style type="text/css">
+   .container {
+    font-family: sans-serif;
+    max-width: 968px;
+    margin: 0 auto;
+  }
+  .human-readable-example {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    color: #333;
+    width: 100%;
+  }
+  .human-readable-example td {
+    padding: 6px 3px 6px 3px;
+  }
+  .human-readable-example tr:first-child td:first-child {
+    width: 25%;
+  }
+  .human-readable-example tr:nth-child(even) {
+    background-color: #F7F7F7;
+  }
+  .human-readable-example tr:nth-child(odd) {
+    background-color: #FFFFFF;
+  }
+  div.example {
+    padding: 0.5em;
+    border-left: 0.5em solid #E0CB52;
+    border-color: #E0CB52;
+    background: none repeat scroll 0% 0% #FCFAEE;
+  }
+  a {
+    color: #00C;
+    text-decoration: none;
+  }
+  a[href]:hover {
+    background: none repeat scroll 0% 0% #FFA;
+  }
+  form#duv-feedback {
+    width: 48%;
+    display: block;
+  }
+  form#duv-feedback fieldset label {
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+  }
+  form#duv-feedback fieldset label.radio-motivation {
+    display: inline;
+    margin-right: 10px;
+  }
+  form#duv-feedback fieldset textarea {
+    width: 100%;
+  }
+  pre#rdf-duv-feedback-turtle {
+    white-space: pre-wrap;
+  }
+  section:target, div:target, tbody:target, tr:target {
+    background: #F7F1D0;
+    border: 1px dashed red;
+    padding: 10px;
+    border-top-right-radius: 15px;
+  }
+  #td-version {
+    width: 16px;
+  }
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Navbar</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link" href="#">Features</a>
+	      <a class="nav-item nav-link" href="#">Pricing</a>
+	    </div>
+	  </div>
+	</nav>
+  <div class="container">
+    
+    <!--<h1>Bus stops of MyCity</h1>
+    <div id="abstract">
+      <p>This is the human-readable version of <a href="http://w3.org/TR/dwbp/#basicExample">examples</a> used in the <a href="http://w3.org/TR/dwbp/"><abbr title="Data on the Web Best Practices">DWBP</abbr> document</a>. Please note that, as this is a fictional example, hyperlinks to the data.mycity.example.com domain simply link to example.com which defreferences to an explanation that the domain is designed for use in examples and serves no other function. </p>
+    </div>-->
+
+    <section resource="#timetable-001" typeof="dcat:Dataset" id="dataset-section">
+      <div id="dataset-description">
+        <h2>Catalogo</h2>
+        <table class="human-readable-example" summary="This table has the catalog description. The first column has the keywords and the seconde has the values.">
+          <tbody>
+            <tr>
+              <td>Titolo</td>
+              <td property="dct:title">Catalogo progetto Bolide Open Data</td>
+            </tr>
+            <tr>
+              <td>Descrizione</td>
+              <td property="dct:description">Il catalogo dei dati aperti del progetto Bolide Open Data</td>
+            </tr>
+            <tr>
+              <td>URI</td>
+              <td>https://bolideopendata.github.io/bolideopendata/dataset/set-finali</td>
+            </tr>
+          </tbody>
+          <tbody id="provenance-info">
+            <tr>
+              <td id="publisher">Editore</td>
+              <td property="dct:publisher" resource="#publisher" typeof="foaf:Organization prov:Agent"><span property="foaf:name">Bologna Open Data Team</span></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr id="locale-parameters">
+              <td>Lingua</td>
+              <td>Italiano</td>
+            </tr>
+          </tbody>
+          </div>
+          <tr id="locale-parameters">
+            <td>Data ultima modifica</td>
+            <td><span property="dct:modified" content="2015-05-05" datatype="xsd:date">2019-01-19</span></td>
+          </tr>
+          <tr>
+            <td>Data di rilascio</td>
+            <td><span property="dct:issued" content="2015-05-05" datatype="xsd:date">2019-01-19</span></td>
+          </tr>
+          <tr>
+            <td>Formato della data</td>
+            <td>ISO 8601</td>
+          </tr>
+            <tr>
+              <td>Homepage</td>
+              <td> <a property="foaf:homepage" href=""> INSERIRE URL HOMEPAGE DEL CATALOGO</a></td>
+            </tr>
+            <tr>
+              <td>Dataset 1</td>
+              <td> <a  href=""> INSERIRE URL LINK AL DATASET 1</a></td>
+            </tr>
+            <tr>
+              <td>Dataset 2</td>
+              <td> <a href=""> INSERIRE URL AL LINK DATASET 2</a></td>
+            </tr>
+            <tr>
+              <td>Dataset 3</td>
+              <td> <a href=""> INSERIRE URL AL LINK DATASET 3</a></td>
+            </tr>
+            </tbody>
+            </table>
+
+  <section id="duv-section">
+    <h2></h2>
+    <form id="duv-feedback">
+      <fieldset>
+        <legend>Feedback form</legend>
+
+       <label for="duv-userFeedback">Your feedback:</label>
+       <textarea id="duv-userFeedback">Is there a JSON-LD distribution available for this dataset?</textarea>
+
+     </fieldset>
+   </form>
+ </section>
+
+</div>
+<footer class="footer bg-dark text-white">
+
+            <div class="container-fluid text-center py-2" style="font-size: 80%">
+                <b>Prowered by:</b>
+                <a href="https://jquery.com/" class="text-light bg-dark">Jquery</a>, 
+                <a href="https://getbootstrap.com/" class="text-light bg-dark">Bootstrap</a>, 
+                <a href="https://leafletjs.com/" class="text-light bg-dark">Leaflet</a>, 
+                <a href="https://www.chartjs.org/" class="text-light bg-dark">Chartjs</a>, 
+                <a href="https://github.com/emn178/chartjs-plugin-labels" class="text-light bg-dark">chartjs-plugin-labels</a>,
+                <a href="https://neckster.github.io/chartjs-plugin-piechart-outlabels/" class="text-light bg-dark">chartjs-plugins-piechart-outlabels</a>.
+            </div>
+
+            <div class="text-center py-2" style="font-size: 90%; padding:0">In ogni caso, i dati non possono essere utilizzati al fine di identificare nuovamente gli interessati.
+            <br>This website is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light bg-dark"></a><b>CC BY-SA 4.0.</b></a>
+            </div>
+
+        </footer>
+
+</body>
+</html>
