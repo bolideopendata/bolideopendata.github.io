@@ -130,7 +130,7 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('.information').html('');
-                                                    $('.information').html('<div class="card alert-success mb-3"> <h2 class="card-header">'+ arrayItem["Zona"] +'</h2> <div class="card-body text-right"> <ul style="list-style-type:none"> <li><h5> Quartiere: '+ feature.properties.Nome_quartiere +'</h4></li> <li><h4> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h5></li> </ul> </div> </div>');
+                                                    $('.information').html('<div class="card alert-success mb-3"> <h2 class="card-header">'+ arrayItem["Zona"] +'</h2> <div class="card-body text-right"> <ul style="list-style-type:none"> <li><h4> Quartiere: '+ feature.properties.Nome_quartiere +'</h4></li> <li><h4> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h4></li> </ul> </div> </div>');
                                                     //$('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
 
                                                     //if (firsttime == true) {
