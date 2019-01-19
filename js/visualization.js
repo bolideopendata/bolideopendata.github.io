@@ -290,7 +290,9 @@ $(document).ready(function() {
                                         datisegn.forEach(function(arrayItem) {
                                             if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                 $('#CategorieChart').remove();
+                                                $('#segninfo').remove();
                                                 $('#SegnalazioniButton').remove();
+                                                $('#chartContainerSegn').append('<div id="segninfo">I seguenti dati sono frutto delle segnalazioni dei cittadini bolognesi nel contesto del progetto CZRM (Citizen Relationship management)<div>');
                                                 //$('#pulsanteSEGN').append('<div class="row" id="SegnalazioniButton"><form><label class="class="radio-inline active"><input type="radio" id="segnalazioni" value="segnalazioni" name="radioseg" autocomplete="off" checked>Tutte le Segnalazioni </label><input type="radio" id="sociale" value="sociale" name="radioseg" autocomplete="off"> Sociale </label><label class="radio-inline"><input type="radio" id="ambientale" value="ambientale" name="radioseg" autocomplete="off"> Ambientale </label><label class="class="radio-inline active"><input type="radio" id="microcriminalita" value="microcriminalita" name="radioseg" autocomplete="off"> Microcriminalità </label></form></div>');
                                                 $('#pulsanteSEGN').append('<div class="row" id="SegnalazioniButton"><form><div class="col-xs-4 text-left"><label class="radio-inline btn btn-dark"><input type="radio" id="segnalazioni" value="segnalazioni" name="radioseg" autocomplete="off" checked>Tutte le Segnalazioni </label></div><div class="col-xs-8 text-right"><label class="radio-inline btn btn-danger" style="background: #a6206a !important;"><input type="radio" id="sociale" value="sociale" name="radioseg" autocomplete="off"> Sociale </label><label class="radio-inline btn btn-success" style="background: #2f9395 !important;"><input type="radio" id="ambientale" value="ambientale" name="radioseg" autocomplete="off"> Ambientale </label><label class="radio-inline btn btn-danger" style="background: #f4a256 !important;"><input type="radio" id="microcriminalita" value="microcriminalita" name="radioseg" autocomplete="off"> Microcriminalità </label></div></form></div>');
                                                 $('#chartContainerSegn').append('<canvas id="CategorieChart"><canvas>');
@@ -498,6 +500,8 @@ $(document).ready(function() {
                                                         switch ($(this).val()) {
                                                             case 'segnalazioni':
                                                                 $('#CategorieChart').remove();
+                                                                $('#segninfo').remove();
+                                                                $('#chartContainerSegn').append('<div id="segninfo">I seguenti dati sono frutto delle segnalazioni dei cittadini bolognesi nel contesto del progetto CZRM (Citizen Relationship management)<div>');
                                                                 $('#chartContainerSegn').append('<canvas <canvas id="CategorieChart"><canvas>');
                                                                 grafitot(datitotsegn, optiongensegn);
                                                                 break
@@ -507,11 +511,13 @@ $(document).ready(function() {
                                                                 grafisegn(datisoc, optionspec)
                                                                 break
                                                             case 'ambientale':
+                                                                $('#segninfo').remove();
                                                                 $('#CategorieChart').remove();
                                                                 $('#chartContainerSegn').append('<canvas <canvas id="CategorieChart"><canvas>');
                                                                 grafisegn(datiamb, optionspec)
                                                                 break
                                                             case 'microcriminalita':
+                                                                $('#segninfo').remove();
                                                                 $('#CategorieChart').remove();
                                                                 $('#chartContainerSegn').append('<canvas <canvas id="CategorieChart"><canvas>');
                                                                 grafisegn(daticrim, optionspec)
@@ -523,23 +529,28 @@ $(document).ready(function() {
                                                     $('input[type=radio][name=radioseg]').change(function() {
                                                         switch ($(this).val()) {
                                                             case 'segnalazioni':
+                                                                $('#segninfo').remove();
                                                                 $('#CategorieChart').remove();
+                                                                $('#chartContainerSegn').append('<div id="segninfo">I seguenti dati sono frutto delle segnalazioni dei cittadini bolognesi nel contesto del progetto CZRM (Citizen Relationship management)<div>');
                                                                 $('#chartContainerSegn').append('<canvas <canvas id="CategorieChart"><canvas>');
                                                                 grafitot(datitotsegn, optiongensegn);
                                                                 break
                                                             case 'sociale':
+                                                                $('#segninfo').remove();
                                                                 $('#CategorieChart').remove();
                                                                 $('#chartContainerSegn').append('<canvas <canvas id="CategorieChart"><canvas>');
                                                                 grafisegn(datisoc, optionspec)
                                                                 break
                                                             case 'ambientale':
+                                                                $('#segninfo').remove();
                                                                 $('#CategorieChart').remove();
                                                                 $('#chartContainerSegn').append('<canvas  <canvas id="CategorieChart"><canvas>');
                                                                 grafisegn(datiamb, optionspec)
                                                                 break
                                                             case 'microcriminalita':
+                                                                $('#segninfo').remove();
                                                                 $('#CategorieChart').remove();
-                                                                $('#chartContainerSegn').append('<div class=""text-center id="CategorieChart"><div>Nessuna segnalazione di microcriminalità in questa Zona</div><canvas"><canvas></div>');
+                                                                $('#chartContainerSegn').append('<div class="text-center id="CategorieChart"><div>Nessuna segnalazione di microcriminalità in questa Zona</div><canvas"><canvas></div>');
                                                                 break
                                                         }
                                                     })
