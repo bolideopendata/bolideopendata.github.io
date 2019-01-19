@@ -1,0 +1,421 @@
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pav: <http://pav-ontology.github.io/pav/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix : <http://bolideopendata.github.io/bolideopendata/bolide-ns#> .
+
+
+#Catalog
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali>
+	a dcatapit:Catalog , dcat:Catalog ;
+	dct:title "Catalogo progetto Bolide Open Data"@it ;
+	dct:description "Il catalogo dei dati aperti del progetto Bolide Open Data"@it ;
+        dct:publisher <http://bolideopendata.github.io/team/bolideopendatateam> ;
+	dct:modified "2018-01-19"^^xsd:date ;
+        dct:issued "2018-01-19"^^xsd:date ;
+        dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	foaf:homepage <INSERIRE HOMEPAGE> ;
+        dcat:dataset <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016> ;
+	dcat:dataset <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_2017_czrm> ;
+	dcat:dataset <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna> ;
+	dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> .
+
+
+#Dataset 1
+
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier "bolideopendata:D.1" ;
+	dct:title "redditi_elezioni_politiche"@it ;
+	dct:description "Il dataset contiene i dati divisi per zona di Bologna di: redditi medi pro-capite dei contribuenti bolognesi dal 2009 al 2016, i risutati degli scrutini alle elezioni politiche per l'elezione al Senato della Repubblica e alla Camera dei Deputati del 4.3.2018, e il numero di residenti."@it ;
+	dct:modified "2018-01-19"^^xsd:date ;
+	dct:issued "2018-01-19"^^xsd:date ;
+	owl:versionInfo "0.1.0" ; 
+        dct:temporal <https://bolideopendata.github.io/bolideopendata/PeriodoTemporale/periodTimebolideopendata> ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ; 
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+	dct:subject <http://eurovoc.europa.eu/700> , <http://eurovoc.europa.eu/3319> , <http://eurovoc.europa.eu/3460>; # elezioni nazionali,  distribuzione del reddito , residenza
+	dcat:keyword "elezioni"@it , "bologna"@it, "redditi"@it ;
+	dct:spatial <https://www.geonames.org/3181928/> ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/OTHER> ; # other = ogni 5 anni
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-RDF-XML> ;
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-CSV> ;
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-JSON> ;
+	dcat:contactPoint <https://bolideopendata.github.io/bolideopendata/resource/PuntoContatto/contactPointbolideopendata> ;
+	dct:rightsHolder "Comune di Bologna" ;
+	dct:publisher <http://bolideopendata.github.io/team/bolideopendatateam>  ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/1136> ; #redditi 2009
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/1137> ; #redditi 2010
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/1135> ; #redditi 2011
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/1878> ; #redditi 2012
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/2436> ; #redditi 2013
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/3422> ; #redditi 2014
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/4304> ; #redditi 2015
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/4615> ; #redditi 2016
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/4267> ; #politiche camera collegio 6
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/4269> ; #politiche camera collegio 7
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/4265> ; #politiche senato
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/1275> . #aree statistiche in zone
+
+#Distribution dataset 1 
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-RDF-XML> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione RDF-Turtle bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:description "Distribuzione RDF-Turtle del dataset bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <URL PER L'ACCESSO> .
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-CSV> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione CSV bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:description "Distribuzione CSV del dataset bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv> .
+	
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-JSON> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione JSON bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:description "Distribuzione JSON del dataset bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.json> .
+	
+# Misure
+:measure1 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv>;
+  dqv:isMeasurementOf :accuracyMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure2 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv>;
+  dqv:isMeasurementOf :csvCompletenessMetric;
+  dqv:value "100"^^xsd:decimal.
+
+:measure3 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv>;
+  dqv:isMeasurementOf :coherenceMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure4 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv>;
+  dqv:isMeasurementOf :coherenceMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure5 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv>;
+  dqv:isMeasurementOf :availabilityMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure6 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv>;
+  dqv:isMeasurementOf :processabilityMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure7 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv>;
+  dqv:isMeasurementOf :credibilityMetric;
+  dqv:value "true"^^xsd:boolean.
+
+# Dimensioni
+:accuracy a dqv:Dimension;
+  skos:prefLabel "Accuratezza"@it;
+  skos:definition "Il grado in cui gli attributi rappresentano in maniera corretta il valore reale del dato in uno specifico contesto."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:completeness a dqv:Dimension;
+  skos:prefLabel "Completezza"@en;
+  skos:definition "Il grado per cui il dato associato a un’entità presenta valori per tutti gli attributi attesi e relative istanze in un certo contesto."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:coherence a dqv:Dimension;
+  skos:prefLabel "Coerenza"@it;
+  skos:definition "Il grado in cui gli attributi del dato non sono in contraddizione con altri dati in uno specifico contesto."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:timeliness a dqv:Dimension;
+  skos:prefLabel "Tempestività"@it;
+  skos:definition "Il grado in cui gli attributi del dato sono al «giusto tempo» rispetto al contesto di riferimento."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:availability a dqv:Dimension;
+  skos:prefLabel "Disponibilità"@it;
+  skos:definition "Il grado in cui il dataset risulta essere facilmente raggiungibile e scaricabile."@it;
+  dqv:inCategory :accessibility.
+
+:processability a dqv:Dimension;
+  skos:prefLabel "Processabilità"@it;
+  skos:definition "Il grado in cui il dataset risulta essere consultabile non solo da agenti umani ma anche da agenti automatici."@it;
+  dqv:inCategory :accessibility.
+
+:credibility a dqv:Dimension;
+  skos:prefLabel "Credibilità"@it;
+  skos:definition "Il grado in cui le informazioni contenute nel dataset risultano essere credibili e supportate da provenance"@it;
+  dqv:inCategory :accessibility.
+
+# Metriche
+:accuracyMetric a dqv:Metric;
+  skos:definition "Se il dataset presenta sintassi e semantica accurate == True"@it;
+  dqv:inDimension :accuracy.
+
+:csvCompletenessMetric a dqv:Metric;
+  skos:definition "Percentuale dei valori non-nulli all'interno del dataset."@it;
+  dqv:inDimension :completeness.
+
+:coherenceMetric a dqv:Metric;
+  skos:definition "Se il dataset non presenta contraddizioni interne == True"@it;
+  dqv:inDimension :coherence.
+
+:timelinessMetric a dqv:Metric;
+  skos:definition "Se la data di ultima modifica del dato rispetto al tempo di misurazione ricade nell'intervallo della frequenza di aggiornamento == True"@it;
+  dqv:inDimension :coherence.
+
+:availabilityMetric a dqv:Metric;
+  skos:definition "Se l'URI è persistente, non ambiguo e scaricabile == True"@en;
+  dqv:inDimension :availability.
+
+:processabilityMetric a dqv:Metric;
+  skos:definition "Se il dataset è pubblicato in formato .xml / .json / .rdf (e serializzazioni) == True"@en;
+  dqv:inDimension :processability.
+
+:credibilityMetric a dqv:Metric;
+  skos:definition "Se nei metadati che corredano il dataset è presente prov:wasDerivedFrom == True"@en;
+  dqv:inDimension :credibility.
+  
+	
+# Temporal dataset 1
+
+<https://bolideopendata.github.io/bolideopendata/PeriodoTemporale/periodTimebolideopendata>
+	a dct:PeriodOfTime ;
+	dcatapit:startDate "2009-01-01"^^xsd:date ;
+	dcatapit:endDate "2018-03-04"^^xsd:date .
+
+
+
+#Dataset 2
+
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier "bolideopendata:D.2" ;
+	dct:title "segnalazioni_bologna_2017"@it ;
+	dct:description "Il dataset contiene i dati divisi per zona di Bologna delle segnalazioni sociali, ambientali e di microcriminalità rilevate nell'anno 2017"@it ;
+	dct:modified "2018-01-19"^^xsd:date ;
+	dct:issued "2018-01-19"^^xsd:date ;
+	owl:versionInfo "0.1.0" ; 
+        dct:temporal "2017"^^xsd:date ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ; 
+	dct:subject <http://eurovoc.europa.eu/4045> , <http://publications.europa.eu/resource/authority/pub-theme/L02> ; # sicurezza , degrado ambientale
+	dcat:keyword "sociale"@it , "bologna"@it, "ambiente"@it , "microcriminalità"@it ;
+	dct:spatial <https://www.geonames.org/3181928/> ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-RDF-XML> ;
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-CSV> ;
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-JSON> ;
+	dcat:contactPoint <https://bolideopendata.github.io/bolideopendata/resource/PuntoContatto/contactPointbolideopendata> ;
+	dct:rightsHolder "Comune di Bologna" ;
+	dct:publisher  <http://bolideopendata.github.io/team/bolideopendatateam> ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/4490> ; #segnalazioni area
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/4490> ; #segnalazioni tot-tipologia
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/1275> . #aree statistiche in zone
+	
+
+
+#Distribution dataset 2 
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-RDF-XML> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione RDF segnalazioni_bologna_2017"@it ;
+	dct:description "Distribuzione RDF-Turtle del dataset segnalazioni_bologna_2017"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <URL PER L'ACCESSO> .
+
+<ttps://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-CSV> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione CSV segnalazioni_bologna_2017"@it ;
+	dct:description "Distribuzione CSV del dataset segnalazioni_bologna_2017"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv> .
+	
+https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-JSON
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione JSON segnalazioni_bologna_2017"@it ;
+	dct:description "Distribuzione JSON del dataset segnalazioni_bologna_2017"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.json> .
+	
+	
+# Misure
+:measure1 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv>;
+  dqv:isMeasurementOf :accuracyMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure2 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv>;
+  dqv:isMeasurementOf :csvCompletenessMetric;
+  dqv:value "100"^^xsd:decimal.
+
+:measure3 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv>;
+  dqv:isMeasurementOf :coherenceMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure4 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv>;
+  dqv:isMeasurementOf :coherenceMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure5 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv>;
+  dqv:isMeasurementOf :availabilityMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure6 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv>;
+  dqv:isMeasurementOf :processabilityMetric;
+  dqv:value "true"^^xsd:boolean.
+
+:measure7 a dqv:QualityMeasurement;
+  dqv:computedOn <https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv>;
+  dqv:isMeasurementOf :credibilityMetric;
+  dqv:value "true"^^xsd:boolean.
+
+# Dimensioni
+:accuracy a dqv:Dimension;
+  skos:prefLabel "Accuratezza"@it;
+  skos:definition "Il grado in cui gli attributi rappresentano in maniera corretta il valore reale del dato in uno specifico contesto."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:completeness a dqv:Dimension;
+  skos:prefLabel "Completezza"@en;
+  skos:definition "Il grado per cui il dato associato a un’entità presenta valori per tutti gli attributi attesi e relative istanze in un certo contesto."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:coherence a dqv:Dimension;
+  skos:prefLabel "Coerenza"@it;
+  skos:definition "Il grado in cui gli attributi del dato non sono in contraddizione con altri dati in uno specifico contesto."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:timeliness a dqv:Dimension;
+  skos:prefLabel "Tempestività"@it;
+  skos:definition "Il grado in cui gli attributi del dato sono al «giusto tempo» rispetto al contesto di riferimento."@it;
+  dqv:inCategory :intrinsicDimensions.
+
+:availability a dqv:Dimension;
+  skos:prefLabel "Disponibilità"@it;
+  skos:definition "Il grado in cui il dataset risulta essere facilmente raggiungibile e scaricabile."@it;
+  dqv:inCategory :accessibility.
+
+:processability a dqv:Dimension;
+  skos:prefLabel "Processabilità"@it;
+  skos:definition "Il grado in cui il dataset risulta essere consultabile non solo da agenti umani ma anche da agenti automatici."@it;
+  dqv:inCategory :accessibility.
+
+:credibility a dqv:Dimension;
+  skos:prefLabel "Credibilità"@it;
+  skos:definition "Il grado in cui le informazioni contenute nel dataset risultano essere credibili e supportate da provenance"@it;
+  dqv:inCategory :accessibility.
+
+# Metriche
+:accuracyMetric a dqv:Metric;
+  skos:definition "Se il dataset presenta sintassi e semantica accurate == True"@it;
+  dqv:inDimension :accuracy.
+
+:csvCompletenessMetric a dqv:Metric;
+  skos:definition "Percentuale dei valori non-nulli all'interno del dataset."@it;
+  dqv:inDimension :completeness.
+
+:coherenceMetric a dqv:Metric;
+  skos:definition "Se il dataset non presenta contraddizioni interne == True"@it;
+  dqv:inDimension :coherence.
+
+:timelinessMetric a dqv:Metric;
+  skos:definition "Se la data di ultima modifica del dato rispetto al tempo di misurazione ricade nell'intervallo della frequenza di aggiornamento == True"@it;
+  dqv:inDimension :coherence.
+
+:availabilityMetric a dqv:Metric;
+  skos:definition "Se l'URI è persistente, non ambiguo e scaricabile == True"@en;
+  dqv:inDimension :availability.
+
+:processabilityMetric a dqv:Metric;
+  skos:definition "Se il dataset è pubblicato in formato .xml / .json / .rdf (e serializzazioni) == True"@en;
+  dqv:inDimension :processability.
+
+:credibilityMetric a dqv:Metric;
+  skos:definition "Se nei metadati che corredano il dataset è presente prov:wasDerivedFrom == True"@en;
+  dqv:inDimension :credibility.
+	
+	
+	
+#Dataset 3
+
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier "bolideopendata:D.3" ;
+	dct:title "zone_bologna"@it ;
+	dct:description "Il dataset contiene contiene le coordinate geografiche per tracciare i confini delle zone di Bologna"@it ;
+	dct:modified "2018-01-19"^^xsd:date ;
+	dct:issued "2018-01-19"^^xsd:date ;
+	owl:versionInfo "0.1.0" ; 
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ; #regioni e città
+	dct:subject <http://publications.europa.eu/resource/authority/atu-type/IRL_CTH > ; #city
+	dcat:keyword "zone"@it , "bologna"@it, "geografia"@it ;
+	dct:spatial <https://www.geonames.org/3181928/> ; 
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ; 
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna/Distribuzione/bolideopendata-JSON> ;
+	dcat:contactPoint <https://bolideopendata.github.io/bolideopendata/resource/PuntoContatto/contactPointbolideopendata> ;
+	dct:rightsHolder "Comune di Bologna" ;
+	dct:publisher  <http://bolideopendata.github.io/team/bolideopendatateam>;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/node/1184> . # zone di Bologna
+	
+	
+#Distribution dataset 3
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna/Distribuzione/bolideopendata-JSON> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione JSON zone_bologna"@it ;
+	dct:description "Distribuzione JSON del dataset zone_bologna"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/zone/zone_bologna.geojson> .
+
+
+
+# Licenza
+
+<https://www.dati.gov.it/content/italian-open-data-license-v20>
+     a                dcatapit:LicenseDocument , dct:LicenseDocument ;
+     dct:type         <http://purl.org/adms/licencetype/Attribution> ;
+     foaf:name        "Italian Open Data License" ;
+     owl:versionInfo  "2.0" .
+
+
+# Contact Point 
+
+<https://bolideopendata.github.io/bolideopendata/resource/PuntoContatto/contactPointbolideopendata>
+	a dcatapit:Agent
+	vcard:hasEmail <mailto:bolideopendata@gmail.com> .
+	
+	
