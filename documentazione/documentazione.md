@@ -112,7 +112,7 @@ I dataset che abbiamo generato nel corso del progetto integrando i dati selezion
 | ZONE CODICEZONA QUARTIERE | aree_statistiche.csv | 26.01.06_risultati_politiche_2018_bologna_liste_camera_collegio6 | 26.01.08_risultati_politiche_2018_bologna_liste_camera_collegio7.csv | 26.01.04_risultati_politiche_2018_bologna_liste_senato.csv | | | | | |
 
 ## Dataset finali
-I nostri dataset finali, risultanti dall'integrazione dei dati contenuti all'interno dei dataset intermed, sono raggruppati all'interno del seguente catalogo:
+I nostri dataset finali, risultanti dall'integrazione dei dati contenuti all'interno dei dataset intermedi, sono raggruppati all'interno del seguente catalogo:
 
 * https://bolideopendata.github.io/bolideopendata/catalogo.html
 _______________________________________________________________
@@ -223,7 +223,7 @@ Per attuarla, abbiamo utilizzato una *check list* di riferimento per valutare tu
 
 ## Misure di de-identificazione e pulitura
 ### Misure di de-identificazione
-Nell'elaborazione della check-list abbiamo preso coscienza, all'interno di alcuni dataset, di criticità riguardanti la presenza di possibili dati sensibili. Qualora dati specifici rientrino nella categoria di *personal data*, o, se incrociati con altri dati reperibili sul Web, si incorrerebbe in grosse problematiche legali.
+Nell'elaborazione della check-list abbiamo preso coscienza, all'interno di alcuni dataset, di criticità riguardanti la presenza di possibili dati sensibili. Non sono presenti dati colllegabili in modo diretto al concetto di *personal data*, ma dati che, se incrociati con altri dati reperibili sul Web, potrebbero portare a grosse problematiche legali.
 
 L'Articolo 4 del Regolamento Europeo Generale sulla Protezione dei Dati (EU RGPD) definisce il concetto di *personal data*: per dato personale si intende:
 *"qualsiasi informazione riguardante una persona fisica identificata o identificabile («interessato»); si considera identificabile la persona fisica che può essere identificata, direttamente o indirettamente, con particolare riferimento a un identificativo come il nome, un numero di identificazione, dati relativi all'ubicazione, un identificativo online o a uno o più elementi caratteristici della sua identità fisica, fisiologica, genetica, psichica, economica, culturale o sociale" [...] 
