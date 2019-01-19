@@ -130,7 +130,7 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('.information').html('');
-                                                    $('.information').html('<div class="card alert-success mb-3"> <h2 class="card-header">'+ arrayItem["Zona"] +'</h2> <div class="card-body text-right"> <ul style="list-style-type:none"> <li><h4> Quartiere: '+ feature.properties.Nome_quartiere +'</h4></li> <li><h4> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h4></li> </ul> </div> </div>');
+                                                    $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona'+ arrayItem["Zona"] +'</h3> <div class="card-body text-right"> <ul style="list-style-type:none"> <li><h5> Quartiere: '+ feature.properties.Nome_quartiere +'</h5></li> <li><h5> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h5></li> </ul> </div> </div>');
                                                     //$('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
 
                                                     //if (firsttime == true) {
@@ -173,6 +173,7 @@ $(document).ready(function() {
                                                                     backgroundColor: "#f4a256",
                                                                      borderColor: "#f4a256",
                                                                     "spanGaps": true,
+                                                                    fontColor: "black"
                                                                 },
                                                                 {
                                                                     "label": "Reddito Medio Zona",
@@ -181,6 +182,7 @@ $(document).ready(function() {
                                                                     "fill": false,
                                                                     backgroundColor: "#ee444e",
                                                                     borderColor: "#ee444e",
+                                                                    fontColor: "black"
                                                                 },
                                                                 {
                                                                     "label": "Reddito Medio Bologna",
@@ -188,6 +190,7 @@ $(document).ready(function() {
                                                                     "type": "line",
                                                                     "fill": true,
                                                                     borderColor: "rgb(169,169,169)",
+                                                                    fontColor: "black"
                                                                 }
                                                             ]
                                                         };
@@ -585,16 +588,19 @@ $(document).ready(function() {
                                                     labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali", "Più Europa", "Altri Partiti"],
                                                     datasets: [{
                                                             "label": "Risultati Camera Zona",
+                                                             fontColor: "black",
                                                             data: daticamerazona,
                                                             backgroundColor: "#ee444e"
                                                         },
                                                         {
                                                             "label": "Risultati Camera Italia",
+                                                             fontColor: "black",
                                                             data: [32.68, 18.76, 17.35, 14.00, 4.35, 3.39, 2.56, 6.91],
                                                             backgroundColor: "#808080"
                                                         },
                                                         {
                                                             "label": "Risultati Camera Bologna",
+                                                            fontColor: "black",
                                                             data: [21.90, 29.28, 13.59, 9.62, 3.58, 8.04, 6.23, 7.76],
                                                             backgroundColor: "#b3b3b3"
                                                         }
@@ -619,16 +625,19 @@ $(document).ready(function() {
                                                     labels: ["Movimento 5 Stelle", "Partito Democratico", "Lega Nord", "Forza Italia", "Fratelli D'Italia", "Liberi E Uguali", "Più Europa", "Altri Partiti"],
                                                     datasets: [{
                                                             "label": "Risultati Senato Zona",
+                                                             fontColor: "black",
                                                             data: datisenatozona,
                                                             backgroundColor: "#ee444e"
                                                         },
                                                         {
                                                             "label": "Risultati Senato Italia",
+                                                            fontColor: "black",
                                                             data: [32.22, 19.14, 17.61, 14.43, 4.26, 3.28, 2.37, 6.69],
                                                             backgroundColor: "#808080"
                                                         },
                                                         {
                                                             "label": "Risultati Senato Bologna",
+                                                             fontColor: "black",
                                                             data: [21.97, 28.15, 13.99, 9.75, 3.48, 9.56, 5.43, 7.67],
                                                             backgroundColor: "#b3b3b3"
                                                         }
@@ -649,6 +658,7 @@ $(document).ready(function() {
                                                     "scales": {
                                                         "xAxes": [{
                                                             "ticks": {
+                                                                 fontColor: "black",
                                                                 "beginAtZero": true,
                                                                 "max": 35,
                                                                 "callback": function(value, index, values) {
@@ -672,6 +682,7 @@ $(document).ready(function() {
                                                     },
                                                     "scale": {
                                                         "ticks": {
+                                                             fontColor: "black",
                                                             "beginAtZero": true,
                                                             "max": 35,
                                                              "callback": function(value, index, values) {
@@ -702,7 +713,7 @@ $(document).ready(function() {
                                                         "options": opzionibarsenato
                                                     });
                                                 };
-                                                $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
+                                                $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">Voti validi: ' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
                                                 grafiele(dataelecam, dataelecamtot);
 
                                                 $('input[type=radio][name=radioele]').change(function() {
@@ -712,7 +723,7 @@ $(document).ready(function() {
                                                             $('#votanti').remove();
                                                             $('#empty').remove();                
                                                             $('#EleChartbar').remove();
-                                                            $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
+                                                            $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">Voti validi: ' + arrayItem["Totale Voti Validi Camera"]+ '</span>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartrad"><canvas>');
                                                            $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartbar"><canvas>');
@@ -723,7 +734,7 @@ $(document).ready(function() {
                                                             $('#votanti').remove();
                                                             $('#empty').remove();   
                                                             $('#EleChartbar').remove();
-                                                            $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">' + arrayItem["Totale Voti Validi Senato"]+ '</span>');
+                                                            $('#elettori').append('<span id="votanti" class="btn btn-dark btn-lg disabled">Voti validi: ' + arrayItem["Totale Voti Validi Senato"]+ '</span>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartrad"><canvas>');
                                                             $('#chartContainerEle').append('<div id="empty"><span style="opacity:0;">FMVPAFSB</span></div>');
                                                             $('#chartContainerEle').append('<canvas id="EleChartbar"><canvas>');
