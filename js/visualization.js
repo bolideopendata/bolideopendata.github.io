@@ -1,5 +1,4 @@
 $(document).ready(function() {
-            $("elezioniPUL").hide();
             var map = L.map('map', {
                 maxZoom: 18,
                 minZoom: 12,
@@ -133,7 +132,6 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('#welcome').remove();
-                                                    $("elezioniPUL").show();
                                                     //$('#elezioniPUL').text('ELEZIONI POLITICHE 4 MARZO 2018');
                                                    // $('#redditiPUL').text('REDDITO PRO-CAPITE 2009-2016');
                                                     //$('#segnalazioniPUL').text('SEGNALAZIONI CZRM 2017');
