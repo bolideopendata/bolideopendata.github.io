@@ -677,7 +677,7 @@ $(document).ready(function() {
                                                         }],
                                                       "yAxes": [{
                                                             "ticks": {
-                                                                 fontColor: "black",}
+                                                                 fontColor: "black"}
                                                       }]
                                                     }
                                                 };
