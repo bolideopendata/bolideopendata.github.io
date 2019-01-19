@@ -652,21 +652,33 @@ Popolazione residente per età, sesso, cittadinanza, quartiere e zona area stati
 Abbiamo pubblicato i dataset finali con i seguenti URI:
 
 * Dataset 1: [https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv](https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv)
-* Dataset 2: [https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_2017_czrm.csv](https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_2017_czrm.csv)
+* Dataset 2: [https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv](https://bolideopendata.github.io/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017.csv)
 * Dataset 3: [https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson](https://bolideopendata.github.io/dataset/set-finali/zone/zone_bologna.geojson)
 _______________________________________________________________
 
 # Analisi della sostenibilità
-Nella comunicazione della Commissione pubblicata sulla Gazzetta ufficiale dell'Unione Europea [2014/C 240/01](https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:52014XC0724(01)&from=IT) del 24/07/2014, al paragrafo 4.1.2 si legge: 
-- *nell’ambiente in linea, invece, la totalità del corrispettivo potrebbe essere limitata ai costi collegati direttamente alla manutenzione e al funzionamento dell’infrastruttura (ossia della banca dati elettronica) nella misura necessaria a riprodurre il documento e a metterlo a disposizione di un riutilizzatore in più. Considerate l’esiguità e la tendenza al ribasso dei costi operativi medi di una banca dati, è probabile che l’importo sia prossimo allo zero. Si raccomanda pertanto agli enti pubblici di valutare a cadenza periodica i costi e benefici potenziali della politica di costo zero e della politica dei costi marginali, tenendo presente che la tariffazione com porta in sé dei costi (gestione delle fatture, monitoraggio e amministrazione dei pagamenti ecc.). In conclusione, il metodo dei costi marginali può essere applicato per recuperare le spese sostenute per la riproduzione di una copia supplementare e la distribuzione fisica dei documenti non digitali, mentre **per i documenti digitali (file) divulgati per via elettronica (ossia scaricati) si raccomanderebbe una politica di costo zero.***
+Gli open data, affinché siano utili, devono essere rilevanti, aggiornati ed accessibili. La sostenibilità di un dataset è rappresentata dalla sua pubblicazione regolare nel tempo. Esso dovrebbe essere supportato da:
 
-Per riuscire a mantenere la curation nel lungo periodo:
-* mantenere serie storica;
-* usare [URI persistenti](#uri);
-* integrare idati con i **metadati di provenance**;
+* **finanziamento** dell'*update* sostenuto nel tempo;
+* **supporto** da parte di un organismo professionale, ben inserito nell'ecosistema degli Open Data;
+* **riutilizzo** su ampia scala da parte di possibili utenti interessati ad usufruire dei dati pubblicati;
 
-CERCARE TIZI DEL CITIZEN MANAGEMENT PER PARLARE DI SOSTENIBILITA' anche sociale
+Nel nostro caso, possiamo proporre in via ipotetica un possibile modello organizzativo di sostenibilità, basato sui seguenti elementi:
 
+* [Provenance](#metadati) e [Tempestività](#requisiti): le informazioni riguardanti la fonte dei dati (OpenData Bologna) sono state integrate nei metadati associati ai dataset da noi pubblicati; il requisito di tempestività viene rispettato a patto che le date di ultimo aggiornamento rientrino nell'arco di tempo coperto dalla frequenza di aggiornamento (5 anni per il dataset 1, 1 anno per il dataset 2);
+
+* il supporto economico potrebbe provenire dal Comune di Bologna stesso oppure dall'[AgID](https://www.agid.gov.it/), due possibili agenti potenzialmente interessati a sostenere la qualità informativa del nostro lavoro (si veda, ad esempio, [http://dati.comune.bologna.it/casi-uso](http://dati.comune.bologna.it/casi-uso)). Il nostro modello pertiene ad una politica basata sui **costi marginali**, per cui il nostro interesse sarebbe quello di sostenere una pubblicazione duratura e di qualità dei dataset a costo zero o prossimo allo zero. Nella comunicazione della Commissione pubblicata sulla Gazzetta ufficiale dell'Unione Europea [2014/C 240/01](https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:52014XC0724(01)&from=IT) del 24/07/2014, al paragrafo 4.1.2 si legge: *nell’ambiente in linea, invece, la totalità del corrispettivo potrebbe essere limitata ai costi collegati direttamente alla manutenzione e al funzionamento dell’infrastruttura (ossia della banca dati elettronica) nella misura necessaria a riprodurre il documento e a metterlo a disposizione di un riutilizzatore in più. Considerate l’esiguità e la tendenza al ribasso dei costi operativi medi di una banca dati, è probabile che l’importo sia prossimo allo zero. Si raccomanda pertanto agli enti pubblici di valutare a cadenza periodica i costi e benefici potenziali della politica di costo zero e della politica dei costi marginali, tenendo presente che la tariffazione com porta in sé dei costi (gestione delle fatture, monitoraggio e amministrazione dei pagamenti ecc.). In conclusione, il metodo dei costi marginali può essere applicato per recuperare le spese sostenute per la riproduzione di una copia supplementare e la distribuzione fisica dei documenti non digitali, mentre **per i documenti digitali (file) divulgati per via elettronica (ossia scaricati) si raccomanderebbe una politica di costo zero.*** 
+
+* la licenza che abbiamo scelto (**IODL 2.0**) prevede "*una licenza per tutto il mondo, gratuita, perpetua, non revocabile e non esclusiva [...]*" a determinate condizioni [qui specificate](https://www.dati.gov.it/content/italian-open-data-license-v20). 
+
+* puntiamo ad un riutilizzo piuttosto allargato dei dati che abbiamo pubblicato, forti dell'ampio ventaglio di tematiche coperte (ad esempio: redditi, elezioni politiche, partecipazione attiva del cittadino, ecc...) e della possibilità concreta di ulteriori incroci con altri dataset. 
+
+* offriamo una casella di comunicazione diretta e via mail con l'utente, per garantire un'approccio quanto più aperto e tempestivo rispetto a feedback, richieste, ulteriori informazioni e quant'altro;
+
+Per adesso, abbiamo potuto eseguire nel concreto queste operazioni al fine di migliorare la sostenibilità dei dataset:
+* il mantenimento della serie storica e soprattutto il suo carico informativo nel suo complesso;
+* l'utilizzo di [URI persistenti](#uri);
+* l'integrazione dei dati con una serie di **metadati**, secondo le linee guida fornite da AGiD e dal profilo DCAT-AP_IT, e in particolar modo dai **metadati di provenance** modellati sullo standard **PROV-O**.
 _______________________________________________________________
 
 # Visualizzazione
