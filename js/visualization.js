@@ -130,7 +130,7 @@ $(document).ready(function() {
                                         dati.forEach(function(arrayItem) {
                                                 if (arrayItem["Zona"] == feature.properties.Nome_zona) {
                                                     $('.information').html('');
-                                                    $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona'+ arrayItem["Zona"] +'</h3> <div class="card-body text-right"> <ul style="list-style-type:none"> <li><h5> Quartiere: '+ feature.properties.Nome_quartiere +'</h5></li> <li><h5> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h5></li> </ul> </div> </div>');
+                                                    $('.information').html('<div class="card alert-success mb-3"> <h3 class="card-header">Zona '+ arrayItem["Zona"] +'</h3> <div class="card-body text-right"> <ul style="list-style-type:none"> <li><h5> Quartiere: '+ feature.properties.Nome_quartiere +'</h5></li> <li><h5> Abitanti(2017): '+ feature.properties.Censimento2017_zona +'</h5></li> </ul> </div> </div>');
                                                     //$('.information').html('<h2><span class="badge badge-primary">' + arrayItem["Zona"]) + '</span></h2>';
 
                                                     //if (firsttime == true) {
@@ -196,6 +196,9 @@ $(document).ready(function() {
                                                         };
                                                         var opzionigenerali = {
                                                             responsiveAnimationDuration: 1000,
+                                                            legend: {
+                                                                    fontColor: "black"
+                                                                 },
                                                             "tooltips": {
                                                                 "enabled": true,
                                                                 "mode": 'single',
@@ -221,6 +224,9 @@ $(document).ready(function() {
                                                         };
                                                         var opzionidettaglio = {
                                                             responsiveAnimationDuration: 1000,
+                                                            legend: {
+                                                                    fontColor: "black"
+                                                                 },
                                                             "tooltips": {
                                                                 "enabled": true,
                                                                 "mode": 'single',
@@ -655,6 +661,9 @@ $(document).ready(function() {
                                                             }
                                                         }
                                                     },
+                                                     legend: {
+                                                        fontColor: "black"
+                                                     },
                                                     "scales": {
                                                         "xAxes": [{
                                                             "ticks": {
@@ -665,7 +674,11 @@ $(document).ready(function() {
                                                                     return value + '%';
                                                                 }
                                                             }
-                                                        }]
+                                                        }],
+                                                      "yAxes": [{
+                                                            "ticks": {
+                                                                 fontColor: "black",}
+                                                      }]
                                                     }
                                                 };
 
@@ -682,7 +695,6 @@ $(document).ready(function() {
                                                     },
                                                     "scale": {
                                                         "ticks": {
-                                                             fontColor: "black",
                                                             "beginAtZero": true,
                                                             "max": 35,
                                                              "callback": function(value, index, values) {
@@ -690,7 +702,7 @@ $(document).ready(function() {
                                                         }
                                                     },
                                                     legend: {
-                                                        //display: false
+                                                        fontColor: "black",
                                                         display: true
                                                     },
                                                 };
