@@ -144,7 +144,7 @@ I requisiti aggiuntivi che abbiamo stabilito per controllare il livello di quali
 
 |  |  |  |
 | -------| ----------- | --------- |
-| **Completezza**<br>(del **dataset**) | Percentuale di valori non-nulli nel dataset | Script(**mettere link**) |
+| **Completezza**<br>(del **dataset**) | Percentuale di valori non-nulli nel dataset | [Script](https://bolideopendata.github.io/bolideopendata/tool/funzioni/completezza.py) |
 | **Disponibilità** | Analisi dell'URI | [URI dei dataset](#uri-dei-dataset) |
 | **Processabilità** | Analisi dei formati | [Formati](#formati) |
 | **Credibilità** | Metadatazione | [Metadati](#metadati) |
