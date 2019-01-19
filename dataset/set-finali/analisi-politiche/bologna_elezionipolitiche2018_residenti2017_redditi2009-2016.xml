@@ -10,7 +10,7 @@
          xmlns:ns2="http://www.w3.org/ns/dqv#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
-  <rdf:Description rdf:about="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti">
+  <rdf:Description rdf:about="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016">
     <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapitDataset"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     <dc:identifier>bolideopendata:D.1</dc:identifier>
@@ -37,18 +37,17 @@
     <dcat:keyword xml:lang="it">redditi</dcat:keyword>
     <dc:spatial rdf:resource="https://www.geonames.org/3181928/"/>
     <dc:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/OTHER"/>
-    <dcat:distribution rdf:resource="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti/Distribuzione/bolideopendata-RDFTURTLE"/>
-    <dcat:distribution rdf:resource="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti/Distribuzione/bolideopendata-CSV"/>
-    <dcat:distribution rdf:resource="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti/Distribuzione/bolideopendata-JSON"/>
+    <dcat:distribution rdf:resource="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-RDFTURTLE"/>
+    <dcat:distribution rdf:resource="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-CSV"/>
+    <dcat:distribution rdf:resource="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-JSON"/>
     <dcat:contactPoint>
       <ns0:dcatapitAgent rdf:about="https://bolideopendata.github.io/bolideopendata/resource/PuntoContatto/contactPointbolideopendata">
         <ns1:hasEmail rdf:resource="mailto:bolideopendata@gmail.com"/>
       </ns0:dcatapitAgent>
     </dcat:contactPoint>
 
-    <dc:rightsHolder rdf:resource="http://bolideopendata.github.io/team/bolideopendatateam"/>
+    <dc:rightsHolder rdf:resource="Comune di Bologna">
     <dc:publisher rdf:resource="http://bolideopendata.github.io/team/bolideopendatateam"/>
-    <dc:creator rdf:resource="http://bolideopendata.github.io/team/bolideopendatateam"/>
     <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
     <prov:wasDerivedFrom rdf:resource="http://dati.comune.bologna.it/download/file/fid/1136"/>
     <prov:wasDerivedFrom rdf:resource="http://dati.comune.bologna.it/download/file/fid/1137"/>
@@ -64,10 +63,10 @@
     <prov:wasDerivedFrom rdf:resource="http://dati.comune.bologna.it/download/file/fid/1275"/>
   </rdf:Description>
 
-  <ns0:dcatapitDistribution rdf:about="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti/Distribuzione/bolideopendata-RDFXML">
+  <ns0:dcatapitDistribution rdf:about="https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-RDFXML">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <dc:title xml:lang="it">Distribuzione RDF-XML redditi_elezioni_residenti</dc:title>
-    <dc:description xml:lang="it">Distribuzione RDF-XML del dataset redditi_elezioni_residenti</dc:description>
+    <dc:title xml:lang="it">Distribuzione RDF-XML bologna_elezionipolitiche2018_residenti2017_redditi2009-2016</dc:title>
+    <dc:description xml:lang="it">Distribuzione RDF-XML del dataset bologna_elezionipolitiche2018_residenti2017_redditi2009-2016</dc:description>
     <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XML"/>
     <dc:license>
       <ns0:dcatapitLicenseDocument rdf:about="https://www.dati.gov.it/content/italian-open-data-license-v20">
@@ -78,12 +77,12 @@
       </ns0:dcatapitLicenseDocument>
     </dc:license>
 
-    <dcat:accessURL rdf:resource="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.xml"/>
+    <dcat:accessURL rdf:resource="https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.xml"/>
   </ns0:dcatapitDistribution>
 
   <rdf:Description rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#measure1">
     <rdf:type rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
-    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv"/>
+    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv"/>
     <ns2:isMeasurementOf>
       <ns2:Metric rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#accuracyMetric">
         <skos:definition xml:lang="it">Se il dataset presenta sintassi e semantica accurate == True</skos:definition>
@@ -102,7 +101,7 @@
   </rdf:Description>
 
   <ns2:QualityMeasurement rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#measure2">
-    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv"/>
+    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv"/>
     <ns2:isMeasurementOf>
       <ns2:Metric rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#csvCompletenessMetric">
         <skos:definition xml:lang="it">Percentuale dei valori non-nulli all'interno del dataset.</skos:definition>
@@ -121,19 +120,19 @@
   </ns2:QualityMeasurement>
 
   <ns2:QualityMeasurement rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#measure3">
-    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv"/>
+    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv"/>
     <ns2:isMeasurementOf rdf:resource="http://bolideopendata.github.io/bolideopendata/bolide-ns#coherenceMetric"/>
     <ns2:value rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns2:value>
   </ns2:QualityMeasurement>
 
   <ns2:QualityMeasurement rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#measure4">
-    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv"/>
+    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv"/>
     <ns2:isMeasurementOf rdf:resource="http://bolideopendata.github.io/bolideopendata/bolide-ns#coherenceMetric"/>
     <ns2:value rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns2:value>
   </ns2:QualityMeasurement>
 
   <ns2:QualityMeasurement rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#measure5">
-    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv"/>
+    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv"/>
     <ns2:isMeasurementOf>
       <ns2:Metric rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#availabilityMetric">
         <skos:definition xml:lang="en">Se l'URI è persistente, non ambiguo e scaricabile == True</skos:definition>
@@ -152,7 +151,7 @@
   </ns2:QualityMeasurement>
 
   <ns2:QualityMeasurement rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#measure6">
-    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv"/>
+    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv"/>
     <ns2:isMeasurementOf>
       <ns2:Metric rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#processabilityMetric">
         <skos:definition xml:lang="en">Se il dataset è pubblicato in formato .xml / .json / .rdf (e serializzazioni) == True</skos:definition>
@@ -171,7 +170,7 @@
   </ns2:QualityMeasurement>
 
   <ns2:QualityMeasurement rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#measure7">
-    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/redditi_elezioni_residenti.csv"/>
+    <ns2:computedOn rdf:resource="https://bolideopendata.github.io/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv"/>
     <ns2:isMeasurementOf>
       <ns2:Metric rdf:about="http://bolideopendata.github.io/bolideopendata/bolide-ns#credibilityMetric">
         <skos:definition xml:lang="en">Se nei metadati che corredano il dataset è presente prov:wasDerivedFrom == True</skos:definition>
