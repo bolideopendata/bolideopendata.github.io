@@ -1,0 +1,46 @@
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pav: <http://pav-ontology.github.io/pav/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier "bolideopendata:D.3" ;
+	dct:title "zone_bologna"@it ;
+	dct:description "Il dataset contiene contiene le coordinate geografiche per tracciare i confini delle zone di Bologna"@it ;
+	dct:modified "2018-01-19"^^xsd:date ;
+	dct:issued "2018-01-19"^^xsd:date ;
+	owl:versionInfo "0.1.0" ; 
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ; #regioni e città
+	dct:subject <http://publications.europa.eu/resource/authority/atu-type/IRL_CTH> ; #city
+	dcat:keyword "zone"@it , "bologna"@it, "geografia"@it ;
+	dct:spatial <https://www.geonames.org/3181928/> ; 
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ; 
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna/Distribuzione/bolideopendata-JSON> ;
+	dcat:contactPoint <https://bolideopendata.github.io/bolideopendata/resource/PuntoContatto/contactPointbolideopendata> ;
+	dct:rightsHolder <http://bolideopendata.github.io/team/bolideopendatateam> ;
+	dct:publisher  <http://bolideopendata.github.io/team/bolideopendatateam>;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/03.00.34_zone.zip> ; # zone di Bologna
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/aree_statistiche_0.csv> ;
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/03.00.02_aree_statistiche_bologna.zip> . 
+	
+	
+#Distribution dataset 3
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna/Distribuzione/bolideopendata-JSON> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione JSON zone_bologna"@it ;
+	dct:description "Distribuzione JSON del dataset zone_bologna"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/zone/zone_bologna.geojson> .
+
