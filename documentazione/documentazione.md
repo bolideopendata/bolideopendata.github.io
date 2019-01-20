@@ -578,12 +578,11 @@ I dataset che abbiamo utilizzato sono pubblicati nei seguenti formati:
 * i dataset Aree statistiche e Segnalazioni sono corredati da un insieme di file in formato **.shp** (*shapefile*, uno standard per dati vettoriali spaziali), con file aggiuntivi (**.sph** per le forme geometriche, **.dbf** per gli attributi delle forme geometriche, **.shx** come indice delle forme geometriche, **.prj** per le impostazioni del sistema di riferimento) da sui dipendono interpretazione ed utilizzo. 
 
 ### Distribuzioni
-Abbiamo deciso di pubblicare i dataset finali in 3 distribuzioni: 
-* **RDF(serializzazione RDF/XML)**;
+Abbiamo deciso di pubblicare i dataset finali in 2 distribuzioni: 
 * **JSON**;
 * **CSV**.
 
-Si veda la [pagina di pubblicazione del dataset](https://bolideopendata.github.io/bolideopendata/).
+Si veda la [pagina di pubblicazione dei dataset](https://bolideopendata.github.io/bolideopendata/).
 
 ## Metadati
 La metadatazione ricopre un ruolo essenziale laddove i dati sono esposti a utenti terzi e a software. I metadati, infatti, consentono una maggiore comprensione e rappresentano la chiave attraverso cui abilitare più agevolmente la ricerca, la scoperta, l’accesso e quindi il riuso dei dati stessi. La classificazione qualitativa dei metadati si fonda su due fattori principali: legame tra dato-metadati e livello di dettaglio.
