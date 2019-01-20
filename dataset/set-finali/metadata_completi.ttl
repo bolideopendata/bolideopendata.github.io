@@ -23,7 +23,7 @@
 	dct:modified "2018-01-19"^^xsd:date ;
         dct:issued "2018-01-19"^^xsd:date ;
         dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-	foaf:homepage <INSERIRE HOMEPAGE> ;
+	foaf:homepage <https://bolideopendata.github.io/bolideopendata/index.html> ;
         dcat:dataset <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016> ;
 	dcat:dataset <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_2017_czrm> ;
 	dcat:dataset <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/zone/zone_bologna> ;
@@ -70,14 +70,6 @@
 	prov:wasDerivedFrom <http://dati.comune.bologna.it/download/file/fid/1275> . #aree statistiche in zone
 
 #Distribution dataset 1 
-
-<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-RDF-XML> 
-	a dcatapit:Distribution , dcat:Distribution ;
-	dct:title "Distribuzione RDF-Turtle bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
-	dct:description "Distribuzione RDF-Turtle del dataset bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
-	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
-	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
-	dcat:accessURL <URL PER L'ACCESSO> .
 
 <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-CSV> 
 	a dcatapit:Distribution , dcat:Distribution ;
@@ -238,14 +230,6 @@
 
 
 #Distribution dataset 2 
-
-<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-RDF-XML> 
-	a dcatapit:Distribution , dcat:Distribution ;
-	dct:title "Distribuzione RDF segnalazioni_bologna_2017"@it ;
-	dct:description "Distribuzione RDF-Turtle del dataset segnalazioni_bologna_2017"@it ;
-	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> ;
-	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
-	dcat:accessURL <URL PER L'ACCESSO> .
 
 <ttps://bolideopendata.github.io/bolideopendata/dataset/set-finali/segnalazioni/segnalazioni_bologna_2017/Distribuzione/bolideopendata-CSV> 
 	a dcatapit:Distribution , dcat:Distribution ;
