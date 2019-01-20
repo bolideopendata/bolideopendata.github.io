@@ -23,4 +23,4 @@ L'output del lavoro è presentato sottoforma di un Sito Web che possa permettere
 - il modello RDF, in accordo con ontologie condivise dalla comunità di riferimento;
 - una data visualization fruibile anche dagli utenti meno esperti.
 
-Per visionare il resto della documentazione: [Documentazione](http://bolideopendata.github.io/bolideopendata/documentazione/)
+Per visionare il resto della documentazione: [Documentazione](http://bolideopendata.github.io/bolideopendata/documentazione.html)
