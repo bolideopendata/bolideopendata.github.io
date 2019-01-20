@@ -10,7 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix pav: <http://pav-ontology.github.io/pav/> .
 @prefix dqv: <http://www.w3.org/ns/dqv#> .
-@prefix : <http://bolideopendata.github.io/bolideopendata/bolide-ns#> .
+@prefix : <http://bolideopendata.github.io/bolideopendata/dataset/set-finali/metadata_completi.ttl#> .
 
 
 #Catalog
