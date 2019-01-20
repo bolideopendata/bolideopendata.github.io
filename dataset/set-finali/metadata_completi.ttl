@@ -60,9 +60,9 @@
 	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi_2011_per_area_statistica.csv> ; #redditi 2011
 	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2012_areastat.csv> ; #redditi 2012
 	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2013_areastat.csv> ; #redditi 2013
-	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2014_areastat.csv>> ; #redditi 2014
-	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2015_areastat.csv>> ; #redditi 2015
-	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2016_areastat.csv>> ; #redditi 2016
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2014_areastat.csv> ; #redditi 2014
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2015_areastat.csv> ; #redditi 2015
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2016_areastat.csv> ; #redditi 2016
 	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/260106_risultati_politiche_2018_bologna_liste_camera_collegio6.csv> ; #politiche camera collegio 6
 	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/260108_risultati_politiche_2018_bologna_liste_camera_collegio7.csv> ; #politiche camera collegio 7
 	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/26.01.04_risultati_politiche_2018_bologna_liste_senato.csv> ; #politiche senato
