@@ -53,8 +53,10 @@ Il piano di lavoro è stato suddiviso nelle seguenti sezioni:
 _______________________________________________________________
 
 # Scenario applicativo
-Dalle elezioni del 1948, prime elezioni della storia italiana dopo il periodo di dittatura fascista in cui si potè votare per Camera e Senato, l’Emilia-Romagna ha sempre votato in maggioranza le forze di (centro)sinistra; le ultime Politiche del 4 marzo 2018 ci hanno invece restituito una differente cartina regionale.
+Dalle elezioni del 1948, prime elezioni della storia italiana nel dopoguerra in cui si potè votare per Camera e Senato, l’Emilia-Romagna ha sempre votato in maggioranza le forze progressiste; le ultime Politiche del 4 marzo 2018 ci hanno invece restituito una differente cartina regionale.
 Partendo da questa considerazione abbiamo deciso di analizzare la situazione politico-economica-sociale Bolognese degli ultimi anni, per introdurre l'utente alla questione, lasciandolo però libero di analizzare ed interpretare tali dati a suo piacimento.
+
+Tra i fattori che hanno caratterizzato il voto troviamo certamente la **crisi del debito sovrano europeo** (2010-2011), fattore che possiamo analizzare tenendo in esame l'*andamento dei redditi tra il 2009 e il 2016* (quelli del 2017 non sono ancora disponibili) delle diverse zone di Bologna. Inoltre, altro fattore determinante è stato il *malcontento nei confronti delle problematiche sociali e ambientali*, nonchè un senso di insicurezza nei confronti degli episodi di *criminalità*, che proviamo a rintracciare attraverso il progetto europeo di **Citizen Relationship Management** a cui hanno aderito vari comuni di Italia, tra cui il comune di Bologna.
 _______________________________________________________________
 
 # Dataset
