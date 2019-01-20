@@ -1,0 +1,68 @@
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pav: <http://pav-ontology.github.io/pav/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+         
+         
+         
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier "bolideopendata:D.1" ;
+	dct:title "redditi_elezioni_politiche"@it ;
+	dct:description "Il dataset contiene i dati divisi per zona di Bologna di: redditi medi pro-capite dei contribuenti bolognesi dal 2009 al 2016, i risutati degli scrutini alle elezioni politiche per l'elezione al Senato della Repubblica e alla Camera dei Deputati del 4.3.2018, e il numero di residenti."@it ;
+	dct:modified "2019-01-19"^^xsd:date ;
+	dct:issued "2019-01-19"^^xsd:date ;
+	owl:versionInfo "0.1.0" ; 
+        dct:temporal <https://bolideopendata.github.io/bolideopendata/PeriodoTemporale/periodTimebolideopendata> ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ; 
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+	dct:subject <http://eurovoc.europa.eu/700> , <http://eurovoc.europa.eu/3319> , <http://eurovoc.europa.eu/3460>; # elezioni nazionali,  distribuzione del reddito , residenza
+	dcat:keyword "elezioni"@it , "bologna"@it, "redditi"@it ;
+	dct:spatial <https://www.geonames.org/3181928/> ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/OTHER> ; # other = ogni 5 anni
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-CSV> ;
+	dcat:distribution <https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-JSON> ;
+	dcat:contactPoint <https://bolideopendata.github.io/bolideopendata/resource/PuntoContatto/contactPointbolideopendata> ;
+	dct:rightsHolder <http://bolideopendata.github.io/team/bolideopendatateam>  ;
+	dct:publisher <http://bolideopendata.github.io/team/bolideopendatateam>  ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi_2009_per_area_statistica.csv> ; #redditi 2009
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi_2010_per_area_statistica.csv> ; #redditi 2010
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi_2011_per_area_statistica.csv> ; #redditi 2011
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2012_areastat.csv> ; #redditi 2012
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2013_areastat.csv> ; #redditi 2013
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2014_areastat.csv> ; #redditi 2014
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2015_areastat.csv> ; #redditi 2015
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/redditi2016_areastat.csv> ; #redditi 2016
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/260106_risultati_politiche_2018_bologna_liste_camera_collegio6.csv> ; #politiche camera collegio 6
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/260108_risultati_politiche_2018_bologna_liste_camera_collegio7.csv> ; #politiche camera collegio 7
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/26.01.04_risultati_politiche_2018_bologna_liste_senato.csv> ; #politiche senato
+	prov:wasDerivedFrom <http://dati.comune.bologna.it/file/dataset/aree_statistiche_0.csv> . #aree statistiche in zone
+
+#Distribution dataset 1 
+
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-CSV> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione CSV bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:description "Distribuzione CSV del dataset bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.csv> .
+	
+<https://bolideopendata.github.io/bolideopendata/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016/Distribuzione/bolideopendata-JSON> 
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Distribuzione JSON bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:description "Distribuzione JSON del dataset bologna_elezionipolitiche2018_residenti2017_redditi2009-2016"@it ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dct:license <https://www.dati.gov.it/content/italian-open-data-license-v20> ;
+	dcat:accessURL <https://github.com/bolideopendata/bolideopendata/blob/master/dataset/set-finali/analisi-politiche/bologna_elezionipolitiche2018_residenti2017_redditi2009-2016.json> .
+	
