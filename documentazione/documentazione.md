@@ -5,7 +5,7 @@ Il progetto è stato sviluppato nell'ambito dell' esame di *Open Access and Digi
 - Fabio Mariani
 - Valentina Pasqual
 
-Si inserisce in questo contesto **BOLIDE** (BOLogna In Dati Elettorali), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita, seguendo le *Best Practices* della classificazione "[** 5 Stelle Open Data**"].  Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di *Semantic Web*, e prevede: 
+Si inserisce in questo contesto **BOLIDE** (BOLogna In Dati Elettorali), il cui obiettivo passa dall'analisi etico-giuridica e tecnica di una particolare raccolta di Open Government Data, per la creazione di una nuova raccolta, pulita ed arricchita. Tale sistema di classificazione, proposto da Tim Berners-Lee, si basa sul concetto di *Semantic Web*, e prevede: 
 1) dati disponibili sul web con una licenza aperta; 
 2) dati in formato strutturato per la facile interpretazione da parte di un software;
 3) dati in un formato non proprietario;
