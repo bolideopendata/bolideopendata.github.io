@@ -38,7 +38,7 @@ $(document).ready(function() {
             legend.onAdd = function(map) {
                 var div = L.DomUtil.create('div', 'info legend'),
                     grades = [8000, 14400, 20800, 27200, 33600],
-                    labels = ['<strong> Abitanti per Zone di Bologna </strong>'],
+                    labels = ['<strong> Residenti per Zone di Bologna </strong>'],
                     from, to;
 
                 for (var i = 0; i < grades.length; i++) {
