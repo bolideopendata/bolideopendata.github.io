@@ -188,40 +188,40 @@ L'analisi giuridica è necessaria per garantire sostenibilità nel tempo del pro
 
 Per attuarla, abbiamo utilizzato una *check list* di riferimento per valutare tutti gli aspetti giuridici del ciclo di vita dei dataset. La check list è formata da una serie di domande, per ciascun aspetto, a cui rispondere con Sì, No o Non Verificabile (?).
 
-| **Privacy** | Domande | D.Elezioni |  D.Redditi | D.Segnalazioni | D.Aree Statistiche |
-| ----------- | --------| ------|--------|-------|---------|
-| | sono i dati liberi da ogni informazione                    personale che possa identificare in modo                       diretto l’individuo?|sì |sì| sì | sì| |
-| | sono i dati liberi da ogni informazione indiretta che      possa identificare l’individuo? In caso negativo, queste       informazioni sono autorizzate per legge?|sì |sì|no  |sì | |
-| | sono i dati liberi da ogni informazione sensibile che può essere ricondotta all’individuo? In caso negativo, queste informazioni sono autorizzate per legge? |sì |no|no |sì | |
-| | sono i dati liberi da ogni informazione relativa al soggetto che incrociata con dati comunemente reperibili nel web possa identificare l’individuo? In caso negativo, queste informazioni sono autorizzate per legge? |sì |no|no |sì | |
-| | sono i dati liberi da ogni record relativo a profughi, protetti di giustizia, vittime di violenze o in ogni caso categorie protette? |sì |sì| no| sì| |
-| | hai usato un tool per calcolare il rischio di de-anonimizzazione del tuo dataset prima di pubblicarlo? |? |?|?|?|
-| | esponi dei servizi di ricerca tali da poter filtrare i dati in modo da ottenere un solo record geolocalizzato? | no|no|sì|no|
+| **Privacy** | Domande | D.Elezioni |  D.Redditi | D.Segnalazioni | D.Aree Statistiche | D.Censimento |
+| ----------- | --------| ------|--------|-------|---------|---------|
+| | sono i dati liberi da ogni informazione                    personale che possa identificare in modo                       diretto l’individuo?|sì |sì| sì | sì| sì|
+| | sono i dati liberi da ogni informazione indiretta che      possa identificare l’individuo? In caso negativo, queste       informazioni sono autorizzate per legge?|sì |sì|no  |sì | no|
+| | sono i dati liberi da ogni informazione sensibile che può essere ricondotta all’individuo? In caso negativo, queste informazioni sono autorizzate per legge? |sì |no|no |sì | no|
+| | sono i dati liberi da ogni informazione relativa al soggetto che incrociata con dati comunemente reperibili nel web possa identificare l’individuo? In caso negativo, queste informazioni sono autorizzate per legge? |sì |no|no |sì |no |
+| | sono i dati liberi da ogni record relativo a profughi, protetti di giustizia, vittime di violenze o in ogni caso categorie protette? |sì |sì| no| sì| sì||
+| | hai usato un tool per calcolare il rischio di de-anonimizzazione del tuo dataset prima di pubblicarlo? |? |?|?|?|?|
+| | esponi dei servizi di ricerca tali da poter filtrare i dati in modo da ottenere un solo record geolocalizzato? | no|no|sì|no|no|
 | **Proprietà intellettuale della sorgente** | | |
-| | avete creato voi i dati? | sì| sì| sì |sì|
-| | siete i proprietari dei dati anche se non li avete creati voi? |/ |/|/|/|
-| | siete sicuri di non usare dati per i quali vi è una licenza o un brevetto di terzi? | sì |sì| sì| sì|
-| | se i dati non sono vostri avete un accordo o una licenza che vi autorizzi a pubblicarli? |/ |/|/|/|
+| | avete creato voi i dati? | sì| sì| sì |sì|sì|
+| | siete i proprietari dei dati anche se non li avete creati voi? |/ |/|/|/|/|
+| | siete sicuri di non usare dati per i quali vi è una licenza o un brevetto di terzi? | sì |sì| sì| sì|sì|
+| | se i dati non sono vostri avete un accordo o una licenza che vi autorizzi a pubblicarli? |/ |/|/|/|/|
 | **Licenza di rilascio** | | |
-| | rilasciate i dati di cui possedete la proprietà accompagnati da una licenza? | sì|sì|sì| sì|
-| | avete incluso anche la clausola di salvaguardia “In ogni caso, i dati non possono essere utilizzati al fine di identificare nuovamente gli interessati”? | no|no|no|no|
+| | rilasciate i dati di cui possedete la proprietà accompagnati da una licenza? | sì|sì|sì| sì|sì|
+| | avete incluso anche la clausola di salvaguardia “In ogni caso, i dati non possono essere utilizzati al fine di identificare nuovamente gli interessati”? | no|no|no|no|no|
 | **Limite alla pubblicazione** | | |
-| | hai verificato che non ci siano impedimenti di legge o contrattuali che impediscano la pubblicazione dei dati? |?/non sono presenti | ? / sono presenti |?/ sono presenti | ?/ non sono presenti|
+| | hai verificato che non ci siano impedimenti di legge o contrattuali che impediscano la pubblicazione dei dati? |?/non sono presenti | ? / sono presenti |?/ sono presenti | ?/ non sono presenti|? /sono presenti|
 | **Segretezza** | | |
-| | hai verificato se non ci sono motivi di ordine pubblico o di sicurezza nazionale che ti impediscono la pubblicazione dei dati? |?/ non sono presenti |?/ sono presenti | ?/ sono presenti | ?/non sono presenti |
-| | hai verificato se non ci sono motivi legati al segreto d’ufficio che impediscono la pubblicazione dei dati? | ?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti
-| | hai verificato se non ci sono motivi legati al segreto di stato che impediscono la pubblicazione dei dati? |?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti |
+| | hai verificato se non ci sono motivi di ordine pubblico o di sicurezza nazionale che ti impediscono la pubblicazione dei dati? |?/ non sono presenti |?/ sono presenti | ?/ sono presenti | ?/non sono presenti |?/sono presenti|
+| | hai verificato se non ci sono motivi legati al segreto d’ufficio che impediscono la pubblicazione dei dati? | ?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti| ?/non sono presenti| 
+| | hai verificato se non ci sono motivi legati al segreto di stato che impediscono la pubblicazione dei dati? |?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti | ?/ non sono presenti |?/non sono presenti|
 | **Condizioni economiche** | | |
-| | hai verificato di poter rilasciare in modo gratuito i dati senza infrangere qualche norma di finanza pubblica? |?/ non viene infranta |?/ non viene infranta |?/ non viene infranta |?/ non viene infranta |
-| | se hai imposto condizioni economiche per l’utilizzo dei dati, sei sicuro di avere imposto un prezzo per coprire i soli costi marginali? |/  |/ |/ |/ |
+| | hai verificato di poter rilasciare in modo gratuito i dati senza infrangere qualche norma di finanza pubblica? |?/ non viene infranta |?/ non viene infranta |?/ non viene infranta |?/ non viene infranta | ?/ non viene infranta | 
+| | se hai imposto condizioni economiche per l’utilizzo dei dati, sei sicuro di avere imposto un prezzo per coprire i soli costi marginali? |/  |/ |/ |/ |/|
 | **Temporalizzazione** | | |
-| | i dati sono soggetti per legge a restrizioni temporali di pubblicazione? | no|no|no|no|
-| | i dati sono aggiornati frequentemente in modo da sanare eventuali informazioni lesive di persone o organizzazioni? |? | ? | ?| ?|
-| | i dati hanno dei divieti di legge o giurisprudenziali che impediscono la loro indicizzazione da parte di motori di ricerca? |no |no|no|no|
+| | i dati sono soggetti per legge a restrizioni temporali di pubblicazione? | no|no|no|no|no|
+| | i dati sono aggiornati frequentemente in modo da sanare eventuali informazioni lesive di persone o organizzazioni? |? | ? | ?| ?|?|
+| | i dati hanno dei divieti di legge o giurisprudenziali che impediscono la loro indicizzazione da parte di motori di ricerca? |no |no|no|no|no|
 | **Trasparenza**| | | 
-| | i dati rientrano nella lista dell’allegato A del d.lgs. 33/2013? | no|no|no|no|
-| | se sì, come sono stati trattati dal responsabile della trasparenza nel sito “Amministrazione trasparente”? | /|/|/|/|
-| | in che forma si possono creare sinergie tra il portale “Amministrazione trasparente” e il portal open data per minimizzare le inconsistenze e favorire la trasparenza del dato aperto? |/ |/|/|/| 
+| | i dati rientrano nella lista dell’allegato A del d.lgs. 33/2013? | no|no|no|no|no|
+| | se sì, come sono stati trattati dal responsabile della trasparenza nel sito “Amministrazione trasparente”? | /|/|/|/|/|
+| | in che forma si possono creare sinergie tra il portale “Amministrazione trasparente” e il portal open data per minimizzare le inconsistenze e favorire la trasparenza del dato aperto? |/ |/|/|/| /|
 
 ## Misure di de-identificazione e pulitura
 ### Misure di de-identificazione
